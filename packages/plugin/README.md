@@ -11,6 +11,12 @@ including attraction and repulsion. Run `npm run diagram` or
 and their limits are documented in [the diagram guide](../../docs/diagrams.md).
 Deterministic output is not a guarantee that a user-supplied physical model is correct.
 
+When no available specialized skill covers a requested static technical figure,
+the diagram skill provides a custom SVG/3D illustration fallback. It requires
+independent technical checks and inspection of the final render for overlaps,
+clipping, attachments, perspective, and shading. This authoring workflow does
+not add new physics solvers or guarantee flawless output for arbitrary inputs.
+
 ## Layout
 
 ```
