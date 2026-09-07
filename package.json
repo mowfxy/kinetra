@@ -11,6 +11,7 @@
     "test:core": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/core/test/**/*.test.ts",
     "test:plugin": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/plugin/test/**/*.test.ts",
     "test:diagrams": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/core/test/diagram/*.test.ts",
+    "test:textbook": "python packages/plugin/skills/kinetra-textbook-diagrams/scripts/test_render.py",
     "typecheck:diagrams": "tsc -p packages/core/tsconfig.diagrams.json",
     "audit:diagrams": "node --experimental-strip-types --import ./scripts/_register.mjs scripts/audit-diagrams.mjs",
     "examples:diagrams": "node --experimental-strip-types --import ./scripts/_register.mjs examples/render-diagrams.mjs",

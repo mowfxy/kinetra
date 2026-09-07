@@ -16,6 +16,23 @@ This is the saved visual review from September 7, 2026. Verification included 29
 
 ## Run a diagram
 
+For textbook-style **straight-wire magnetic fields, solenoids and reactor-loop
+cutaways**, use the [portable textbook diagram skill](packages/plugin/skills/kinetra-textbook-diagrams/SKILL.md).
+It bundles a Python renderer, measured typography, original templates and visual
+regression checks. Copy the entire skill folder into Codex's skills directory,
+or import the Kinetra plugin. Install its Python dependencies before use.
+
+```sh
+python -m pip install -r packages/plugin/skills/kinetra-textbook-diagrams/scripts/requirements.txt
+python packages/plugin/skills/kinetra-textbook-diagrams/scripts/render.py packages/plugin/skills/kinetra-textbook-diagrams/assets/solenoid.json out/textbook/solenoid.svg
+npm run test:textbook
+```
+
+This writes SVG, PNG, an editable model and a geometry report. Templates have
+documented parameter limits; custom subjects are not automatically verified.
+The [model contract](packages/plugin/skills/kinetra-textbook-diagrams/references/models.md)
+includes coverage, assumptions and reviewed reference images.
+
 Use Node.js 25 or newer (verified on 25.8.1). The diagram renderer and tests run directly from TypeScript; they do not require a build or runtime dependency installation.
 
 ```sh

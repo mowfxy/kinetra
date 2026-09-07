@@ -27,7 +27,7 @@
   "interface": {
     "displayName": "Kinetra",
     "shortDescription": "Local-first engineering learning workbench",
-    "longDescription": "Kinetra is a local-first technical learning and engineering workbench. This Codex plugin exposes six skills that route into Kinetra's deterministic TypeScript core for Karnaugh maps, DC/transient circuit analysis, physics diagrams, lexical+vector retrieval, study-plan generation, and quiz/exam generation.",
+    "longDescription": "Kinetra is a local-first technical learning and engineering workbench. This Codex plugin exposes a portable Python textbook-diagram skill and six skills that route into Kinetra's deterministic TypeScript core for Karnaugh maps, DC/transient circuit analysis, physics diagrams, lexical+vector retrieval, study-plan generation, and quiz/exam generation.",
     "developerName": "Kinetra Contributors",
     "category": "Developer Tools",
     "capabilities": [

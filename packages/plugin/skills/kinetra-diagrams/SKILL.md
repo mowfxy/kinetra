@@ -12,6 +12,11 @@ rendered figure. Six diagram families are supported.
 
 ## When to activate
 
+For a straight-wire magnetic field, solenoid, or reactor-loop cutaway, route to
+[kinetra-textbook-diagrams](../kinetra-textbook-diagrams/SKILL.md) first. That
+skill bundles the renderer, measured typography and regression checks for those
+families; do not replace them with the open-ended fallback below.
+
 - User describes a physics scene and asks for a diagram.
 - User posts equations and wants the corresponding free body / field
   visualization.
@@ -24,6 +29,12 @@ technical illustrations, use the fallback below. Production CAD and
 animation/video remain outside this skill.
 
 ## Fallback for an uncovered figure
+
+For reusable coverage, follow the template-extension requirements in
+[kinetra-textbook-diagrams](../kinetra-textbook-diagrams/SKILL.md#coverage-boundary).
+Its bundled layout module is available for measured text and collision checks.
+A custom figure is not verified coverage until its parameter limits, geometry
+tests and rendered reference have been checked.
 
 Do not substitute the nearest supported example if that changes the requested
 apparatus, topology, or physical meaning. Keep supported renderers for the parts
