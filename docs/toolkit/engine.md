@@ -286,3 +286,38 @@ Rules for part authors:
    `spring.end`. Document them in `description`.
 5. **Do not edit shared files.** `primitives.ts` and `scene2d.ts` are covered
    by byte-identical goldens.
+
+
+## Part library (Agent 2)
+
+The full catalogue (every part, its options, anchors and a sample) is
+[parts.md](parts.md), generated from the registry; contact sheets of every
+part are in [contact-sheet/](contact-sheet/). The parts live in
+`packages/core/src/toolkit/parts/`:
+
+- `kit.ts` is the shared machinery. A part builds one list of world-space
+  primitives (`Prim`) per instance, and `definePart()` derives `draw()`,
+  `collide()`, `box()`, anchors, outline, label anchor and refs from it, so
+  collision shapes always cover what is painted. It also registers each part's
+  catalogue entry (`TOOLKIT_PART_CATALOG`) and its sample
+  (`TOOLKIT_PART_SAMPLES`), which drive the docs, contact sheets, tests and
+  fuzz.
+- `general.ts`, `mechanics.ts`, `fields.ts`, `fluids.ts`, `circuits.ts`,
+  `logic.ts` and `plots.ts` hold the parts by category.
+
+### Additive engine hooks
+
+| Hook | Where | Purpose |
+| --- | --- | --- |
+| `PartDefinition.elementRefs(spec)` | `parts.ts`, `resolver.ts` | Element ids a part reads beyond its point references (the pulleys a rope wraps, the axes of a series). They become dependencies, so cycles and unknown ids are reported as usual. |
+| `PartDefinition.link(inst, get, ctx)` | `parts.ts`, `resolver.ts` | Runs once after the part's origin and points are resolved, with read access to referenced elements. Ropes compute tangents here, connectors route, series map data and junctions validate their node. |
+| `PartInstance.touches` | `parts.ts`, `compose.ts` | Element ids an instance may touch without a model `mayTouch` (a connector and the parts it joins, a series and its axes). They are merged into the gate's allowances. |
+| `CollisionShape.strict` | `geometry.ts`, `gate.ts` | Marks a part's own text. An allowed contact (mayTouch or touches) never excuses a line through strict shapes; that is still `E_COLLISION`. Only kit text sets it, so basic-shape behaviour is unchanged. |
+| Extra units | `expr.ts` | kN, MN, mN, Pa, kPa, MPa, GPa, bar, atm, litre/liter, mL, kJ, MJ, kWh, MW, mT, uC/µC, nC, uH/µH and nH, defined in SI inside the toolkit so `units.ts` is unchanged. A model variable of the same name still wins, so a variable `m` shadows the metre. |
+
+In their `gate` hook, kit parts also check two things:
+
+- Internal text fits inside its frame (meter letters, box text).
+- A part's own lines never cross its own text (tick labels, ring labels, angle marks).
+
+Both report `E_INVALID_VALUE` with a suggestion. No error code was added.

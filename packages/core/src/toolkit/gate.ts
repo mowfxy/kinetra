@@ -57,6 +57,13 @@ export function bodyDistance(a: Body, b: Body, stopBelow = 0): number {
   return d;
 }
 
+/** Distance between two bodies counting only pairs where one shape is strict. */
+export function strictDistance(a: Body, b: Body): number {
+  let d = Infinity;
+  for (const s of a.shapes) for (const t of b.shapes) if (s.strict || t.strict) { d = Math.min(d, shapeDistance(s, t)); if (d === 0) return 0; }
+  return d;
+}
+
 export function requiredGap(a: Body, b: Body): number {
   return isText(a) || isText(b) ? CLEARANCE.text : CLEARANCE.geometry;
 }
@@ -108,14 +115,16 @@ export function runGate(bodies: Body[], width: number, height: number, allow: Al
     const d = bodyDistance(a, b, 0);
     if (d >= gap) continue;
     const reason = contactReason(a, b, allow);
-    if (reason) { contacts.push({ a: a.key, b: b.key, reason }); continue; }
+    // An allowed element contact never excuses touching a part's own text (strict shapes).
+    const strictD = reason === "mayTouch" ? strictDistance(a, b) : Infinity;
+    if (reason && strictD >= CLEARANCE.text) { contacts.push({ a: a.key, b: b.key, reason }); continue; }
     stats.collisions++;
     const both = a.kind === "element" && b.kind === "element";
     issues.push({
       code: "E_COLLISION", elements: [...new Set([a.kind === "element" ? a.owner : a.key, b.kind === "element" ? b.owner : b.key])],
-      message: `${describeBody(a)} ${d === 0 ? "overlaps" : `comes within ${d.toFixed(2)} px of`} ${describeBody(b)}${d === 0 ? "" : ` (needs ${gap} px)`}`,
+      message: reason ? `${describeBody(a)} and ${describeBody(b)} may touch, but one of them runs through the other's text (${strictD.toFixed(2)} px; text needs ${CLEARANCE.text} px even between parts allowed to touch)` : `${describeBody(a)} ${d === 0 ? "overlaps" : `comes within ${d.toFixed(2)} px of`} ${describeBody(b)}${d === 0 ? "" : ` (needs ${gap} px)`}`,
       measured: { distancePx: d, requiredPx: gap, boxA: a.box, boxB: b.box },
-      suggestion: both ? `If this contact is intended (e.g. an arrow starting on its body), add "mayTouch": ["${b.owner}"] to "${a.owner}"; otherwise move one of them.` : `Move ${describeBody(a)} or ${describeBody(b)}, or shorten the text.`,
+      suggestion: reason ? `Move or resize one of them, change tick or label settings, or shorten the text so the line clears it.` : both ? `If this contact is intended (e.g. an arrow starting on its body), add "mayTouch": ["${b.owner}"] to "${a.owner}"; otherwise move one of them.` : `Move ${describeBody(a)} or ${describeBody(b)}, or shorten the text.`,
     });
   }
   return { issues, contacts, stats };

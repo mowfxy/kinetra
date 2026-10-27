@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+
+<rect x="0" y="0" width="640" height="420" fill="#fff"/>
+<g>
+<text x="320" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+RC charging circuit
+</text>
+<line x1="57.50000000000006" y1="157.5" x2="57.50000000000006" y2="191.625" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="57.50000000000006" y1="228.375" x2="57.50000000000006" y2="262.5" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="31.250000000000057" y1="191.625" x2="83.75000000000006" y2="191.625" stroke="#222" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="44.37500000000006" y1="203.875" x2="70.62500000000006" y2="203.875" stroke="#222" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="57.50000000000006" y1="203.875" x2="57.50000000000006" y2="216.125" stroke="#222" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="31.250000000000057" y1="216.125" x2="83.75000000000006" y2="216.125" stroke="#222" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="44.37500000000006" y1="228.375" x2="70.62500000000006" y2="228.375" stroke="#222" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="80.25000000000006" y1="174.125" x2="80.25000000000006" y2="182.875" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="75.87500000000006" y1="178.5" x2="84.62500000000006" y2="178.5" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="57.50000000000006" y1="157.5" x2="57.50000000000005" y2="148.74999999999997" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="57.50000000000006" y1="262.5" x2="57.500000000000064" y2="271.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="197.50000000000006" y1="78.75" x2="260.50000000000006" y2="47.25" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="260.50000000000006" y1="78.75" x2="267.50000000000006" y2="78.75" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="197.50000000000006" y1="78.75" x2="180.00000000000006" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="267.50000000000006" y1="78.75" x2="285.00000000000006" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="372.50000000000006" y1="78.75" x2="383.00000000000006" y2="110.25" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="383.00000000000006" y1="110.25" x2="404.00000000000006" y2="47.25" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="404.00000000000006" y1="47.25" x2="425.00000000000006" y2="110.25" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="425.00000000000006" y1="110.25" x2="446.0000000000001" y2="47.25" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="446.0000000000001" y1="47.25" x2="467.0000000000001" y2="110.25" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="467.0000000000001" y1="110.25" x2="477.50000000000006" y2="78.75" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="372.50000000000006" y1="78.75" x2="355.0000000000001" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="477.50000000000006" y1="78.75" x2="495.00000000000006" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="556.25" y1="183.75" x2="608.75" y2="183.75" stroke="#222" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="556.25" y1="236.25" x2="608.75" y2="236.25" stroke="#222" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="582.5" y1="183.75" x2="582.5" y2="148.74999999999997" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="582.5" y1="236.25" x2="582.5" y2="271.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="425.00000000000006" y1="152.25" x2="425.00000000000006" y2="171.5" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="425.00000000000006" y1="248.5" x2="425.00000000000006" y2="267.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<ellipse cx="425.00000000000006" cy="210" rx="38.49999999999999" ry="38.49999999999999" fill="#fff" stroke="#222" stroke-width="1"/>
+<rect x="420.59000000000003" y="204.00000000000003" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="425.00000000000006" y="213.85000000000002" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V
+</text>
+<line x1="425.00000000000006" y1="152.25" x2="425.00000000000006" y2="148.74999999999997" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="425.00000000000006" y1="267.75" x2="425.00000000000006" y2="271.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="57.50000000000005" y1="148.74999999999997" x2="57.50000000000006" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="57.50000000000006" y1="78.75" x2="180.00000000000006" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="285.00000000000006" y1="78.75" x2="355.0000000000001" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="495.00000000000006" y1="78.75" x2="582.5" y2="78.75" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="582.5" y1="78.75" x2="582.5" y2="148.74999999999997" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="582.5" y1="271.25" x2="582.5" y2="341.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="582.5" y1="341.25" x2="57.50000000000006" y2="341.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="57.50000000000006" y1="341.25" x2="57.500000000000064" y2="271.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="425.00000000000006" y1="148.74999999999997" x2="425.00000000000006" y2="131.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="425.00000000000006" y1="131.25" x2="582.5" y2="131.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="425.00000000000006" y1="271.25" x2="425.00000000000006" y2="341.25" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<ellipse cx="582.5" cy="131.25" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
+<ellipse cx="425.00000000000006" cy="341.25" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
+<defs>
+<marker id="arr-23633033393262-48" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="105.75000000000006" y1="69.75" x2="131.75000000000006" y2="69.75" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-48)" stroke-dasharray=""/>
+<rect x="91.22500000000005" y="202.77" width="54.08" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="92.22500000000005" y="213.47" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+E = 9 V
+</text>
+<rect x="227.78000000000006" y="25.74999999999999" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="228.78000000000006" y="36.44999999999999" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+S
+</text>
+<rect x="390.52000000000015" y="25.74999999999999" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="391.52000000000015" y="36.44999999999999" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R = 10 kΩ
+</text>
+<rect x="534.5899999999999" y="202.77" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="535.5899999999999" y="213.47" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+C = 47 μF
+</text>
+<rect x="114.03000000000006" y="48.949999999999974" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="115.03000000000006" y="59.64999999999998" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+I
+</text>
+</g>
+</svg>

@@ -168,3 +168,209 @@ code is frozen.
 - **Run before handing off.** Run `npm test`, `npm run test:compat` and
   `npm run typecheck:toolkit`. The compat tests must stay green without
   regenerating anything.
+
+
+# Toolkit handoff: Agent 2 → Agent 3
+
+Branch: `kinetra/toolkit`, continued from Agent 1's `6368a7e`. It is not
+merged, and no PR has been opened.
+
+## What was built
+
+1. **A library of 92 part types** in `packages/core/src/toolkit/parts/`, on
+   top of Agent 1's 11 basic shapes (103 types in all). Every part has:
+   - named anchors;
+   - exact collision shapes, derived from what it draws;
+   - a catalogue entry and a sample;
+   - unit tests and fuzz coverage.
+
+   | Category | Parts | Types |
+   | --- | --- | --- |
+   | General | 12 | roundedBox (tfBlock), circleNode, textBlock, curvedArrow, doubleArrow, connector (signal: straight, orthogonal-routed or curved), brace, dimension, angleArc, leader, legend, table |
+   | Mechanics and structures | 21 | beam, pinSupport, rollerSupport, fixedSupport, hinge, ground (wall, ceiling), pulley, rope (exact tangency), coilSpring (adaptive coils), damper, mass, pivot, spokedWheel, incline, truss, cable, gear, pointLoad, distributedLoad, moment, triad |
+   | Fields and E&M | 8 | charge, pageVector (dot/cross), magnet (bar, horseshoe), solenoid, plates, fieldGrid, fieldLine, currentArrow |
+   | Fluids and thermo | 8 | tank, pipe, valve, pump, pistonCylinder, heatFlow, reservoir, liquidSurface |
+   | Circuits | 27 | resistor, capacitor, inductor, voltageSource, currentSource, switch, circuitGround (the 7 template kinds, wrapped), battery, cell, bulb, ammeter, voltmeter, ohmmeter, galvanometer, diode, zener, led, acSource, potentiometer, fuse, spdtSwitch, pushButton, bjt, mosfet, opamp, wire, junction |
+   | Logic and controls | 7 | logicGate (IEC wrapping logic_schematic.ts, plus ANSI), flipFlop, summingJunction, takeoff, state, transition, selfLoop |
+   | Plots | 9 | axes (linear/log, ticks, units, grid, y2, box/cross frames), series (fn, parametric, polar, data), shade, plotPoint, guideLine (asymptote), slopeTriangle, intercept, polarAxes, phasor |
+
+   Aliases cover two of the requested items:
+   - block-diagram blocks are `roundedBox` (alias `tfBlock`);
+   - signal arrows are `connector` (alias `signal`).
+2. **A connector router.** `routeOrthogonal`, exported as
+   `toolkitRouteOrthogonal`, routes orthogonally around the endpoint parts and
+   any `avoid` parts. It penalises bends and crossings of the connectors listed
+   in `avoid`. No general graph-layout engine was added.
+3. **Wrapping, not modifying.** `circuit_schematic.ts` and `logic_schematic.ts`
+   are untouched; their `SYMBOL` table is module-private, so it cannot be
+   imported. The toolkit symbols reproduce the originals, and tests prove the
+   match:
+   - Pin positions of the resistor, capacitor, inductor, voltage source,
+     current source and switch are compared with `renderSchematic`'s own wire
+     endpoints at three rotations.
+   - The resistor's zig-zag vertices and stroke width are compared with the
+     template path.
+   - Gate terminals are compared with `logicTerminals` for 1–6 inputs.
+
+   The template inductor's bumps hang below the axis, and the toolkit
+   reproduces that; `flip` puts them above.
+4. **The catalogue, `docs/toolkit/parts.md`.** `npm run docs:toolkit-parts`
+   generates it, and a test fails if it is stale.
+5. **Contact sheets.**
+   - **Files:** `docs/toolkit/contact-sheet/{general,mechanics,fields,fluids,circuits,logic,plots}.svg`
+     and `.png`, plus renders of the worked examples in
+     `docs/toolkit/contact-sheet/examples/`.
+   - **Command:** `npm run contact-sheet:toolkit`. PNGs need a local Chrome or
+     Edge; set `KINETRA_CHROME` to override the path.
+   - **Checked by the engine:** each sheet is itself a composition, so it
+     passes the gate and the style contract.
+   - **Visual review:** I inspected every sheet and example and fixed what
+     looked wrong:
+     - left-aligned text drift;
+     - symbol labels that fell back to leader lines;
+     - a polar ring label under a spoke;
+     - an angle mark touching its incline's edge;
+     - tick labels colliding at the plot corner and under the y title;
+     - a battery with reversed polarity.
+6. **Ten worked examples** in `examples/toolkit/parts/`: beam reactions,
+   Atwood machine, RC circuit, inverting amplifier, half adder, Bode plot, P–V
+   cycle with shaded work, feedback loop, FSM and spring–mass–damper. Each
+   declares checks, and they pass. The examples live in a subfolder because
+   Agent 1's example test pins the exact list of files in `examples/toolkit/`.
+7. **npm scripts** `contact-sheet:toolkit` and `docs:toolkit-parts` (additions only).
+
+## Engine changes (additive only)
+
+They are documented in `engine.md` under "Part library (Agent 2)".
+
+- **Resolver hooks.** `PartDefinition.elementRefs` and `PartDefinition.link`
+  are optional, and the resolver calls them only when a part defines them.
+  Existing parts are unaffected.
+- **Implicit contacts.** `PartInstance.touches` is merged into the gate's
+  mayTouch allowances in `compose.ts`.
+- **Strict text.** `CollisionShape.strict` and `strictDistance` in the gate
+  mean that an allowed contact never excuses a line through a part's own
+  text.
+  - Only kit text is strict, so Agent 1's parts behave exactly as before.
+  - Agent 1's fuzz totals are byte-identical to the numbers in their section.
+- **Units.** `expr.ts` has a toolkit-local table of engineering units (kN,
+  kPa, MPa, bar, litre, kJ, …); `units.ts` is unchanged.
+- **Exports.** `toolkit/index.ts` adds `TOOLKIT_PART_CATALOG`,
+  `TOOLKIT_PART_SAMPLES`, `defineToolkitPart`, `toolkitRouteOrthogonal` and
+  their types. The API lock allows additions, and it passes.
+
+## Test counts
+
+| Command | Before (Agent 1 final) | After |
+| --- | --- | --- |
+| `npm test` | 428/428 | 1186/1186 (+758) |
+| `npm run test:toolkit` | 75/75 | 833/833 |
+| `npm run test:compat` | 56/56 | 56/56 (unchanged; goldens and api-lock untouched since `37831c7`) |
+| `npm run test:diagrams` | 82/82 | 82/82 |
+| `npm run audit:diagrams` | 9/9 | 9/9 |
+| `npm run typecheck:diagrams` | pass | pass |
+| `npm run typecheck:toolkit` | pass | pass (the same pre-existing error in `math/eval.ts`) |
+| `npm run test:plugin` | 6/6 | 6/6 |
+
+The new tests are in `packages/core/test/toolkit/`.
+
+- **`parts_catalog.test.ts` (638 tests).** For each of the 92 parts:
+  - its sample composes at 3 seeds and 2 zooms, and passes the style
+    contract and an SVG oracle;
+  - its collision shapes cover every painted pixel sample, checked by an
+    independent oracle that samples each Scene2D shape;
+  - every documented anchor resolves;
+  - output is deterministic;
+  - a duplicate is rejected with E_COLLISION, and an unknown key with E_SCHEMA;
+  - it takes a label when it says it does;
+  - it is documented.
+- **`parts_behaviour.test.ts` (47 tests).**
+  - Circuit pins and gate terminals match the templates.
+  - Rope tangency, belt tangents and gear meshing are exact.
+  - The router avoids obstacles and prefers the route that crosses no other
+    connector.
+  - Junctions are accepted only at real nodes.
+  - Mechanics values are right: the distributed-load resultant, vectorSum with
+    point loads, and truss counts.
+  - Plot values are right: onCurve, shade area = ln 3, slope, root, log
+    spacing and phasor re/im.
+  - Both text rules hold.
+- **`parts_errors.test.ts` (59 tests).** One bad model per new failure mode,
+  checking the code, the element named and the message.
+- **`parts_fuzz.test.ts` (2 tests)** and **`parts_examples.test.ts` (12
+  tests).** The examples file includes the check that the catalogue is current.
+
+No existing test was modified, skipped or loosened. Agent 1's E_UNKNOWN_PART
+test uses `"spring"` as its example of an unknown type. The spring part is
+therefore registered as `coilSpring` (alias `zigzagSpring`), and `"spring"`
+stays unregistered.
+
+## Fuzz totals
+
+The parts fuzz is `parts_fuzz.test.ts`, with seed 20261028 and 300 cases.
+
+- **Cases.** Random grids of random part samples, with seeded variation,
+  labels, zoom, title and caption.
+- **Checks.** Every case goes through the gate, the style checker, the SVG
+  oracle and the paint-coverage oracle; every tenth case is also checked for
+  determinism.
+
+```text
+PARTS_FUZZ_TOTALS {"cases":300,"elements":5533,"partTypes":92,"labels":1136,"leaders":53,"contacts":3109,"pairsTested":3648,"collisions":0,"outOfBounds":0,"nonFinite":0,"oracleProblems":0,"styleViolations":0,"paintSamplesUncovered":0}
+PARTS_FUZZ_NEGATIVE {"cases":300,"rejected":300}
+```
+
+- All 92 part types appear.
+- Agent 1's basic-shape fuzz (`fuzz.test.ts`) is unchanged and still reports
+  its original totals: 320 cases, 0 problems, 320/320 negatives rejected.
+- In the parts fuzz, parts drawn inside a plot frame get only short labels. A
+  long label cannot fit between a small cell's grid lines, and the engine
+  correctly reports E_LABEL_UNPLACEABLE.
+
+## Open issues
+
+- **Grid lines block labels.** Labels may not cross grid lines, because the
+  SVG oracle rejects any line under a label backdrop. Labels inside dense plots
+  or polar grids can therefore be unplaceable. Use fewer grid lines, a larger
+  plot, short labels or a separate text element.
+- **Router limits.**
+  - It routes on the grid of obstacle edges and does not know the canvas, so a
+    route can leave the canvas; the gate then reports E_OUT_OF_BOUNDS.
+  - Ties are broken arbitrarily, so a route may bend early rather than at the
+    obstacle.
+  - Connectors avoid only the parts listed in `avoid`.
+- **Contacts the parts cannot infer** still need `mayTouch`: phasors sharing
+  the polar centre, wires crossing without a junction, and arrows starting on
+  a body.
+- **Wire nodes.** Wires meeting at a 3-way node need a `junction`, which grants
+  their contact. Two wires meeting end to end should be one wire.
+- **Units table.** The core `units.ts` has no kN and similar units; the
+  toolkit-local table covers the common engineering ones. Expression names
+  shadow units (a variable `m` replaces the metre), as Agent 1 documented.
+- **Capital subscripts** are still unsupported because Unicode has no such
+  glyphs (for example `R_A`, `T_H` and `R_f`). The samples use `R₁`, `T₁` and
+  `Rf` instead.
+- **Draw order.** Elements draw in dependency order. A `shade` must come before
+  the series it sits under, unless that series bounds it; the shade then
+  redraws the series edge on top.
+- **Plot expressions** follow the engine's angle rules: write `sin(x rad)`.
+  Angle-valued results such as `atan(x)` are plotted in degrees.
+- **3D** is out of scope, as requested.
+
+## Notes for Agent 3
+
+- **Where to start.** Read `docs/toolkit/parts.md` and the examples in
+  `examples/toolkit/parts/`. The contact sheets show every part.
+- **Adding a part.**
+  1. Call `definePart` (see `kit.ts`) and `addSample`. The catalogue, the docs
+     test, the contact sheet, the per-part tests and the fuzz pick it up
+     automatically.
+  2. Run `npm run docs:toolkit-parts` and `npm run contact-sheet:toolkit`.
+  3. Look at the sheet.
+- **Fastest check for collision shapes.** The paint-coverage oracle
+  (`uncovered` in `parts_helpers.ts`) catches a collision shape that misses
+  something drawn.
+- **README.** `README.md` still does not mention the toolkit.
+- **Run before handing off:** `npm test`, `npm run test:compat`,
+  `npm run typecheck:toolkit`, `npm run test:diagrams` and
+  `npm run audit:diagrams`.

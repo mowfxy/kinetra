@@ -8,9 +8,11 @@
 import type { Vec2 } from "../diagram/primitives.js";
 
 export type CollisionShape =
-  | { kind: "stroke"; points: Vec2[]; r: number; closed?: boolean }
-  | { kind: "area"; points: Vec2[] }
-  | { kind: "disc"; c: Vec2; r: number };
+  | { kind: "stroke"; points: Vec2[]; r: number; closed?: boolean; strict?: boolean }
+  | { kind: "area"; points: Vec2[]; strict?: boolean }
+  | { kind: "disc"; c: Vec2; r: number; strict?: boolean };
+// `strict` marks shapes (a part's own text) that must stay clear even of
+// elements the part is allowed to touch (mayTouch or a part's `touches`).
 
 export interface Box { x0: number; y0: number; x1: number; y1: number }
 

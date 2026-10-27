@@ -74,6 +74,7 @@ export function resolveLayout(elements: ElementSpec[], ctx: PartContext): Resolv
     const ids = def.positioning === "points"
       ? (def.pointProps ?? []).flatMap(p => Array.isArray(el[p.name]) ? (el[p.name] as unknown[]).flatMap(refIds) : refIds(el[p.name]))
       : relationsOf(el).flatMap(relationDeps);
+    if (def.elementRefs) ids.push(...def.elementRefs(el));
     for (const id of ids) if (!byId.has(id)) fail("E_UNKNOWN_REF", [el.id], `"${el.id}" refers to unknown element "${id}"`, { path: `elements[${el.id}]`, suggestion: closestNames(id, byId.keys()).length ? `Did you mean "${closestNames(id, byId.keys())[0]}"?` : `Define an element with id "${id}" or fix the reference.` });
     deps.set(el.id, [...new Set(ids)]);
   }
@@ -110,6 +111,7 @@ export function resolveLayout(elements: ElementSpec[], ctx: PartContext): Resolv
     } else {
       inst.origin = solvePlacement(inst, def, relationsOf(el), instances, defs, ctx);
     }
+    if (def.link) def.link(inst, rid => { const other = instances.get(rid); if (!other) return fail("E_UNKNOWN_REF", [id], `"${id}" refers to unknown element "${rid}"`, { path: `elements[${id}]`, suggestion: closestNames(rid, byId.keys()).length ? `Did you mean "${closestNames(rid, byId.keys())[0]}"?` : `Define an element with id "${rid}".` }); return { inst: other, def: defs.get(rid)! }; }, ctx);
     if (![inst.origin.x, inst.origin.y].every(Number.isFinite)) fail("E_NON_FINITE", [id], `Position of "${id}" is not finite`, { measured: { origin: inst.origin } });
     instances.set(id, inst);
   }

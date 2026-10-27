@@ -33,7 +33,27 @@ const isDimless = (d: QDim) => qdimEqual(d, DIMLESS);
 /** Unit spellings accepted in expressions, beyond the keys of UNITS. */
 const UNIT_ALIASES: Record<string, string> = { "°": "deg", "Ω": "ohm", "kΩ": "kohm", "MΩ": "Mohm", "µF": "uF", "μF": "uF", "µA": "uA", "μA": "uA", "µs": "us", "μs": "us", "degC": "Cdeg" };
 
+/**
+ * Engineering units the core table (units.ts) lacks, defined here in SI so
+ * units.ts stays unchanged. A model variable of the same name still wins.
+ */
+const MECH = { kg: 1, m: -1, s: -2 }, FORCE = { kg: 1, m: 1, s: -2 }, ENERGY = { kg: 1, m: 2, s: -2 };
+const EXTRA_UNITS: Record<string, { toBase: number; dim: Partial<Record<"kg" | "m" | "s" | "A" | "K" | "mol" | "cd", number>> }> = {
+  mN: { toBase: 1e-3, dim: FORCE }, kN: { toBase: 1e3, dim: FORCE }, MN: { toBase: 1e6, dim: FORCE },
+  Pa: { toBase: 1, dim: MECH }, kPa: { toBase: 1e3, dim: MECH }, MPa: { toBase: 1e6, dim: MECH }, GPa: { toBase: 1e9, dim: MECH },
+  bar: { toBase: 1e5, dim: MECH }, atm: { toBase: 101325, dim: MECH },
+  litre: { toBase: 1e-3, dim: { m: 3 } }, liter: { toBase: 1e-3, dim: { m: 3 } }, mL: { toBase: 1e-6, dim: { m: 3 } },
+  kJ: { toBase: 1e3, dim: ENERGY }, MJ: { toBase: 1e6, dim: ENERGY }, kWh: { toBase: 3.6e6, dim: ENERGY },
+  MW: { toBase: 1e6, dim: { kg: 1, m: 2, s: -3 } },
+  mT: { toBase: 1e-3, dim: { kg: 1, s: -2, A: -1 } },
+  uC: { toBase: 1e-6, dim: { A: 1, s: 1 } }, nC: { toBase: 1e-9, dim: { A: 1, s: 1 } },
+  uH: { toBase: 1e-6, dim: { kg: 1, m: 2, s: -2, A: -2 } }, nH: { toBase: 1e-9, dim: { kg: 1, m: 2, s: -2, A: -2 } },
+};
+const EXTRA_ALIASES: Record<string, string> = { "µC": "uC", "μC": "uC", "µH": "uH", "μH": "uH" };
+
 export function unitQuantity(symbol: string): TkQuantity | undefined {
+  const extra = EXTRA_UNITS[EXTRA_ALIASES[symbol] ?? symbol];
+  if (extra) return { value: extra.toBase, dim: { base: dim(extra.dim), angle: 0 } };
   const key = UNIT_ALIASES[symbol] ?? symbol;
   const def = key === "" ? undefined : UNITS[key];
   if (!def) return undefined;
@@ -151,7 +171,7 @@ export function evalQuantity(value: NumLike, scope: Scope, where: string, owner:
     // A bare name is a variable or reference first, then a unit, then a constant.
     const q = scope.lookup(tok.s) ?? unitQuantity(tok.s) ?? (tok.s in CONSTANTS ? { value: CONSTANTS[tok.s]!, dim: DIMLESS } : undefined);
     if (!q) {
-      const known = [...scope.names(), ...Object.keys(UNITS).filter(Boolean), ...Object.keys(UNIT_ALIASES), "pi"];
+      const known = [...scope.names(), ...Object.keys(UNITS).filter(Boolean), ...Object.keys(UNIT_ALIASES), ...Object.keys(EXTRA_UNITS), "pi"];
       const near = closestNames(tok.s, known);
       fail("E_EXPR_UNKNOWN_NAME", owner, `Unknown name "${tok.s}" in expression "${value}"`, { path: where, measured: { name: tok.s }, suggestion: near.length ? `Did you mean ${near.map(n => `"${n}"`).join(", ")}? Declare variables under "vars".` : `Declare "${tok.s}" under "vars", or use a unit from Kinetra's unit table (m, cm, s, kg, N, J, V, A, ohm, deg, rad, ...).` });
     }

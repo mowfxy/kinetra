@@ -126,7 +126,7 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
     bodies.push(makeBody("title", "title", "title", [{ kind: "area", points: [{ x: c.width / 2 - w / 2, y: y - s * 0.95 }, { x: c.width / 2 + w / 2, y: y - s * 0.95 }, { x: c.width / 2 + w / 2, y: y + s * 0.25 }, { x: c.width / 2 - w / 2, y: y + s * 0.25 }] }]));
   }
   if (caption) bodies.push(makeBody("caption", "caption", "caption", [{ kind: "area", points: textBoxPolygon(c.width / 2, c.height - TOOLKIT_TEXT.caption.bottomOffset, caption, TOOLKIT_TEXT.caption.size, "middle") }]));
-  const allow = { mayTouch: new Map(res.order.map(id => [id, new Set(res.instances.get(id)!.spec.mayTouch ?? [])])) };
+  const allow = { mayTouch: new Map(res.order.map(id => [id, new Set([...(res.instances.get(id)!.spec.mayTouch ?? []), ...(res.instances.get(id)!.touches ?? [])])])) };
   // Geometry must be clean before labels are placed, so the root cause is reported.
   report.stage = "gate";
   const fixedGate = runGate(bodies, c.width, c.height, allow);

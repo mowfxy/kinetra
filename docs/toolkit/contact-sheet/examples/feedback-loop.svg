@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" width="720" height="340">
+
+<rect x="0" y="0" width="720" height="340" fill="#fff"/>
+<g>
+<text x="360" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Negative feedback loop
+</text>
+<circle cx="52.36363636363636" cy="97.99999999999999" r="3" fill="#222"/>
+<ellipse cx="176.72727272727272" cy="97.99999999999999" rx="18.327272727272728" ry="18.327272727272728" fill="#fff" stroke="#222" stroke-width="1"/>
+<line x1="163.7679339011629" y1="110.9593388261098" x2="189.68661155338253" y2="85.04066117389017" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="163.7679339011629" y1="85.04066117389017" x2="189.68661155338253" y2="110.9593388261098" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="153.97224730656282" y1="114.40861461818" x2="160.37224730656283" y2="114.40861461818" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="157.1722473065628" y1="117.60861461818" x2="157.1722473065628" y2="111.20861461818001" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="189.93588734545276" y1="117.55502542070991" x2="196.33588734545276" y2="117.55502542070991" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="288" y="65.27272727272725" width="117.81818181818187" height="65.45454545454547" fill="#fff" stroke="#222" stroke-width="1" rx="0"/>
+<rect x="312.4290909090909" y="91.49999999999999" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="346.90909090909093" y="102.19999999999999" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+G(s) = 10
+</text>
+<rect x="288" y="222.36363636363635" width="117.81818181818187" height="65.45454545454547" fill="#fff" stroke="#222" stroke-width="1" rx="0"/>
+<rect x="308.70909090909095" y="248.59090909090907" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="346.90909090909093" y="259.29090909090905" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+H(s) = 0.1
+</text>
+<circle cx="530.1818181818181" cy="97.99999999999999" r="3" fill="#222"/>
+<circle cx="674.1818181818182" cy="97.99999999999999" r="3" fill="#222"/>
+<line x1="52.36363636363636" y1="97.99999999999999" x2="155.4" y2="97.99999999999999" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 159.4 97.99999999999999 L 152.4 101.49999999999999 L 152.4 94.49999999999999 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="195.05454545454546" y1="97.99999999999999" x2="285" y2="97.99999999999999" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 289 97.99999999999999 L 282 101.49999999999999 L 282 94.49999999999999 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="405.81818181818187" y1="97.99999999999999" x2="671.1818181818182" y2="97.99999999999999" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 675.1818181818182 97.99999999999999 L 668.1818181818182 101.49999999999999 L 668.1818181818182 94.49999999999999 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="530.1818181818181" y1="97.99999999999999" x2="530.1818181818181" y2="255.09090909090907" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="530.1818181818181" y1="255.09090909090907" x2="408.81818181818187" y2="255.09090909090907" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 404.81818181818187 255.09090909090907 L 411.81818181818187 251.59090909090907 L 411.81818181818187 258.59090909090907 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="288" y1="255.09090909090907" x2="176.72727272727272" y2="255.09090909090907" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="176.72727272727272" y1="255.09090909090907" x2="176.72727272727272" y2="119.32727272727271" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 176.72727272727272 115.32727272727271 L 180.22727272727272 122.32727272727271 L 173.22727272727272 122.32727272727271 Z" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="36.483636363636364" y="77.19999999999999" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="37.483636363636364" y="87.89999999999999" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R(s)
+</text>
+<rect x="658.3018181818184" y="77.19999999999999" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="659.3018181818184" y="87.89999999999999" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Y(s)
+</text>
+<rect x="225.64727272727274" y="77.19999999999999" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="226.64727272727274" y="87.89999999999999" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+E(s)
+</text>
+</g>
+</svg>

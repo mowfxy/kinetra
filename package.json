@@ -26,7 +26,9 @@
     "test:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/core/test/toolkit/*.test.ts",
     "typecheck:toolkit": "node scripts/typecheck-toolkit.mjs",
     "compose": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts compose",
-    "examples:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs examples/toolkit/render-toolkit.mjs"
+    "examples:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs examples/toolkit/render-toolkit.mjs",
+    "contact-sheet:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs scripts/toolkit-contact-sheet.mjs",
+    "docs:toolkit-parts": "node --experimental-strip-types --import ./scripts/_register.mjs scripts/toolkit-parts-doc.mjs"
   },
   "engines": { "node": ">=25" }
 }

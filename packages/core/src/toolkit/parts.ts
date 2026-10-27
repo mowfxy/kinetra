@@ -37,7 +37,12 @@ export interface PartInstance<P = any> {
   origin: Vec2;
   /** Resolved point properties of point-defined parts. */
   points: Record<string, Vec2 | Vec2[]>;
+  /** Elements this instance may touch without a `mayTouch` in the model, set by a part's `link` hook (e.g. a plot series and its axes). */
+  touches?: string[];
 }
+
+/** Read access to already-resolved elements, given to `link` hooks. */
+export type LinkLookup = (id: string) => { inst: PartInstance; def: PartDefinition };
 
 /** An arrow that encodes a physical quantity at a declared scale. */
 export interface ArrowQuantity {
@@ -90,6 +95,10 @@ export interface PartDefinition<P = any> {
   label?(inst: PartInstance<P>, ctx: PartContext): { anchor: Vec2; candidates: LabelPosition[] };
   /** Part-specific gate checks (e.g. minimum arrow length). */
   gate?(inst: PartInstance<P>, ctx: PartContext): void;
+  /** Element ids this part reads beyond its point references (e.g. the pulleys a rope wraps); they become dependencies. */
+  elementRefs?(spec: ElementSpec): string[];
+  /** Runs once after the part's own origin and points are resolved; may read the referenced elements and update its props or `touches`. */
+  link?(inst: PartInstance<P>, get: LinkLookup, ctx: PartContext): void;
 }
 
 const registry = new Map<string, PartDefinition>();
