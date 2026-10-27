@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 490" width="980" height="490">
+
+<rect x="0" y="0" width="980" height="490" fill="#fff"/>
+<g>
+<text x="490" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Single-cycle CPU datapath (load/store and R-type)
+</text>
+<rect x="61.24999999999997" y="204.16666666666669" width="52.5" height="81.66666666666663" fill="#cfe4ff" stroke="#1f4f8b" stroke-width="1" rx="0"/>
+<rect x="79.05999999999997" y="238.5" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="87.49999999999997" y="249.2" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+PC
+</text>
+<rect x="173.08333333333334" y="180.83333333333331" width="116.66666666666666" height="128.33333333333337" fill="#e8edef" stroke="#526873" stroke-width="1" rx="0"/>
+<rect x="193.21666666666664" y="238.5" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="231.41666666666663" y="249.2" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Instr. mem
+</text>
+<rect x="349.08333333333337" y="169.16666666666669" width="128.33333333333331" height="151.66666666666663" fill="#e8edef" stroke="#526873" stroke-width="1" rx="0"/>
+<rect x="378.77" y="238.5" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="413.25" y="249.2" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Registers
+</text>
+<rect x="536.761104081545" y="186.66666666666669" width="87.49999999999989" height="116.66666666666663" fill="#d6e1e6" stroke="#526873" stroke-width="1" rx="11.666666666666666"/>
+<rect x="568.3511040815449" y="238.5" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="580.5111040815449" y="249.2" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+ALU
+</text>
+<rect x="683.6055414964233" y="180.83333333333331" width="116.66666666666663" height="128.33333333333337" fill="#e8edef" stroke="#526873" stroke-width="1" rx="0"/>
+<rect x="711.1788748297566" y="238.5" width="61.519999999999996" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="741.9388748297566" y="249.2" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Data mem
+</text>
+<rect x="859.6194215983545" y="198.33333333333331" width="35" height="93.33333333333331" fill="#fff" stroke="#222" stroke-width="1" rx="14.583333333333332"/>
+<rect x="872.3994215983546" y="238.5" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="877.1194215983546" y="249.2" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+M
+</text>
+<rect x="183.74999999999997" y="55.416666666666686" width="75.83333333333329" height="46.66666666666666" fill="#fff" stroke="#222" stroke-width="1" rx="8.749999999999998"/>
+<rect x="213.22666666666663" y="72.24999999999999" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="221.66666666666663" y="82.94999999999999" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
++4
+</text>
+<rect x="431.66666666666663" y="376.25" width="93.33333333333337" height="40.83333333333337" fill="#fff" stroke="#222" stroke-width="1" rx="17.499999999999996"/>
+<rect x="447.57333333333327" y="390.16666666666663" width="61.519999999999996" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="478.33333333333326" y="400.8666666666666" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+sign-ext
+</text>
+<line x1="113.74999999999997" y1="245" x2="170.08333333333334" y2="245" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 174.08333333333334 245 L 167.08333333333334 248.5 L 167.08333333333334 241.5 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="289.75" y1="245" x2="346.08333333333337" y2="245" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 350.08333333333337 245 L 343.08333333333337 248.5 L 343.08333333333337 241.5 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="477.41666666666663" y1="210" x2="533.761104081545" y2="210" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 537.761104081545 210 L 530.761104081545 213.5 L 530.761104081545 206.5 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="477.41666666666663" y1="280" x2="533.761104081545" y2="280" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 537.761104081545 280 L 530.761104081545 283.5 L 530.761104081545 276.5 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="624.2611040815449" y1="245" x2="680.6055414964233" y2="245" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 684.6055414964233 245 L 677.6055414964233 248.5 L 677.6055414964233 241.5 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="800.2722081630899" y1="221.66666666666666" x2="856.6194215983545" y2="221.66666666666666" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 860.6194215983545 221.66666666666666 L 853.6194215983545 225.16666666666666 L 853.6194215983545 218.16666666666666 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="598.011104081545" y1="303.3333333333333" x2="594.9999999999999" y2="355.8333333333333" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="594.9999999999999" y1="355.8333333333333" x2="822.4999999999999" y2="355.8333333333333" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="822.4999999999999" y1="355.8333333333333" x2="822.4999999999999" y2="268.3333333333333" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="822.4999999999999" y1="268.3333333333333" x2="856.6194215983545" y2="268.3333333333333" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 860.6194215983545 268.3333333333333 L 853.6194215983545 271.8333333333333 L 853.6194215983545 264.8333333333333 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="894.6194215983546" y1="245" x2="927.4999999999998" y2="245" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="927.4999999999998" y1="245" x2="927.4999999999998" y2="443.3333333333333" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="927.4999999999998" y1="443.3333333333333" x2="411.24999999999994" y2="443.3333333333333" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="411.24999999999994" y1="443.3333333333333" x2="413.2010269347508" y2="323.8329335798462" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 413.26632435508304 319.8334665844957 L 416.6515874904333 326.88966906914976 L 409.65252024856994 326.77539858356835 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="87.49999999999997" y1="204.16666666666669" x2="87.49999999999997" y2="78.75" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="87.49999999999997" y1="78.75" x2="180.74999999999997" y2="78.75" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 184.74999999999997 78.75 L 177.74999999999997 82.25 L 177.74999999999997 75.25 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="259.58333333333326" y1="78.75" x2="291.66666666666663" y2="78.75" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="291.66666666666663" y1="78.75" x2="291.66666666666663" y2="37.916666666666686" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="291.66666666666663" y1="37.916666666666686" x2="23.33333333333331" y2="37.916666666666686" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="23.33333333333331" y1="37.916666666666686" x2="23.33333333333331" y2="245" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="23.33333333333331" y1="245" x2="58.24999999999997" y2="245" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 62.24999999999997 245 L 55.24999999999997 248.5 L 55.24999999999997 241.5 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="254.75" y1="309.1666666666667" x2="253.74999999999997" y2="396.66666666666663" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="253.74999999999997" y1="396.66666666666663" x2="428.66666666666663" y2="396.66666666666663" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 432.66666666666663 396.66666666666663 L 425.66666666666663 400.16666666666663 L 425.66666666666663 393.16666666666663 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="525" y1="396.66666666666663" x2="559.9999999999999" y2="396.66666666666663" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="559.9999999999999" y1="396.66666666666663" x2="562.914368922334" y2="306.33177331255126" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 563.0433491346153 302.33385334026065 L 566.3158137388772 309.4430709775153 L 559.3194537873686 309.21735560602303 Z" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="127.53666666666666" y="224.20000000000002" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="128.53666666666666" y="234.9" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+addr
+</text>
+<rect x="299.81666666666666" y="224.20000000000002" width="39.2" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="300.81666666666666" y="234.9" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+instr
+</text>
+<rect x="502.3688853741058" y="189.20000000000002" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="503.3688853741058" y="199.9" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+A
+</text>
+<rect x="502.3688853741058" y="286.34000000000003" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="503.3688853741058" y="297.04" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+B
+</text>
+<rect x="626.8933227889842" y="224.20000000000002" width="54.08" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="627.8933227889842" y="234.9" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+address
+</text>
+<rect x="814.0658148807222" y="200.86666666666665" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="815.0658148807222" y="211.56666666666663" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+load
+</text>
+<rect x="706.5665712577022" y="362.17333333333335" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="707.5665712577022" y="372.87333333333333" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+ALU result
+</text>
+<rect x="685.5237931461015" y="422.53333333333336" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="686.5237931461015" y="433.23333333333335" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+write-back
+</text>
+<rect x="44.4183333333333" y="17.116666666666692" width="54.08" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="45.4183333333333" y="27.81666666666669" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+next PC
+</text>
+<text x="490" y="482" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Instruction flow left to right: fetch, decode/register read, execute, memory, write-back
+</text>
+</g>
+</svg>

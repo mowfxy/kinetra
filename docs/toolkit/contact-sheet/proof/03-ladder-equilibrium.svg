@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" width="560" height="520">
+
+<rect x="0" y="0" width="560" height="520" fill="#fff"/>
+<g>
+<text x="280" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Ladder against a smooth wall: free-body diagram
+</text>
+<path d="M 338.1651948084932 410.2647058823529 L 146.9887242202579 79.1373456118323 L 137.71715813268332 84.49028678830291 L 328.8936287209186 415.61764705882354 Z" fill="#d6e1e6" stroke="#586d78" stroke-width="1"/>
+<line x1="134.7058823529412" y1="173.57852208242056" x2="134.7058823529412" y2="35.9314632588912" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="345.00000000000006" y1="418.29411764705884" x2="455.8823529411765" y2="418.29411764705884" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<defs>
+<marker id="arr-23633033393262-4" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="237.9411764705883" y1="247.37749633532792" x2="237.9411764705883" y2="400.31867280591615" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-4)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-6" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="333.52941176470597" y1="412.94117647058823" x2="333.52941176470597" y2="260" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-6)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333537616136-8" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#357aa6"/>
+</marker>
+</defs>
+<line x1="333.52941176470597" y1="412.94117647058823" x2="289.37909706196984" y2="412.94117647058823" stroke="#357aa6" stroke-width="1.6" marker-end="url(#arr-23333537616136-8)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-10" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="142.3529411764706" y1="81.8138162000676" x2="186.5032558792067" y2="81.8138162000676" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-10)" stroke-dasharray=""/>
+<path d="M 310.5882352941177 373.2058932381257 L 308.63611259910056 374.39881058484696 L 306.7458785680509 375.68755032597835 L 304.92223262059935 377.0689084514669 L 303.16970862790885 378.5394506873628 L 301.49266364075675 380.09552103396584 L 299.8952670572198 381.7332508552166 L 298.38149025689404 383.4485684967352 L 296.9550967274189 385.23720940859573 L 295.6196327078544 387.0947267476691 L 294.3784183721717 389.01650243317596 L 293.23453957477784 390.99775862796304 L 292.19084017859495 393.0335696169591 L 291.2499149847696 395.1188740532787 L 290.4141032815878 397.2484875415281 L 289.685483028636 399.41711552702907 L 289.0658656906659 401.6193664589159 L 288.556791734008 403.84976519438055 L 288.15952679672944 406.1027666107402 L 287.8750585420581 408.37276939148603 L 287.70409420289656 410.6541299520386 L 287.64705882352945 412.94117647058823" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="278.79212076378155" y="377.5636800470687" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="283.5121207637816" y="388.2636800470687" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+θ
+</text>
+<rect x="298.84235294117644" y="192.32352941176472" width="54.08" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="325.88235294117646" y="203.0235294117647" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+L = 5 m
+</text>
+<rect x="231.7771764705883" y="406.6586728059162" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="232.7771764705883" y="417.35867280591617" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+W
+</text>
+<rect x="325.08941176470597" y="237.72" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="326.08941176470597" y="248.42" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+N<tspan font-size="9" dy="3.6">f</tspan>
+</text>
+<rect x="284.6590970619698" y="419.28117647058826" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="285.6590970619698" y="429.98117647058825" fill="#357aa6" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+f
+</text>
+<rect x="192.5032558792067" y="73.84381620006762" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="193.5032558792067" y="84.54381620006762" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+N<tspan font-size="9" dy="3.6">w</tspan>
+</text>
+<text x="280" y="512" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+W = 200 N at mid-length, θ = 60°, μ = 0.35 · Arrow scale: 1 unit = 100 N (force)
+</text>
+</g>
+</svg>

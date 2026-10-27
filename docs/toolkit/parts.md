@@ -140,7 +140,7 @@ Straight arrow with heads at both ends (drawn as two Scene2D vectors from the mi
 
 ### `connector`
 
-Line between two anchors: straight, orthogonal (routed around the endpoint parts and any `avoid` parts with few bends and few crossings of other connectors in `avoid`) or curved. Ends: arrow, dot or none. It may touch the parts it connects.
+Line between two anchors: straight, orthogonal (routed around the endpoint parts and any `avoid` parts with few bends and few crossings of other connectors in `avoid`) or curved. Ends: arrow, dot or none. It may touch the parts it connects, and it may cross another straight or orthogonal connector cleanly (at 30° or more, 10 px from corners and ends) without mayTouch.
 
 **Positioning:** by point references · **Aliases:** `wireArrow`, `link`, `signal`
 
@@ -894,7 +894,7 @@ Field or flow line through `points` (smoothed with Catmull-Rom), with arrowheads
 
 ### `currentArrow`
 
-Current direction on a conductor from `from` to `to`: an arrowhead on the wire at fraction `t` (inline), or a short arrow beside it (beside). Label it I. It may touch the wire it marks.
+Current direction on a conductor from `from` to `to`: an arrowhead on the wire at fraction `t` (inline), or a short arrow beside it (beside). Label it I. It may touch the wire it marks (an inline head may touch any wire, segment or connector it sits on, with no mayTouch).
 
 **Positioning:** by point references · **Aliases:** `current`
 

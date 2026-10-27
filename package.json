@@ -28,7 +28,8 @@
     "compose": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts compose",
     "examples:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs examples/toolkit/render-toolkit.mjs",
     "contact-sheet:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs scripts/toolkit-contact-sheet.mjs",
-    "docs:toolkit-parts": "node --experimental-strip-types --import ./scripts/_register.mjs scripts/toolkit-parts-doc.mjs"
+    "docs:toolkit-parts": "node --experimental-strip-types --import ./scripts/_register.mjs scripts/toolkit-parts-doc.mjs",
+    "proof:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs scripts/toolkit-proof.mjs"
   },
   "engines": { "node": ">=25" }
 }

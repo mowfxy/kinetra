@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 560" width="620" height="560">
+
+<rect x="0" y="0" width="620" height="560" fill="#fff"/>
+<g>
+<text x="310" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Flowchart: iterative factorial
+</text>
+<rect x="190.22727272727272" y="45.73863636363635" width="126.81818181818178" height="45.795454545454554" fill="#cfe4ff" stroke="#1f4f8b" stroke-width="1" rx="22.545454545454547"/>
+<rect x="234.03636363636363" y="62.136363636363626" width="39.2" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="253.63636363636363" y="72.83636363636363" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Start
+</text>
+<rect x="183.1818181818182" y="133.80681818181816" width="140.90909090909088" height="45.79545454545453" fill="#fff" stroke="#222" stroke-width="1" rx="0"/>
+<rect x="230.31636363636363" y="150.20454545454544" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="253.63636363636363" y="160.90454545454543" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+read n
+</text>
+<rect x="183.1818181818182" y="221.875" width="140.90909090909088" height="45.795454545454504" fill="#fff" stroke="#222" stroke-width="1" rx="0"/>
+<rect x="234.03636363636363" y="238.27272727272725" width="39.2" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="253.63636363636363" y="248.97272727272724" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+f ← 1
+</text>
+<path d="M 253.63636363636363 290.56818181818176 L 345.22727272727275 332.84090909090907 L 253.63636363636363 375.1136363636363 L 162.04545454545453 332.84090909090907 Z" fill="#e8edef" stroke="#222" stroke-width="1"/>
+<rect x="162.04545454545453" y="424.43181818181813" width="183.18181818181822" height="63.409090909090935" fill="#fff" stroke="#222" stroke-width="1" rx="0"/>
+<rect x="181.95636363636362" y="449.6363636363636" width="143.35999999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="253.63636363636363" y="460.3363636363636" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+f ← f·n,  n ← n − 1
+</text>
+<rect x="433.2954545454545" y="309.9431818181818" width="119.77272727272725" height="45.79545454545456" fill="#fff" stroke="#222" stroke-width="1" rx="0"/>
+<rect x="466.1418181818181" y="326.34090909090907" width="54.08" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="493.18181818181813" y="337.04090909090905" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+print f
+</text>
+<rect x="436.81818181818176" y="433.2386363636363" width="112.72727272727275" height="45.79545454545456" fill="#cfe4ff" stroke="#1f4f8b" stroke-width="1" rx="22.545454545454547"/>
+<rect x="481.0218181818181" y="449.6363636363636" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="493.18181818181813" y="460.3363636363636" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+End
+</text>
+<line x1="253.63636363636363" y1="91.5340909090909" x2="253.63636363636363" y2="130.8068181818182" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 253.63636363636363 134.8068181818182 L 250.13636363636363 127.80681818181819 L 257.1363636363636 127.80681818181819 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="253.63636363636363" y1="179.6022727272727" x2="253.63636363636363" y2="218.87499999999997" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 253.63636363636363 222.87499999999997 L 250.13636363636363 215.87499999999994 L 257.1363636363636 215.87499999999994 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="253.63636363636363" y1="267.6704545454545" x2="253.63636363636363" y2="287.5681818181818" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 253.63636363636363 291.56818181818176 L 250.13636363636363 284.56818181818176 L 257.1363636363636 284.56818181818176 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="253.63636363636363" y1="375.1136363636363" x2="253.63636363636363" y2="421.43181818181813" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 253.63636363636363 425.43181818181813 L 250.13636363636363 418.43181818181813 L 257.1363636363636 418.43181818181813 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="345.22727272727275" y1="332.84090909090907" x2="430.2954545454545" y2="332.84090909090907" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 434.2954545454545 332.84090909090907 L 427.2954545454545 336.34090909090907 L 427.2954545454545 329.34090909090907 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="493.18181818181813" y1="355.7386363636364" x2="493.18181818181813" y2="430.2386363636363" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 493.18181818181813 434.2386363636363 L 489.68181818181813 427.2386363636364 L 496.68181818181813 427.2386363636364 Z" fill="#222" stroke="none" stroke-width="1"/>
+<line x1="162.04545454545453" y1="456.1363636363636" x2="98.63636363636363" y2="456.1363636363636" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="98.63636363636363" y1="456.1363636363636" x2="98.63636363636363" y2="332.84090909090907" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="98.63636363636363" y1="332.84090909090907" x2="159.04545454545456" y2="332.84090909090907" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<path d="M 163.04545454545453 332.84090909090907 L 156.04545454545453 336.34090909090907 L 156.04545454545453 329.34090909090907 Z" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="226.59636363636363" y="325.6109090909091" width="54.08" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="227.59636363636363" y="336.3109090909091" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+n &gt; 1 ?
+</text>
+<rect x="259.6363636363636" y="392.54272727272723" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="260.6363636363636" y="403.2427272727272" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+yes
+</text>
+<rect x="380.8213636363636" y="312.0409090909091" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="381.8213636363636" y="322.7409090909091" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+no
+</text>
+<rect x="60.876363636363635" y="387.2586363636364" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="61.876363636363635" y="397.9586363636364" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+loop
+</text>
+<text x="310" y="552" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+For n = 5 the loop runs four times and prints 120
+</text>
+</g>
+</svg>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" width="820" height="500">
+
+<rect x="0" y="0" width="820" height="500" fill="#fff"/>
+<g>
+<text x="410" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Pumping between two open tanks
+</text>
+<path d="M 71.30434782608694 422.3188405797102 L 202.02898550724638 422.3188405797102 L 202.02898550724638 351.01449275362324 L 71.30434782608694 351.01449275362324 Z" fill="#cfe4ff" stroke="none" stroke-width="1"/>
+<line x1="202.02898550724638" y1="351.01449275362324" x2="71.30434782608694" y2="351.01449275362324" stroke="#2679a0" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="71.30434782608694" y1="315.36231884057975" x2="71.30434782608694" y2="422.3188405797102" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="71.30434782608694" y1="422.3188405797102" x2="202.02898550724638" y2="422.3188405797102" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="202.02898550724638" y1="422.3188405797102" x2="202.02898550724638" y2="315.36231884057975" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<path d="M 166.07971014492753 349.01449275362324 L 161.07971014492753 342.01449275362324 L 171.07971014492753 342.01449275362324 Z" fill="#fff" stroke="#2679a0" stroke-width="1"/>
+<line x1="161.07971014492753" y1="355.01449275362324" x2="171.07971014492753" y2="355.01449275362324" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
+<line x1="163.32971014492753" y1="358.01449275362324" x2="168.82971014492756" y2="358.01449275362324" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
+<path d="M 617.9710144927536 190.5797101449276 L 748.695652173913 190.5797101449276 L 748.695652173913 101.44927536231887 L 617.9710144927536 101.44927536231887 Z" fill="#cfe4ff" stroke="none" stroke-width="1"/>
+<line x1="748.695652173913" y1="101.44927536231887" x2="617.9710144927536" y2="101.44927536231887" stroke="#2679a0" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="617.9710144927536" y1="83.62318840579712" x2="617.9710144927536" y2="190.5797101449276" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="617.9710144927536" y1="190.5797101449276" x2="748.695652173913" y2="190.5797101449276" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="748.695652173913" y1="190.5797101449276" x2="748.695652173913" y2="83.62318840579712" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<path d="M 712.7463768115941 99.44927536231887 L 707.7463768115941 92.44927536231887 L 717.7463768115941 92.44927536231887 Z" fill="#fff" stroke="#2679a0" stroke-width="1"/>
+<line x1="707.7463768115941" y1="105.44927536231887" x2="717.7463768115941" y2="105.44927536231887" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
+<line x1="709.9963768115941" y1="108.44927536231887" x2="715.4963768115941" y2="108.44927536231887" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
+<ellipse cx="338.695652173913" cy="401.5217391304348" rx="24.956521739130434" ry="24.956521739130434" fill="#fff" stroke="#222" stroke-width="1"/>
+<path d="M 326.21739130434776 386.04869565217393 L 326.21739130434776 416.9947826086957 L 358.16173913043474 401.5217391304348 Z" fill="#d6e1e6" stroke="#526873" stroke-width="1"/>
+<path d="M 475.36231884057975 391.71739130434787 L 475.36231884057975 411.3260869565218 L 493.1884057971015 401.5217391304348 Z" fill="#fff" stroke="#222" stroke-width="1"/>
+<path d="M 511.01449275362313 391.71739130434787 L 511.01449275362313 411.3260869565218 L 493.1884057971015 401.5217391304348 Z" fill="#fff" stroke="#222" stroke-width="1"/>
+<line x1="493.1884057971015" y1="401.5217391304348" x2="493.1884057971015" y2="382.804347826087" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="485.16666666666663" y1="382.804347826087" x2="501.21014492753625" y2="382.804347826087" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+<path d="M 202.0037005064469 396.05512626139864 L 313.7138454339831 395.5797639425581 L 313.764415435582 407.4637143183116 L 202.05427050804585 407.93907663715214 Z" fill="#cfe4ff" stroke="none" stroke-width="1"/>
+<line x1="202.0037005064469" y1="396.05512626139864" x2="313.7138454339831" y2="395.5797639425581" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="202.05427050804585" y1="407.93907663715214" x2="313.764415435582" y2="407.4637143183116" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 261.88402175602414 401.7423991673657 L 254.89897861443538 405.2721544436057 L 254.86919165007893 398.2722178198387 Z" fill="#2679a0" stroke="none" stroke-width="1"/>
+<path d="M 363.6521739130435 395.57971014492756 L 475.36231884057975 395.57971014492756 L 475.36231884057975 407.46376811594206 L 363.6521739130435 407.46376811594206 Z" fill="#cfe4ff" stroke="none" stroke-width="1"/>
+<line x1="363.6521739130435" y1="395.57971014492756" x2="475.36231884057975" y2="395.57971014492756" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="363.6521739130435" y1="407.46376811594206" x2="475.36231884057975" y2="407.46376811594206" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 423.5072463768116 401.5217391304348 L 416.5072463768116 405.0217391304348 L 416.5072463768116 398.0217391304348 Z" fill="#2679a0" stroke="none" stroke-width="1"/>
+<path d="M 511.01449275362313 395.57971014492756 L 576.376811594203 395.57971014492756 L 576.376811594203 163.7608245001232 L 618.0502345044279 164.3164701389262 L 617.8917944810794 176.1994718900594 L 588.2608695652174 175.80439289118124 L 588.2608695652174 407.46376811594206 L 511.01449275362313 407.46376811594206 Z" fill="#cfe4ff" stroke="none" stroke-width="1"/>
+<line x1="511.01449275362313" y1="395.57971014492756" x2="576.376811594203" y2="395.57971014492756" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="576.376811594203" y1="395.57971014492756" x2="576.376811594203" y2="163.7608245001232" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="576.376811594203" y1="163.7608245001232" x2="618.0502345044279" y2="164.3164701389262" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="511.01449275362313" y1="407.46376811594206" x2="588.2608695652174" y2="407.46376811594206" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="588.2608695652174" y1="407.46376811594206" x2="588.2608695652174" y2="175.80439289118124" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="588.2608695652174" y1="175.80439289118124" x2="617.8917944810794" y2="176.1994718900594" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 582.3188405797101 299.4766763989203 L 585.8188405797101 306.4766763989203 L 578.8188405797101 306.4766763989203 Z" fill="#2679a0" stroke="none" stroke-width="1"/>
+<line x1="772.463768115942" y1="226.23188405797106" x2="772.463768115942" y2="104.44927536231887" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 772.463768115942 100.44927536231887 L 775.963768115942 107.44927536231887 L 768.963768115942 107.44927536231887 Z" fill="#444" stroke="none" stroke-width="1"/>
+<line x1="772.463768115942" y1="226.23188405797106" x2="772.463768115942" y2="348.01449275362324" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 772.463768115942 352.01449275362324 L 768.963768115942 345.01449275362324 L 775.963768115942 345.01449275362324 Z" fill="#444" stroke="none" stroke-width="1"/>
+<rect x="699.2637681159421" y="220.23188405797106" width="70.2" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="734.3637681159421" y="230.08188405797105" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Δz = 4.2 m
+</text>
+<line x1="136.66666666666666" y1="351.01449275362324" x2="772.463768115942" y2="351.01449275362324" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="683.3333333333334" y1="101.44927536231887" x2="772.463768115942" y2="101.44927536231887" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<rect x="225.0915942028985" y="119.1295652173913" width="203.44000000000003" height="83.48000000000005" fill="#fff" stroke="#444" stroke-width="1" rx="0"/>
+<rect x="229.09159420289853" y="124.93956521739135" width="135.92" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="230.09159420289853" y="135.63956521739135" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+v = Q/A = 2.39 m/s
+</text>
+<rect x="229.09159420289853" y="144.5595652173913" width="195.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="230.09159420289853" y="155.2595652173913" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+h<tspan font-size="9" dy="3.6">L</tspan><tspan dy="-3.6"> = 1.35 m (pipe + valve)</tspan>
+</text>
+<rect x="229.09159420289853" y="164.17956521739134" width="158.24" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="230.09159420289853" y="174.87956521739133" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+H<tspan font-size="9" dy="3.6">p</tspan><tspan dy="-3.6"> = Δz + h</tspan><tspan font-size="9" dy="3.6">L</tspan><tspan dy="-3.6"> = 5.55 m</tspan>
+</text>
+<rect x="229.09159420289853" y="183.79956521739132" width="128.48000000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="230.09159420289853" y="194.4995652173913" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+P = ρgQH<tspan font-size="9" dy="3.6">p</tspan><tspan dy="-3.6"> = 653 W</tspan>
+</text>
+<rect x="113.34666666666666" y="321.7023188405798" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="114.34666666666666" y="332.40231884057977" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+tank A
+</text>
+<rect x="660.0133333333333" y="62.823188405797154" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="661.0133333333333" y="73.52318840579716" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+tank B
+</text>
+<rect x="322.815652173913" y="429.8182608695653" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="323.815652173913" y="440.51826086956527" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+pump
+</text>
+<rect x="454.98840579710156" y="362.00434782608704" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="455.98840579710156" y="372.70434782608703" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+gate valve
+</text>
+<text x="410" y="492" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Q = 12 L/s through D = 80 mm pipe; pump head H_p = Δz + h_L
+</text>
+</g>
+</svg>

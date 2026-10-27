@@ -62,7 +62,7 @@ export interface PartDefinition<P = any> {
   /** "placed": an origin positioned by relations; "points": geometry from point properties. */
   positioning: "placed" | "points";
   /** Point properties of point-defined parts (PointRef, or PointRef[] when list). */
-  pointProps?: { name: string; list?: boolean; optional?: boolean }[];
+  pointProps?: { name: string; list?: boolean; optional?: boolean; min?: number }[];
   /** Spec keys this part reads (besides the common ones); unknown keys are rejected. */
   propKeys: string[];
   /** Evaluate and validate properties. Must not depend on position. */
@@ -212,15 +212,15 @@ registerPart({
 
 // --- rect / block ---------------------------------------------------------------
 
-interface RectProps { w: number; h: number; rotation: number; fill: string; stroke: string }
+interface RectProps { w: number; h: number; rotation: number; fill: string; stroke: string; background: boolean }
 const RECT_ANCHORS: Record<string, [number, number]> = { center: [0, 0], top: [0, 1], bottom: [0, -1], left: [-1, 0], right: [1, 0], topLeft: [-1, 1], topRight: [1, 1], bottomLeft: [-1, -1], bottomRight: [1, -1] };
 const rectCorners = (i: PartInstance<RectProps>) => [[-1, -1], [1, -1], [1, 1], [-1, 1]].map(([x, y]) => add(i.origin, rot({ x: x! * i.props.w / 2, y: y! * i.props.h / 2 }, i.props.rotation)));
 function rectPart(type: string, aliases: string[], fill: string, stroke: string, description: string): PartDefinition<RectProps> {
   return {
     type, aliases, description,
     positioning: "placed",
-    propKeys: ["w", "h", "rotation", "fill", "stroke"],
-    props: (s, ctx) => ({ w: lengthProp(s, "w", ctx, { positive: true }), h: lengthProp(s, "h", ctx, { positive: true }), rotation: angleProp(s, "rotation", ctx, 0), fill: colorProp(s, "fill", fill), stroke: colorProp(s, "stroke", stroke) }),
+    propKeys: ["w", "h", "rotation", "fill", "stroke", "background"],
+    props: (s, ctx) => ({ w: lengthProp(s, "w", ctx, { positive: true }), h: lengthProp(s, "h", ctx, { positive: true }), rotation: angleProp(s, "rotation", ctx, 0), fill: colorProp(s, "fill", fill), stroke: colorProp(s, "stroke", stroke), background: boolProp(s, "background") }),
     anchorNames: Object.keys(RECT_ANCHORS),
     anchor: (i, n) => { const a = n === "origin" ? [0, 0] : RECT_ANCHORS[n]; return a ? add(i.origin, rot({ x: a[0]! * i.props.w / 2, y: a[1]! * i.props.h / 2 }, i.props.rotation)) : undefined; },
     box: i => boxOf(rectCorners(i)),
@@ -229,11 +229,11 @@ function rectPart(type: string, aliases: string[], fill: string, stroke: string,
     draw: i => i.props.rotation === 0
       ? [{ kind: "rect", origin: { x: i.origin.x - i.props.w / 2, y: i.origin.y - i.props.h / 2 }, size: { w: i.props.w, h: i.props.h }, fill: i.props.fill, stroke: i.props.stroke }]
       : [{ kind: "polygon", points: rectCorners(i), fill: i.props.fill, stroke: i.props.stroke }],
-    collide: (i, ctx) => closedShapes(rectCorners(i), i.props.fill !== "none", ctx),
+    collide: (i, ctx) => asBackground(closedShapes(rectCorners(i), i.props.fill !== "none", ctx), i.props.background),
     label: i => ({ anchor: i.origin, candidates: CLOSED }),
   };
 }
-registerPart(rectPart("rect", ["box"], "none", "#222", "Rectangle; origin at its centre. Props: w, h, rotation, fill, stroke."));
+registerPart(rectPart("rect", ["box"], "none", "#222", "Rectangle; origin at its centre. Props: w, h, rotation, fill, stroke, background (a region such as a medium that other elements may be drawn over; list it first)."));
 registerPart(rectPart("block", [], "#cfe4ff", "#1f4f8b", "A body in FBD style (filled #cfe4ff, outlined #1f4f8b); origin at its centre. Props: w, h, rotation."));
 
 // --- circle -------------------------------------------------------------------------
@@ -336,14 +336,19 @@ registerPart({
 
 // --- polygon --------------------------------------------------------------------------
 
-interface PolygonProps { fill: string; stroke: string }
+interface PolygonProps { fill: string; stroke: string; background: boolean }
+
+/** Background regions (Agent 3): their fill and outline are soft, so other elements may be drawn over them. */
+function asBackground(shapes: CollisionShape[], background: boolean): CollisionShape[] {
+  return background ? shapes.map(s => s.kind === "disc" ? s : { ...s, soft: true }) : shapes;
+}
 registerPart({
   type: "polygon",
-  description: "Closed polygon (e.g. a wedge or incline). Props: points (list), fill, stroke. Anchors: centroid, vertex(i), edge(i) midpoints.",
+  description: "Closed polygon (e.g. a wedge or incline). Props: points (list), fill, stroke, background (a region other elements may be drawn over; list it first). Anchors: centroid, vertex(i), edge(i) midpoints.",
   positioning: "points",
   pointProps: [{ name: "points", list: true }],
-  propKeys: ["points", "fill", "stroke"],
-  props: s => ({ fill: colorProp(s, "fill", "none"), stroke: colorProp(s, "stroke", "#222") }),
+  propKeys: ["points", "fill", "stroke", "background"],
+  props: s => ({ fill: colorProp(s, "fill", "none"), stroke: colorProp(s, "stroke", "#222"), background: boolProp(s, "background") }),
   anchorNames: ["centroid", "vertex(i)", "edge(i)"],
   anchorArgs: { vertex: "number", edge: "number" },
   anchor: (i, n, arg) => {
@@ -357,7 +362,7 @@ registerPart({
   box: i => boxOf(i.points.points as Vec2[]),
   outline: i => i.points.points as Vec2[],
   draw: (i: PartInstance<PolygonProps>) => [{ kind: "polygon", points: i.points.points as Vec2[], fill: i.props.fill, stroke: i.props.stroke }],
-  collide: (i: PartInstance<PolygonProps>, ctx) => closedShapes(i.points.points as Vec2[], i.props.fill !== "none", ctx),
+  collide: (i: PartInstance<PolygonProps>, ctx) => asBackground(closedShapes(i.points.points as Vec2[], i.props.fill !== "none", ctx), i.props.background),
   label: i => { const p = i.points.points as Vec2[]; return { anchor: { x: p.reduce((s, q) => s + q.x, 0) / p.length, y: p.reduce((s, q) => s + q.y, 0) / p.length }, candidates: CLOSED }; },
 });
 

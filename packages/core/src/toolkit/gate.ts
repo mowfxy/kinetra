@@ -53,21 +53,22 @@ export function contactReason(a: Body, b: Body, allow: Allowances): string | und
 
 export function bodyDistance(a: Body, b: Body, stopBelow = 0): number {
   let d = Infinity;
-  // Labels ignore soft (grid) strokes: they are drawn over them with a halo.
-  const skipA = b.kind === "label", skipB = a.kind === "label";
-  for (const s of a.shapes) {
-    if (skipA && isSoft(s)) continue;
-    for (const t of b.shapes) { if (skipB && isSoft(t)) continue; d = Math.min(d, shapeDistance(s, t)); if (d <= stopBelow) return d; }
+  // Soft (grid) strokes are low priority: labels sit over them behind a halo,
+  // and other elements' lines and fills may cross them. A part's own text
+  // (strict) still keeps clear, because only labels get a halo.
+  for (const s of a.shapes) for (const t of b.shapes) {
+    if ((isSoft(s) && (!t.strict || s.kind === "area")) || (isSoft(t) && (!s.strict || t.kind === "area"))) continue;
+    d = Math.min(d, shapeDistance(s, t)); if (d <= stopBelow) return d;
   }
   return d;
 }
 
-const isSoft = (s: CollisionShape) => s.kind === "stroke" && !!s.soft;
+const isSoft = (s: CollisionShape) => s.kind !== "disc" && !!s.soft;
 
 /** Does label body `label` sit over (within text clearance of) a soft grid stroke of `b`? */
 export function overSoft(label: Body, b: Body): boolean {
   if (!boxesNear(label.box, b.box, CLEARANCE.text)) return false;
-  return b.shapes.some(t => isSoft(t) && label.shapes.some(s => shapeDistance(s, t) < CLEARANCE.text));
+  return b.shapes.some(t => t.kind === "stroke" && isSoft(t) && label.shapes.some(s => shapeDistance(s, t) < CLEARANCE.text));
 }
 
 /** Distance between two bodies counting only pairs where one shape is strict. */

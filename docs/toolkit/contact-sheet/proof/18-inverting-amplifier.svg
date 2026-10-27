@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420">
+
+<rect x="0" y="0" width="720" height="420" fill="#fff"/>
+<g>
+<text x="360" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Inverting amplifier with an ideal op-amp
+</text>
+<path d="M 358.3636363636364 171.54545454545456 L 358.3636363636364 289.3636363636364 L 476.18181818181813 230.45454545454547 Z" fill="#fff" stroke="#222" stroke-width="1"/>
+<line x1="328.9090909090909" y1="201.00000000000003" x2="358.3636363636364" y2="201.00000000000003" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="328.9090909090909" y1="259.90909090909093" x2="358.3636363636364" y2="259.90909090909093" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="476.18181818181813" y1="230.45454545454547" x2="505.6363636363636" y2="230.45454545454547" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="368.1818181818182" y1="201.00000000000003" x2="383.8909090909091" y2="201.00000000000003" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="368.1818181818182" y1="259.90909090909093" x2="383.8909090909091" y2="259.90909090909093" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="376.0363636363636" y1="267.76363636363635" x2="376.0363636363636" y2="252.05454545454546" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="184.90909090909088" y1="201.00000000000003" x2="193.74545454545455" y2="227.50909090909093" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="193.74545454545455" y1="227.50909090909093" x2="211.41818181818184" y2="174.4909090909091" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="211.41818181818184" y1="174.4909090909091" x2="229.09090909090907" y2="227.50909090909093" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="229.09090909090907" y1="227.50909090909093" x2="246.76363636363635" y2="174.4909090909091" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="246.76363636363635" y1="174.4909090909091" x2="264.43636363636364" y2="227.50909090909093" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="264.43636363636364" y1="227.50909090909093" x2="273.27272727272725" y2="201.00000000000003" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="184.90909090909088" y1="201.00000000000003" x2="163.63636363636363" y2="201.00000000000003" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="273.27272727272725" y1="201.00000000000003" x2="294.54545454545456" y2="201.00000000000003" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="373.09090909090907" y1="83.18181818181822" x2="381.92727272727274" y2="109.69090909090912" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="381.92727272727274" y1="109.69090909090912" x2="399.59999999999997" y2="56.672727272727315" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="399.59999999999997" y1="56.672727272727315" x2="417.27272727272725" y2="109.69090909090912" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="417.27272727272725" y1="109.69090909090912" x2="434.94545454545454" y2="56.672727272727315" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="434.94545454545454" y1="56.672727272727315" x2="452.6181818181818" y2="109.69090909090912" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="452.6181818181818" y1="109.69090909090912" x2="461.45454545454544" y2="83.18181818181822" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="373.09090909090907" y1="83.18181818181822" x2="351.8181818181818" y2="83.18181818181822" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="461.45454545454544" y1="83.18181818181822" x2="482.7272727272727" y2="83.18181818181822" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="294.54545454545456" y1="304.0909090909091" x2="294.54545454545456" y2="333.54545454545456" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="272.45454545454544" y1="333.54545454545456" x2="316.6363636363636" y2="333.54545454545456" stroke="#222" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="279.8181818181818" y1="343.8545454545455" x2="309.2727272727273" y2="343.8545454545455" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="287.1818181818182" y1="354.1636363636364" x2="301.9090909090909" y2="354.1636363636364" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="98.18181818181819" cy="201.00000000000003" r="3" fill="#222"/>
+<circle cx="638.1818181818181" cy="230.45454545454547" r="3" fill="#222"/>
+<line x1="98.18181818181819" y1="201.00000000000003" x2="163.63636363636363" y2="201.00000000000003" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="294.54545454545456" y1="201.00000000000003" x2="328.9090909090909" y2="201.00000000000003" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="315" y1="201.00000000000003" x2="315" y2="83.18181818181822" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="315" y1="83.18181818181822" x2="351.8181818181818" y2="83.18181818181822" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="482.7272727272727" y1="83.18181818181822" x2="548.1818181818181" y2="83.18181818181822" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="548.1818181818181" y1="83.18181818181822" x2="548.1818181818181" y2="230.45454545454547" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="505.6363636363636" y1="230.45454545454547" x2="638.1818181818181" y2="230.45454545454547" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="328.9090909090909" y1="259.90909090909093" x2="294.54545454545456" y2="259.90909090909093" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="294.54545454545456" y1="259.90909090909093" x2="294.54545454545456" y2="304.0909090909091" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<ellipse cx="315" cy="201.00000000000003" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
+<ellipse cx="548.1818181818181" cy="230.45454545454547" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
+<path d="M 135.4090909090909 201.00000000000003 L 128.4090909090909 204.50000000000003 L 128.4090909090909 197.50000000000003 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
+<path d="M 516.6818181818181 83.18181818181822 L 509.68181818181813 86.68181818181822 L 509.68181818181813 79.68181818181822 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
+<rect x="187.1709090909091" y="151.51090909090908" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="188.1709090909091" y="162.21090909090907" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">in</tspan><tspan dy="-3.6"> = 10 kΩ</tspan>
+</text>
+<rect x="379.07272727272726" y="33.69272727272731" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="380.07272727272726" y="44.39272727272731" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">f</tspan><tspan dy="-3.6"> = 47 kΩ</tspan>
+</text>
+<rect x="56.261818181818185" y="178.72000000000003" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="57.261818181818185" y="189.42000000000002" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+v<tspan font-size="9" dy="3.6">in</tspan><tspan dy="-3.6"> = 0.5 V</tspan>
+</text>
+<rect x="585.1018181818181" y="236.79454545454547" width="106.16" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="586.1018181818181" y="247.49454545454546" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+v<tspan font-size="9" dy="3.6">out</tspan><tspan dy="-3.6"> = −2.35 V</tspan>
+</text>
+<rect x="101.7890909090909" y="206.64000000000004" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="102.7890909090909" y="217.34000000000003" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+i<tspan font-size="9" dy="3.6">in</tspan>
+</text>
+<rect x="503.74181818181825" y="60.4018181818182" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="504.74181818181825" y="71.1018181818182" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+i<tspan font-size="9" dy="3.6">f</tspan>
+</text>
+<text x="360" y="412" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Virtual ground at the inverting input: i_in = i_f, so v_out = −(R_f/R_in) v_in
+</text>
+</g>
+</svg>

@@ -6,6 +6,7 @@
 import { fail } from "../errors.js";
 import { DIMLESS } from "../expr.js";
 import type { PartDefinition } from "../parts.js";
+import { wiresCrossCleanly } from "../geometry.js";
 import {
   ABOVE_FIRST, AROUND, CLOSED, DEG, P, add, addSample, alongPolyline, angleOf, angleProp, angleQ, arc, arcSamples, arrowPath, besideLine, between, boolProp,
   circle, colorProp, definePart, dist, dot, enumProp, fittedText, head, idProp, lengthProp, lengthQ, lerp, line, listOf, listProp, mul, numProp, perp,
@@ -209,9 +210,9 @@ const refId = (r: unknown): string | undefined => typeof r === "string" ? /^([A-
 
 definePart<ConnProps>({
   type: "connector", aliases: ["wireArrow", "link", "signal"], category: "general",
-  description: "Line between two anchors: straight, orthogonal (routed around the endpoint parts and any `avoid` parts with few bends and few crossings of other connectors in `avoid`) or curved. Ends: arrow, dot or none. It may touch the parts it connects.",
+  description: "Line between two anchors: straight, orthogonal (routed around the endpoint parts and any `avoid` parts with few bends and few crossings of other connectors in `avoid`) or curved. Ends: arrow, dot or none. It may touch the parts it connects, and it may cross another straight or orthogonal connector cleanly (at 30° or more, 10 px from corners and ends) without mayTouch.",
   options: { from: "point", to: "point", route: "straight | orthogonal | curved", via: "explicit corner points (orthogonal; skips routing)", start: "none | arrow | dot", end: "arrow (default) | dot | none", fromSide: "exit direction left/right/up/down (default: inferred)", toSide: "entry side of the target", avoid: "element ids to route around", margin: "px clearance from bodies (default 12)", labelAt: "label slot t", color: "palette colour", width: "px (default 1.4)", dashed: "boolean" },
-  positioning: "points", pointProps: [{ name: "from" }, { name: "to" }, { name: "via", list: true, optional: true }],
+  positioning: "points", pointProps: [{ name: "from" }, { name: "to" }, { name: "via", list: true, optional: true, min: 1 }],
   propKeys: ["from", "to", "via", "route", "start", "end", "fromSide", "toSide", "avoid", "margin", "labelAt", "width", "dashed"],
   props: (s, ctx) => {
     const sides = ["left", "right", "up", "down"] as const;
@@ -260,6 +261,13 @@ definePart<ConnProps>({
     const route = routeOrthogonal(a, dA, b, dB, obstacles, others, m, { a: idA ? obstacleIds.indexOf(idA) : -1, b: idB ? obstacleIds.indexOf(idB) : -1 }, bounds);
     if (!route) fail("E_CONTRADICTORY", [i.id, ...ends, ...p.avoid], `No orthogonal route for "${i.id}" clears the parts it must avoid inside the canvas`, { suggestion: "Move the parts apart, reduce \"margin\", give \"fromSide\"/\"toSide\", enlarge the world bounds, or give \"via\" corner points." });
     p.path = route;
+  },
+  contactWith: (i, o, ctx) => {
+    // Two signal lines may cross without connecting, away from corners and arrowheads (10 px).
+    if (o.type !== "connector") return undefined;
+    const a = i.props.path ?? [ptsOf(i, "from"), ptsOf(i, "to")], q = o.props as ConnProps, b = q.path ?? [];
+    if (i.props.route === "curved" || q.route === "curved" || b.length < 2) return undefined;
+    return wiresCrossCleanly(a.map(ctx.view.toView), b.map(ctx.view.toView), (i.props.width + q.width) / 2 + 0.5, 10) ? "signal lines cross without connecting" : undefined;
   },
   anchors: ["start", "end", "mid", "at(t)", "slot(t)", "bend(i)"],
   anchorArgs: { at: "number", slot: "number", bend: "number" },

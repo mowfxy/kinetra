@@ -6,7 +6,7 @@
  */
 import { fail, ToolkitFailure } from "./errors.js";
 import type { ToolkitIssue } from "./errors.js";
-import { DIMLESS, dimLabel, evalLength, evalQuantity, mapScope, qdimEqual } from "./expr.js";
+import { DIMLESS, LENGTH, dimLabel, evalLength, evalQuantity, mapScope, qdimEqual } from "./expr.js";
 import type { Scope, TkQuantity } from "./expr.js";
 import { pointPolylineDist } from "./geometry.js";
 import type { PartContext } from "./parts.js";
@@ -32,6 +32,15 @@ export function elementScope(res: Resolved, ctx: PartContext, parent: Scope): Sc
   const values = new Map<string, TkQuantity>();
   for (const id of res.order) {
     const inst = res.instances.get(id)!, def = res.defs.get(id)!;
+    // Anchor coordinates (Agent 3): <id>.<anchor>.x / .y for every anchor without an argument.
+    for (const name of def.anchorNames) {
+      if (!/^[A-Za-z_][A-Za-z0-9_]*$/.test(name) || def.anchorArgs?.[name]) continue;
+      let p: { x: number; y: number } | undefined;
+      try { p = def.anchor(inst, name, undefined, ctx); } catch { p = undefined; }
+      if (!p || !Number.isFinite(p.x) || !Number.isFinite(p.y)) continue;
+      values.set(`${id}.${name}.x`, { value: p.x * ctx.worldUnitSI, dim: LENGTH });
+      values.set(`${id}.${name}.y`, { value: p.y * ctx.worldUnitSI, dim: LENGTH });
+    }
     for (const [k, v] of Object.entries(def.refs?.(inst, ctx) ?? {})) values.set(`${id}.${k}`, v);
   }
   return mapScope(values, parent);

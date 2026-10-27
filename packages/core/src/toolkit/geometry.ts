@@ -9,12 +9,14 @@ import type { Vec2 } from "../diagram/primitives.js";
 
 export type CollisionShape =
   | { kind: "stroke"; points: Vec2[]; r: number; closed?: boolean; strict?: boolean; soft?: boolean }
-  | { kind: "area"; points: Vec2[]; strict?: boolean }
+  | { kind: "area"; points: Vec2[]; strict?: boolean; soft?: boolean }
   | { kind: "disc"; c: Vec2; r: number; strict?: boolean };
 // `strict` marks shapes (a part's own text) that must stay clear even of
 // elements the part is allowed to touch (mayTouch or a part's `touches`).
 // `soft` marks low-priority reference strokes (plot grid lines): a label may
-// sit over them; compose then draws a white halo behind that label.
+// sit over them; compose then draws a white halo behind that label. A soft
+// area is a background region (a medium such as glass or water) that anything
+// may be drawn over.
 
 export interface Box { x0: number; y0: number; x1: number; y1: number }
 
@@ -121,4 +123,30 @@ export function pointPolylineDist(p: Vec2, points: Vec2[]): number {
   let d = Infinity;
   for (let i = 1; i < points.length; i++) d = Math.min(d, pointSegDist(p, points[i - 1]!, points[i]!));
   return points.length === 1 ? Math.hypot(p.x - points[0]!.x, p.y - points[0]!.y) : d;
+}
+
+/**
+ * True when two wire or signal paths (view px) come close only at clean crossings: each
+ * near pair of segments properly intersects at >= 30 degrees, at least 4 px
+ * (`minVertexPx`) from every vertex of both paths. A T (an end on the other
+ * path), a shared corner or a collinear overlap is not a crossing and stays a
+ * collision.
+ */
+export function wiresCrossCleanly(a: Vec2[], b: Vec2[], near: number, minVertexPx = 4): boolean {
+  let crossings = 0;
+  const cr = (u: Vec2, w: Vec2) => u.x * w.y - u.y * w.x, vsub = (u: Vec2, w: Vec2) => ({ x: u.x - w.x, y: u.y - w.y });
+  for (let s = 1; s < a.length; s++) for (let t = 1; t < b.length; t++) {
+    const p = a[s - 1]!, q = a[s]!, r = b[t - 1]!, e = b[t]!;
+    const close = Math.min(pointSegDist(p, r, e), pointSegDist(q, r, e), pointSegDist(r, p, q), pointSegDist(e, p, q));
+    const d1 = vsub(q, p), d2 = vsub(e, r), den = cr(d1, d2);
+    const tt = den === 0 ? NaN : cr(vsub(r, p), d2) / den, uu = den === 0 ? NaN : cr(vsub(r, p), d1) / den;
+    const hit = tt > 0 && tt < 1 && uu > 0 && uu < 1;
+    if (!hit && close >= near) continue;
+    if (!hit) return false;
+    const x = { x: p.x + d1.x * tt, y: p.y + d1.y * tt };
+    const sin = Math.abs(den) / (Math.hypot(d1.x, d1.y) * Math.hypot(d2.x, d2.y));
+    if (sin < Math.sin(30 * Math.PI / 180) || [...a, ...b].some(vx => Math.hypot(vx.x - x.x, vx.y - x.y) < minVertexPx)) return false;
+    crossings++;
+  }
+  return crossings > 0;
 }

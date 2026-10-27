@@ -23,7 +23,7 @@ import type { PartContext, ViewMap } from "./parts.js";
 import { resolveLayout } from "./resolver.js";
 import type { Resolved } from "./resolver.js";
 import { TOOLKIT_TEXT, checkToolkitStyle } from "./style.js";
-import { formatLabelMarkup, measureTitleWidth, renderScriptTspans } from "./text_metrics.js";
+import { formatLabelMarkup, measureTitleWidth, plainLabelText, renderScriptTspans } from "./text_metrics.js";
 import type { ComposeModel, LabelPosition, LabelSpec } from "./types.js";
 
 export interface ComposeReport {
@@ -135,9 +135,9 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
     const why = res.defs.get(a)!.contactWith?.(ia, ib, ctx) ?? res.defs.get(b)!.contactWith?.(ib, ia, ctx);
     if (!why) continue;
     allow.mayTouch.get(a)!.add(b); allow.mayTouch.get(b)!.add(a);
-    builtIn.set(`${a} ${b}`, why); builtIn.set(`${b} ${a}`, why);
+    builtIn.set(`${a}|${b}`, why); builtIn.set(`${b}|${a}`, why);
   }
-  const named = (cs: GateResult["contacts"]) => cs.map(x => x.reason === "mayTouch" && builtIn.has(`${x.a} ${x.b}`) ? { ...x, reason: builtIn.get(`${x.a} ${x.b}`)! } : x);
+  const named = (cs: GateResult["contacts"]) => cs.map(x => x.reason === "mayTouch" && builtIn.has(`${x.a}|${x.b}`) ? { ...x, reason: builtIn.get(`${x.a}|${x.b}`)! } : x);
   // Geometry must be clean before labels are placed, so the root cause is reported.
   report.stage = "gate";
   const fixedGate = runGate(bodies, c.width, c.height, allow);
@@ -163,7 +163,7 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
     const atCenter = !!outline && Math.hypot(anchorWorld.x - (def.anchor(inst, "center", undefined, ctx) ?? inst.origin).x, anchorWorld.y - (def.anchor(inst, "center", undefined, ctx) ?? inst.origin).y) < 1e-9;
     const extent = outline && atCenter
       ? { x0: Math.min(...outline.map(p => p.x)), y0: Math.min(...outline.map(p => p.y)), x1: Math.max(...outline.map(p => p.x)), y1: Math.max(...outline.map(p => p.y)) }
-      : { x0: anchor.x - 3, y0: anchor.y - 3, x1: anchor.x + 3, y1: anchor.y + 3 };
+      : smallOwnerExtent(anchor, bodies.find(b => b.key === id)!.box);
     const valid = (p: unknown): p is LabelPosition => ["right", "above-right", "above", "above-left", "left", "below-left", "below", "below-right", "center"].includes(p as string);
     if (spec.position !== undefined && !valid(spec.position)) fail("E_SCHEMA", [id], `label position ${JSON.stringify(spec.position)} of "${id}" is not a position`, { path: `elements[${id}].label.position`, suggestion: "Positions: right, above-right, above, above-left, left, below-left, below, below-right, center." });
     if (spec.candidates !== undefined && (!Array.isArray(spec.candidates) || !spec.candidates.every(valid))) fail("E_SCHEMA", [id], `label candidates of "${id}" must be a list of positions`, { path: `elements[${id}].label.candidates` });
@@ -171,7 +171,7 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
     requests.push({ owner: id, text: formatLabelMarkup(spec.text, [id]), size, color, priority: spec.priority ?? 0, order, candidates, pinned: spec.position, leader: spec.leader !== false, anchor, extent, outline: atCenter ? outline : undefined });
   }
   const { placed, issues: labelIssues } = placeLabels(requests, bodies, c.width, c.height, allow);
-  report.labels = placed.map(p => ({ owner: p.request.owner, text: p.request.text, position: p.position, box: p.body.box, ...(p.leader ? { leader: { from: p.leader.from, to: p.leader.to } } : {}) }));
+  report.labels = placed.map(p => ({ owner: p.request.owner, text: plainLabelText(p.request.text), position: p.position, box: p.body.box, ...(p.leader ? { leader: { from: p.leader.from, to: p.leader.to } } : {}) }));
   if (labelIssues.length) return { ok: false, errors: labelIssues, report };
 
   // 5. Gate over everything that will be drawn.
@@ -198,6 +198,18 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
   if (style.length) fail("E_STYLE", [], `Rendered SVG violates the style contract: ${style.map(v => v.detail).join("; ")}`, { measured: { violations: style } });
   report.stage = "done";
   return { ok: true, svg, report };
+}
+
+/**
+ * Label extent for an open part: the anchor inflated by 3 px, grown to the
+ * owner's own box when that box is marker-sized (at most 24 px each way) and
+ * holds the anchor, so a label clears its own marker (circle, cross, x).
+ */
+function smallOwnerExtent(anchor: Vec2, box: { x0: number; y0: number; x1: number; y1: number }) {
+  const e = { x0: anchor.x - 3, y0: anchor.y - 3, x1: anchor.x + 3, y1: anchor.y + 3 };
+  const small = box.x1 - box.x0 <= 24 && box.y1 - box.y0 <= 24;
+  const holds = anchor.x >= box.x0 && anchor.x <= box.x1 && anchor.y >= box.y0 && anchor.y <= box.y1;
+  return small && holds ? { x0: Math.min(e.x0, box.x0), y0: Math.min(e.y0, box.y0), x1: Math.max(e.x1, box.x1), y1: Math.max(e.y1, box.y1) } : e;
 }
 
 function checkInside(model: ComposeModel, res: Resolved, ctx: PartContext): void {

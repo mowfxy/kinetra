@@ -5,6 +5,8 @@
  */
 import { fail } from "../errors.js";
 import { DIMLESS, evalNumber, mapScope } from "../expr.js";
+import { pointPolylineDist } from "../geometry.js";
+import { getPart } from "../parts.js";
 import {
   ABOVE_FIRST, AROUND, CLOSED, DEG, P, add, addSample, alongPolyline, angleOf, angleProp, arcSamples, between, boolProp, circle, colorProp, definePart, dist,
   enumProp, fittedText, frameOf, frameProps, fp, head, lengthProp, lengthQ, lerp, line, listOf, mul, numProp, perp, pickOf, polar, poly, polylineLen, propPath,
@@ -288,11 +290,19 @@ addSample("fieldLine", (id, c) => [
 interface CurrentProps { t: number; style: "inline" | "beside"; side: 1 | -1; color: string; lengthPx: number }
 definePart<CurrentProps>({
   type: "currentArrow", aliases: ["current"], category: "fields",
-  description: "Current direction on a conductor from `from` to `to`: an arrowhead on the wire at fraction `t` (inline), or a short arrow beside it (beside). Label it I. It may touch the wire it marks.",
+  description: "Current direction on a conductor from `from` to `to`: an arrowhead on the wire at fraction `t` (inline), or a short arrow beside it (beside). Label it I. It may touch the wire it marks (an inline head may touch any wire, segment or connector it sits on, with no mayTouch).",
   options: { from: "point", to: "point", t: "position (default 0.5)", style: "inline (default) | beside", side: "left | right for beside", length: "beside arrow length px (default 26)", color: "palette colour (default force)" },
   positioning: "points", pointProps: [{ name: "from" }, { name: "to" }], touchRefs: ["from", "to"],
   propKeys: ["from", "to", "t", "style", "side", "length"],
   props: (s, ctx) => ({ t: numProp(s, "t", ctx, { default: 0.5, min: 0, max: 1 }), style: enumProp(s, "style", ["inline", "beside"] as const, "inline"), side: enumProp(s, "side", ["left", "right"] as const, "left") === "left" ? 1 : -1, color: colorProp(s, "color", "#c0392b"), lengthPx: numProp(s, "length", ctx, { default: 26, min: 14, max: 200 }) }),
+  contactWith: (i, o, ctx) => {
+    // An inline head sits on its conductor: allow the line it lies on (within 0.5 px).
+    if (i.props.style !== "inline") return undefined;
+    const def = getPart(o.type), line = def?.curve?.(o, ctx) ?? (def?.segment ? [...def.segment(o)] : undefined);
+    if (!line || line.length < 2) return undefined;
+    const at = lerp(ptsOf(i, "from"), ptsOf(i, "to"), i.props.t);
+    return pointPolylineDist(at, line) * ctx.view.scale <= 0.5 ? "current arrow on its conductor" : undefined;
+  },
   anchors: ["at", "tail", "tip"],
   geometry: (i, ctx) => {
     const a = ptsOf(i, "from"), b = ptsOf(i, "to"), u = unit(sub(b, a)), n = mul(perp(u), i.props.side), at = lerp(a, b, i.props.t);

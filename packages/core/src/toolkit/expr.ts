@@ -48,8 +48,11 @@ const EXTRA_UNITS: Record<string, { toBase: number; dim: Partial<Record<"kg" | "
   mT: { toBase: 1e-3, dim: { kg: 1, s: -2, A: -1 } },
   uC: { toBase: 1e-6, dim: { A: 1, s: 1 } }, nC: { toBase: 1e-9, dim: { A: 1, s: 1 } },
   uH: { toBase: 1e-6, dim: { kg: 1, m: 2, s: -2, A: -2 } }, nH: { toBase: 1e-9, dim: { kg: 1, m: 2, s: -2, A: -2 } },
+  // Atomic and optical scales (Agent 3): electron-volts (exact SI value) and small lengths.
+  eV: { toBase: 1.602176634e-19, dim: ENERGY }, keV: { toBase: 1.602176634e-16, dim: ENERGY }, MeV: { toBase: 1.602176634e-13, dim: ENERGY },
+  um: { toBase: 1e-6, dim: { m: 1 } }, nm: { toBase: 1e-9, dim: { m: 1 } }, pm: { toBase: 1e-12, dim: { m: 1 } },
 };
-const EXTRA_ALIASES: Record<string, string> = { "µC": "uC", "μC": "uC", "µH": "uH", "μH": "uH" };
+const EXTRA_ALIASES: Record<string, string> = { "µC": "uC", "μC": "uC", "µH": "uH", "μH": "uH", "µm": "um", "μm": "um" };
 
 export function unitQuantity(symbol: string): TkQuantity | undefined {
   const extra = EXTRA_UNITS[EXTRA_ALIASES[symbol] ?? symbol];

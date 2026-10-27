@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600">
+
+<rect x="0" y="0" width="640" height="600" fill="#fff"/>
+<g>
+<text x="320" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Balanced three-phase supply: phase and line voltages
+</text>
+<line x1="320" y1="292.6829268292683" x2="568.780487804878" y2="292.6829268292683" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="535.4502224049091" y2="168.2926829268293" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="444.39024390243907" y2="77.23270442435916" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="320" y2="43.90243902439025" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="195.60975609756105" y2="77.23270442435916" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="104.54977759509086" y2="168.2926829268293" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="71.21951219512195" y2="292.68292682926824" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="104.54977759509086" y2="417.07317073170736" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="195.60975609756088" y2="508.1331492341774" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="319.99999999999994" y2="541.4634146341464" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="444.39024390243907" y2="508.13314923417744" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.6829268292683" x2="535.450222404909" y2="417.0731707317074" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<ellipse cx="320" cy="292.6829268292683" rx="62.19512195121951" ry="62.19512195121951" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.6829268292683" rx="124.39024390243902" ry="124.39024390243902" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.6829268292683" rx="186.58536585365852" ry="186.58536585365852" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.6829268292683" rx="248.78048780487805" ry="248.78048780487805" fill="none" stroke="#777" stroke-width="1"/>
+<rect x="572.780487804878" y="286.6829268292683" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="580.6004878048781" y="296.5329268292683" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0°
+</text>
+<rect x="539.1205924252167" y="153.68995028457965" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="550.3505924252167" y="163.53995028457965" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+30°
+</text>
+<rect x="440.9815123076089" y="57.68587016697182" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="452.2115123076089" y="67.53587016697182" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+60°
+</text>
+<rect x="308.77" y="26.942439024390232" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="320" y="36.792439024390234" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+90°
+</text>
+<rect x="172.29598769239118" y="56.20929685351933" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="186.93598769239117" y="66.05929685351933" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+120°
+</text>
+<rect x="72.45190757478325" y="152.2133769711272" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="87.09190757478325" y="162.06337697112718" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+150°
+</text>
+<rect x="37.939512195121935" y="286.68292682926824" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="52.579512195121936" y="296.53292682926826" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+180°
+</text>
+<rect x="72.4519075747833" y="421.15247668740943" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="87.0919075747833" y="431.00247668740946" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+210°
+</text>
+<rect x="172.295987692391" y="517.1565568050172" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="186.935987692391" y="527.0065568050172" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+240°
+</text>
+<rect x="305.35999999999996" y="546.4234146341464" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="319.99999999999994" y="556.2734146341464" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+270°
+</text>
+<rect x="438.4240123076089" y="517.1565568050173" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="453.0640123076089" y="527.0065568050173" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+300°
+</text>
+<rect x="538.2680924252167" y="421.1524766874095" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="552.9080924252166" y="431.0024766874095" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+330°
+</text>
+<defs>
+<marker id="arr-23633033393262-41" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="320" y1="292.6829268292683" x2="456.2369337979094" y2="292.6829268292683" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-41)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-43" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="320" y1="292.6829268292683" x2="251.8815331010453" y2="410.6675724319566" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-43)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323637396130-45" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#2679a0"/>
+</marker>
+</defs>
+<line x1="320" y1="292.6829268292683" x2="251.8815331010453" y2="174.69828122657995" stroke="#2679a0" stroke-width="1.6" marker-end="url(#arr-23323637396130-45)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323232-47" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#222"/>
+</marker>
+</defs>
+<line x1="320" y1="292.6829268292683" x2="524.3554006968641" y2="174.69828122657998" stroke="#222" stroke-width="1.6" marker-end="url(#arr-23323232-47)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-49" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="456.2369337979094" y1="292.6829268292683" x2="524.3554006968641" y2="174.69828122657998" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-49)" stroke-dasharray="4 4"/>
+<path d="M 407.8048780487805 292.6829268292683 L 407.6845445150357 288.0875745737903 L 407.32387373965327 283.50481785942554 L 406.72385429615844 278.9472177037846 L 405.886130796139 274.42726617209917 L 404.8129993814792 269.9573521373396 L 403.50740143079395 265.5497273231754 L 401.9729154973153 261.2164727228517 L 400.21374750032595 256.96946548602733 L 398.2347191970274 252.8203463643325 L 396.04125496643854 248.78048780487808" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="409.75463714164476" y="258.87498211025365" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="421.9146371416448" y="269.57498211025364" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+30°
+</text>
+<rect x="230.2015331010453" y="415.4675724319566" width="16.879999999999995" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="230.2015331010453" y="153.27828122657994" width="16.879999999999995" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="435.7154006968641" y="153.27828122657996" width="83.84000000000003" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="461.0369337979094" y="297.82292682926834" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="462.0369337979094" y="308.52292682926833" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V<tspan font-size="9" dy="3.6">a</tspan>
+</text>
+<rect x="230.2015331010453" y="415.80757243195666" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="231.2015331010453" y="426.50757243195665" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V<tspan font-size="9" dy="3.6">b</tspan>
+</text>
+<rect x="230.2015331010453" y="153.61828122657994" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="231.2015331010453" y="164.31828122657993" fill="#2679a0" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V<tspan font-size="9" dy="3.6">c</tspan>
+</text>
+<rect x="435.7154006968641" y="153.61828122657997" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="436.7154006968641" y="164.31828122657996" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V<tspan font-size="9" dy="3.6">ab</tspan><tspan dy="-3.6"> = 398 V</tspan>
+</text>
+<text x="320" y="592" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+230 V phases (abc); dashed: −V_b drawn from the tip of V_a
+</text>
+</g>
+</svg>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430">
+
+<rect x="0" y="0" width="900" height="430" fill="#fff"/>
+<g>
+<text x="450" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Truss: method of joints
+</text>
+<line x1="64.28571428571428" y1="290" x2="278.57142857142856" y2="290" stroke="#526873" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="278.57142857142856" y1="290" x2="492.85714285714283" y2="290" stroke="#526873" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="64.28571428571428" y1="290" x2="171.42857142857142" y2="104.42312776047746" stroke="#526873" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="171.42857142857142" y1="104.42312776047746" x2="278.57142857142856" y2="290" stroke="#526873" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="278.57142857142856" y1="290" x2="385.7142857142857" y2="104.42312776047746" stroke="#526873" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="385.7142857142857" y1="104.42312776047746" x2="492.85714285714283" y2="290" stroke="#526873" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="171.42857142857142" y1="104.42312776047746" x2="385.7142857142857" y2="104.42312776047746" stroke="#526873" stroke-width="2.5" stroke-linecap="round"/>
+<ellipse cx="64.28571428571428" cy="290" rx="3.5000000000000004" ry="3.5000000000000004" fill="#fff" stroke="#222" stroke-width="1"/>
+<ellipse cx="278.57142857142856" cy="290" rx="3.5000000000000004" ry="3.5000000000000004" fill="#fff" stroke="#222" stroke-width="1"/>
+<ellipse cx="492.85714285714283" cy="290" rx="3.5000000000000004" ry="3.5000000000000004" fill="#fff" stroke="#222" stroke-width="1"/>
+<ellipse cx="171.42857142857142" cy="104.42312776047746" rx="3.5000000000000004" ry="3.5000000000000004" fill="#fff" stroke="#222" stroke-width="1"/>
+<ellipse cx="385.7142857142857" cy="104.42312776047746" rx="3.5000000000000004" ry="3.5000000000000004" fill="#fff" stroke="#222" stroke-width="1"/>
+<path d="M 64.28571428571428 290 L 78.21428571428571 308.10714285714283 L 50.35714285714285 308.10714285714283 Z" fill="#d6e1e6" stroke="#526873" stroke-width="1"/>
+<ellipse cx="64.28571428571428" cy="290" rx="3.133928571428571" ry="3.133928571428571" fill="#fff" stroke="#526873" stroke-width="1"/>
+<line x1="43.39285714285714" y1="308.80357142857144" x2="85.17857142857142" y2="308.80357142857144" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="81" y1="309.80357142857144" x2="85.89999999999999" y2="315.80357142857144" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="72.64285714285714" y1="309.80357142857144" x2="77.54285714285713" y2="315.80357142857144" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="64.28571428571428" y1="309.80357142857144" x2="69.18571428571428" y2="315.80357142857144" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="55.92857142857142" y1="309.80357142857144" x2="60.82857142857142" y2="315.80357142857144" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="47.57142857142856" y1="309.80357142857144" x2="52.47142857142856" y2="315.80357142857144" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<path d="M 492.85714285714283 290 L 506.7857142857143 308.10714285714283 L 478.9285714285714 308.10714285714283 Z" fill="#d6e1e6" stroke="#526873" stroke-width="1"/>
+<ellipse cx="492.85714285714283" cy="290" rx="3.133928571428571" ry="3.133928571428571" fill="#fff" stroke="#526873" stroke-width="1"/>
+<ellipse cx="485.19642857142856" cy="311.5892857142857" rx="3.482142857142857" ry="3.482142857142857" fill="#fff" stroke="#526873" stroke-width="1"/>
+<ellipse cx="500.51785714285717" cy="311.5892857142857" rx="3.482142857142857" ry="3.482142857142857" fill="#fff" stroke="#526873" stroke-width="1"/>
+<line x1="471.9642857142857" y1="315.76785714285717" x2="513.75" y2="315.76785714285717" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="509.5714285714286" y1="316.76785714285717" x2="514.4714285714286" y2="322.76785714285717" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="501.2142857142857" y1="316.76785714285717" x2="506.11428571428576" y2="322.76785714285717" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="492.85714285714283" y1="316.76785714285717" x2="497.75714285714287" y2="322.76785714285717" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="484.5" y1="316.76785714285717" x2="489.4" y2="322.76785714285717" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="476.14285714285717" y1="316.76785714285717" x2="481.04285714285714" y2="322.76785714285717" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<defs>
+<marker id="arr-23633033393262-31" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="278.57142857142856" y1="182.85714285714286" x2="278.57142857142856" y2="290" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-31)" stroke-dasharray=""/>
+<rect x="35.45857142857142" y="267.42857142857144" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="40.178571428571416" y="278.12857142857143" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+A
+</text>
+<rect x="249.7442857142857" y="302.25" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="254.4642857142857" y="312.95" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+B
+</text>
+<rect x="512.2442857142856" y="267.42857142857144" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="516.9642857142857" y="278.12857142857143" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+C
+</text>
+<rect x="145.28" y="81.85169918904892" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="150" y="92.55169918904892" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+D
+</text>
+<rect x="402.42285714285714" y="81.85169918904892" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="407.14285714285717" y="92.55169918904892" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+E
+</text>
+<rect x="132.91857142857143" y="266.85714285714283" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="171.42857142857142" y="276.70714285714286" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+5.77 kN (T)
+</text>
+<rect x="347.20428571428573" y="266.85714285714283" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="385.7142857142857" y="276.70714285714286" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+5.77 kN (T)
+</text>
+<rect x="23.09714285714285" y="185.85442102309588" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="61.60714285714285" y="195.70442102309588" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+11.5 kN (C)
+</text>
+<rect x="138.2757142857143" y="196.5687067373816" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="176.78571428571428" y="206.4187067373816" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+11.5 kN (T)
+</text>
+<rect x="341.84714285714284" y="196.5687067373816" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="380.35714285714283" y="206.4187067373816" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+11.5 kN (T)
+</text>
+<rect x="457.0257142857143" y="185.85442102309588" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="495.5357142857143" y="195.70442102309588" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+11.5 kN (C)
+</text>
+<rect x="240.06142857142856" y="82.3516991890489" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="278.57142857142856" y="92.2016991890489" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+11.5 kN (C)
+</text>
+<defs>
+<marker id="arr-23333737663563-57" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="64.28571428571428" y1="362.375" x2="64.28571428571428" y2="308.80357142857144" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-57)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-59" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="492.85714285714283" y1="369.3392857142857" x2="492.85714285714283" y2="315.76785714285717" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-59)" stroke-dasharray=""/>
+<circle cx="739.2857142857142" cy="182.85714285714286" r="3" fill="#222"/>
+<rect x="663.8857142857142" y="47.78571428571429" width="150.8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="739.2857142857142" y="58.485714285714295" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Free body of joint B
+</text>
+<defs>
+<marker id="arr-23633033393262-64" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="739.2857142857142" y1="182.85714285714286" x2="708.3562355791271" y2="182.85714285714286" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-64)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23633033393262-66" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="739.2857142857142" y1="182.85714285714286" x2="708.3562355791271" y2="129.28571428571428" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-66)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23633033393262-68" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="739.2857142857142" y1="182.85714285714286" x2="770.2151929923014" y2="129.28571428571428" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-68)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23633033393262-70" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="739.2857142857142" y1="182.85714285714286" x2="770.2151929923014" y2="182.85714285714286" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-70)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23633033393262-72" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="739.2857142857142" y1="182.85714285714286" x2="739.2857142857142" y2="290" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-72)" stroke-dasharray=""/>
+<rect x="244.09142857142857" y="162.05714285714285" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="245.09142857142857" y="172.75714285714284" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+P = 20 kN
+</text>
+<rect x="55.84571428571428" y="368.71500000000003" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="56.84571428571428" y="379.415" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">A</tspan>
+</text>
+<rect x="484.41714285714284" y="375.67928571428575" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="485.41714285714284" y="386.37928571428574" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">C</tspan>
+</text>
+<rect x="678.0362355791269" y="174.88714285714286" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="679.0362355791269" y="185.58714285714285" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+F<tspan font-size="9" dy="3.6">AB</tspan>
+</text>
+<rect x="679.236235579127" y="108.20571428571428" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="680.236235579127" y="118.90571428571428" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+F<tspan font-size="9" dy="3.6">BD</tspan>
+</text>
+<rect x="775.0151929923013" y="108.20571428571428" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="776.0151929923013" y="118.90571428571428" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+F<tspan font-size="9" dy="3.6">BE</tspan>
+</text>
+<rect x="776.2151929923014" y="174.88714285714286" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="777.2151929923014" y="185.58714285714285" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+F<tspan font-size="9" dy="3.6">BC</tspan>
+</text>
+<rect x="734.5657142857142" y="296.34000000000003" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="735.5657142857142" y="307.04" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+P
+</text>
+<text x="450" y="422" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Equilateral panels (4 m), P = 20 kN at B; T = tension, C = compression · Arrow scale: 1 unit = 10 kN (force)
+</text>
+</g>
+</svg>

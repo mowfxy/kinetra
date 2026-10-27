@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 480" width="620" height="480">
+
+<rect x="0" y="0" width="620" height="480" fill="#fff"/>
+<g>
+<text x="310" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Heat engine: energy flow
+</text>
+<rect x="113.27868852459011" y="39.344262295081904" width="346.2295081967213" height="62.950819672131175" fill="#fff" stroke="#c0392b" stroke-width="1" rx="0"/>
+<line x1="113.27868852459011" y1="102.29508196721308" x2="459.50819672131144" y2="102.29508196721308" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
+<rect x="196.11344262295077" y="64.31967213114753" width="180.56" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="286.3934426229508" y="75.01967213114753" fill="#c0392b" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Hot reservoir T<tspan font-size="9" dy="3.6">H</tspan><tspan dy="-3.6"> = 600 K</tspan>
+</text>
+<rect x="113.27868852459011" y="377.70491803278685" width="346.2295081967213" height="62.95081967213116" fill="#fff" stroke="#2679a0" stroke-width="1" rx="0"/>
+<line x1="113.27868852459011" y1="377.70491803278685" x2="459.50819672131144" y2="377.70491803278685" stroke="#2679a0" stroke-width="3" stroke-linecap="round"/>
+<rect x="192.39344262295077" y="402.68032786885243" width="188" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="286.3934426229508" y="413.3803278688524" fill="#2679a0" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Cold reservoir T<tspan font-size="9" dy="3.6">C</tspan><tspan dy="-3.6"> = 300 K</tspan>
+</text>
+<ellipse cx="286.3934426229508" cy="239.99999999999997" rx="48.786885245901644" ry="48.786885245901644" fill="#d6e1e6" stroke="#222" stroke-width="1"/>
+<rect x="263.0734426229508" y="233.49999999999997" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="286.3934426229508" y="244.19999999999996" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+engine
+</text>
+<line x1="286.3934426229508" y1="102.29508196721308" x2="287.8934426229508" y2="103.98087431693985" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="103.98087431693985" x2="288.9915188343041" y2="105.66666666666663" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="105.66666666666663" x2="289.3934426229508" y2="107.35245901639341" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="107.35245901639341" x2="288.9915188343041" y2="109.03825136612019" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="109.03825136612019" x2="287.8934426229508" y2="110.72404371584696" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="110.72404371584696" x2="286.3934426229508" y2="112.40983606557373" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="112.40983606557373" x2="284.8934426229508" y2="114.09562841530051" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="114.09562841530051" x2="283.79536641159746" y2="115.78142076502728" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="115.78142076502728" x2="283.3934426229508" y2="117.46721311475407" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="117.46721311475407" x2="283.79536641159746" y2="119.15300546448084" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="119.15300546448084" x2="284.8934426229508" y2="120.83879781420761" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="120.83879781420761" x2="286.3934426229508" y2="122.52459016393439" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="122.52459016393439" x2="287.8934426229508" y2="124.21038251366116" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="124.21038251366116" x2="288.9915188343041" y2="125.89617486338794" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="125.89617486338794" x2="289.3934426229508" y2="127.58196721311472" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="127.58196721311472" x2="288.9915188343041" y2="129.2677595628415" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="129.2677595628415" x2="287.8934426229508" y2="130.9535519125683" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="130.9535519125683" x2="286.3934426229508" y2="132.63934426229505" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="132.63934426229505" x2="284.8934426229508" y2="134.32513661202182" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="134.32513661202182" x2="283.79536641159746" y2="136.0109289617486" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="136.0109289617486" x2="283.3934426229508" y2="137.6967213114754" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="137.6967213114754" x2="283.79536641159746" y2="139.38251366120215" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="139.38251366120215" x2="284.8934426229508" y2="141.06830601092895" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="141.06830601092895" x2="286.3934426229508" y2="142.7540983606557" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="142.7540983606557" x2="287.8934426229508" y2="144.43989071038249" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="144.43989071038249" x2="288.9915188343041" y2="146.12568306010922" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="146.12568306010922" x2="289.3934426229508" y2="147.81147540983602" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="147.81147540983602" x2="288.9915188343041" y2="149.49726775956282" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="149.49726775956282" x2="287.8934426229508" y2="151.18306010928958" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="151.18306010928958" x2="286.3934426229508" y2="152.86885245901635" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="152.86885245901635" x2="284.8934426229508" y2="154.55464480874315" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="154.55464480874315" x2="283.79536641159746" y2="156.2404371584699" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="156.2404371584699" x2="283.3934426229508" y2="157.92622950819668" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="157.92622950819668" x2="283.79536641159746" y2="159.61202185792348" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="159.61202185792348" x2="284.8934426229508" y2="161.29781420765022" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="161.29781420765022" x2="286.3934426229508" y2="162.98360655737702" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="162.98360655737702" x2="287.8934426229508" y2="164.66939890710378" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="164.66939890710378" x2="288.9915188343041" y2="166.35519125683055" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="166.35519125683055" x2="289.3934426229508" y2="168.04098360655735" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="168.04098360655735" x2="288.9915188343041" y2="169.72677595628414" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="169.72677595628414" x2="287.8934426229508" y2="171.41256830601088" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="171.41256830601088" x2="286.3934426229508" y2="173.09836065573768" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="173.09836065573768" x2="284.8934426229508" y2="174.78415300546445" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="174.78415300546445" x2="283.79536641159746" y2="176.46994535519121" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="176.46994535519121" x2="283.3934426229508" y2="178.155737704918" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="178.155737704918" x2="283.79536641159746" y2="179.84153005464478" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="179.84153005464478" x2="284.8934426229508" y2="181.52732240437155" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="181.52732240437155" x2="286.3934426229508" y2="183.21311475409834" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="183.21311475409834" x2="286.3934426229508" y2="188.21311475409834" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 286.3934426229508 192.21311475409834 L 282.8934426229508 185.21311475409834 L 289.8934426229508 185.21311475409834 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
+<line x1="286.3934426229508" y1="288.7868852459016" x2="287.8934426229508" y2="290.4726775956284" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="290.4726775956284" x2="288.9915188343041" y2="292.1584699453552" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="292.1584699453552" x2="289.3934426229508" y2="293.84426229508193" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="293.84426229508193" x2="288.9915188343041" y2="295.53005464480873" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="295.53005464480873" x2="287.8934426229508" y2="297.21584699453547" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="297.21584699453547" x2="286.3934426229508" y2="298.90163934426226" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="298.90163934426226" x2="284.8934426229508" y2="300.58743169398906" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="300.58743169398906" x2="283.79536641159746" y2="302.2732240437158" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="302.2732240437158" x2="283.3934426229508" y2="303.9590163934426" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="303.9590163934426" x2="283.79536641159746" y2="305.6448087431694" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="305.6448087431694" x2="284.8934426229508" y2="307.33060109289613" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="307.33060109289613" x2="286.3934426229508" y2="309.0163934426229" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="309.0163934426229" x2="287.8934426229508" y2="310.7021857923497" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="310.7021857923497" x2="288.9915188343041" y2="312.38797814207646" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="312.38797814207646" x2="289.3934426229508" y2="314.07377049180326" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="314.07377049180326" x2="288.9915188343041" y2="315.75956284153006" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="315.75956284153006" x2="287.8934426229508" y2="317.4453551912568" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="317.4453551912568" x2="286.3934426229508" y2="319.1311475409836" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="319.1311475409836" x2="284.8934426229508" y2="320.8169398907104" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="320.8169398907104" x2="283.79536641159746" y2="322.5027322404371" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="322.5027322404371" x2="283.3934426229508" y2="324.1885245901639" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="324.1885245901639" x2="283.79536641159746" y2="325.8743169398907" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="325.8743169398907" x2="284.8934426229508" y2="327.56010928961746" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="327.56010928961746" x2="286.3934426229508" y2="329.24590163934425" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="329.24590163934425" x2="287.8934426229508" y2="330.931693989071" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="330.931693989071" x2="288.9915188343041" y2="332.6174863387978" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="332.6174863387978" x2="289.3934426229508" y2="334.3032786885246" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="334.3032786885246" x2="288.9915188343041" y2="335.9890710382514" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="335.9890710382514" x2="287.8934426229508" y2="337.6748633879781" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="337.6748633879781" x2="286.3934426229508" y2="339.36065573770486" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="339.36065573770486" x2="284.8934426229508" y2="341.04644808743166" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="341.04644808743166" x2="283.79536641159746" y2="342.73224043715845" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="342.73224043715845" x2="283.3934426229508" y2="344.41803278688525" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="344.41803278688525" x2="283.79536641159746" y2="346.103825136612" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="346.103825136612" x2="284.8934426229508" y2="347.7896174863388" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="347.7896174863388" x2="286.3934426229508" y2="349.4754098360655" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="349.4754098360655" x2="287.8934426229508" y2="351.1612021857923" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="351.1612021857923" x2="288.9915188343041" y2="352.8469945355191" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="352.8469945355191" x2="289.3934426229508" y2="354.53278688524586" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="289.3934426229508" y1="354.53278688524586" x2="288.9915188343041" y2="356.21857923497265" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="288.9915188343041" y1="356.21857923497265" x2="287.8934426229508" y2="357.90437158469945" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="287.8934426229508" y1="357.90437158469945" x2="286.3934426229508" y2="359.5901639344262" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="359.5901639344262" x2="284.8934426229508" y2="361.275956284153" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="361.275956284153" x2="283.79536641159746" y2="362.9617486338798" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="362.9617486338798" x2="283.3934426229508" y2="364.6475409836065" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.3934426229508" y1="364.6475409836065" x2="283.79536641159746" y2="366.3333333333333" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="283.79536641159746" y1="366.3333333333333" x2="284.8934426229508" y2="368.0191256830601" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="284.8934426229508" y1="368.0191256830601" x2="286.3934426229508" y2="369.70491803278685" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<line x1="286.3934426229508" y1="369.70491803278685" x2="286.3934426229508" y2="374.70491803278685" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M 286.3934426229508 378.70491803278685 L 282.8934426229508 371.70491803278685 L 289.8934426229508 371.70491803278685 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
+<line x1="335.18032786885243" y1="239.99999999999997" x2="519.4590163934427" y2="239.99999999999997" stroke="#117a3a" stroke-width="2" stroke-linecap="round"/>
+<path d="M 523.4590163934427 239.99999999999997 L 516.4590163934427 243.49999999999997 L 516.4590163934427 236.49999999999997 Z" fill="#117a3a" stroke="none" stroke-width="1"/>
+<rect x="292.3934426229508" y="138.7840983606557" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="293.3934426229508" y="149.48409836065568" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Q<tspan font-size="9" dy="3.6">H</tspan><tspan dy="-3.6"> = 1000 J</tspan>
+</text>
+<rect x="292.3934426229508" y="325.2759016393443" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="293.3934426229508" y="335.9759016393443" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Q<tspan font-size="9" dy="3.6">C</tspan><tspan dy="-3.6"> = 650 J</tspan>
+</text>
+<rect x="394.3396721311475" y="219.19999999999996" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="395.3396721311475" y="229.89999999999995" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+W = 350 J
+</text>
+<text x="310" y="472" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Q_H = W + Q_C (first law); η = W/Q_H must not exceed 1 − T_C/T_H (second law)
+</text>
+</g>
+</svg>

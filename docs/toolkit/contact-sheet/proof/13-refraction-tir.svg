@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
+
+<rect x="0" y="0" width="820" height="480" fill="#fff"/>
+<g>
+<text x="410" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Refraction and total internal reflection at a glass–air boundary
+</text>
+<rect x="12.8125" y="236.796875" width="794.375" height="217.8125" fill="#e8edef" stroke="#fff" stroke-width="1" rx="0"/>
+<line x1="12.8125" y1="236.796875" x2="807.1875" y2="236.796875" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="243.4375" y1="403.359375" x2="243.4375" y2="70.234375" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="576.5625" y1="403.359375" x2="576.5625" y2="108.671875" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<defs>
+<marker id="arr-23626134623337-5" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#ba4b37"/>
+</marker>
+</defs>
+<line x1="147.34375" y1="403.2361322898218" x2="243.4375" y2="236.796875" stroke="#ba4b37" stroke-width="1.6" marker-end="url(#arr-23626134623337-5)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23626134623337-7" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#ba4b37"/>
+</marker>
+</defs>
+<line x1="243.4375" y1="236.796875" x2="387.57812499999994" y2="109.67679247619348" stroke="#ba4b37" stroke-width="1.6" marker-end="url(#arr-23626134623337-7)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323637396130-9" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#2679a0"/>
+</marker>
+</defs>
+<line x1="429.3383335880714" y1="360.3326187366318" x2="576.5625" y2="236.796875" stroke="#2679a0" stroke-width="1.6" marker-end="url(#arr-23323637396130-9)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323637396130-11" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#2679a0"/>
+</marker>
+</defs>
+<line x1="576.5625" y1="236.796875" x2="723.7866664119285" y2="360.33261873663173" stroke="#2679a0" stroke-width="1.6" marker-end="url(#arr-23323637396130-11)" stroke-dasharray=""/>
+<path d="M 214.60937499999994 286.72865218694653 L 217.01787710665397 288.0437938365104 L 219.48622815660994 289.2428447321589 L 222.0088365408342 290.32308863795794 L 224.57998773997988 291.2820784540176 L 227.1938572696113 292.11764175996086 L 229.8445238745346 292.8278857361542 L 232.52598294234502 293.4112014515529 L 235.2321601058059 293.86626750844755 L 237.95692500324324 294.1920530358544 L 240.69410516578733 294.3878200247703 L 243.4375 294.453125" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="216.39681545436804" y="299.7155747798597" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="224.83681545436804" y="310.4155747798597" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+θ<tspan font-size="9" dy="3.6">1</tspan>
+</text>
+<path d="M 291.484375 194.42351415873117 L 289.3116413168217 192.08035607584543 L 287.02476830178637 189.84845704754832 L 284.62944591770287 187.73337025601495 L 282.1316339599734 185.7403582431977 L 279.5375472280422 183.87437981710895 L 276.85364006236904 182.140077713824 L 274.0865902854017 180.54176704590134 L 271.24328258650314 179.0834245659624 L 268.3307913921738 177.76867877214357 L 265.3563632641893 176.60080088003957 L 262.32739886944927 175.58269668360032 L 259.2514345663967 174.71689932523253 L 256.1361236538246 174.0055629930947 L 252.98921732872273 173.45045756126729 L 249.8185454005449 173.05296418613335 L 246.63199680988012 172.8140718699271 L 243.4375 172.734375" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="267.5459695191602" y="158.1938636732982" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="275.9859695191602" y="168.8938636732982" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+θ<tspan font-size="9" dy="3.6">2</tspan>
+</text>
+<path d="M 532.3952500764215 273.8575981209895 L 534.3550404249872 276.07503076482897 L 536.426027178075 278.1889843141842 L 538.6027542792654 280.19388951574365 L 540.8794870970568 282.08446440626983 L 543.250227532868 283.8557282280384 L 545.70872982315 285.5030145507447 L 548.2485169939756 287.02198356530886 L 550.862897924759 288.4086335171903 L 553.5449849761471 289.659311249091 L 556.2877121356455 290.770721825272 L 559.0838536331698 291.73993721212827 L 561.926042977484 292.5644039921523 L 564.8067923633699 293.2419500909641 L 567.7185123984009 293.7707904996851 L 570.6535320973497 294.14953197757995 L 573.6041190915548 294.37717672257736 L 576.5625 294.453125" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="533.2741132492389" y="297.0519158113054" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="545.4341132492389" y="307.75191581130537" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+50°
+</text>
+<path d="M 576.5625 313.671875 L 580.507007877927 313.57061063010315 L 584.4411238702003 313.2670843034399 L 588.3544834687989 312.7620956662468 L 592.2367768488401 312.05697512128546 L 596.0777760300211 311.1535803228697 L 599.8673618224402 310.05429128283765 L 603.5955504858059 308.7620041003627 L 607.2525200318037 307.2801233321213 L 610.8286361003214 305.6125530229204 L 614.3144773413659 303.7636864204118 L 617.7008602358001 301.73839440099295 L 620.9788632895093 299.5420126373846 L 624.1398505372576 297.18032754169315 L 627.1754942943129 294.65956102099153 L 630.0777970959 291.986354085579 L 632.8391127666837 289.16774935310525 L 635.4521665647715 286.2111724946527" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="603.6530814685902" y="314.470018593416" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="615.8130814685902" y="325.170018593416" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+50°
+</text>
+<rect x="40.3275" y="201.46875" width="98.72" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="89.6875" y="212.16875" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+air, n₂ = 1.0
+</text>
+<rect x="39.29375" y="259.125" width="113.6" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="96.09375" y="269.825" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+glass, n₁ = 1.5
+</text>
+<rect x="332.9475" y="76.54687499999999" width="128.48000000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="397.1875" y="87.24687499999999" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+refracted (48.6°)
+</text>
+<rect x="599.5275" y="403.265625" width="210.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="704.6875" y="413.965625" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+totally reflected (50° &gt; θc)
+</text>
+<text x="410" y="472" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+n₁ = 1.5 (glass), n₂ = 1.0 (air): critical angle θc = 41.8°
+</text>
+</g>
+</svg>

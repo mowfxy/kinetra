@@ -12,6 +12,7 @@ import type { Box } from "./geometry.js";
 import { collides, contactReason, makeBody, outOfBounds } from "./gate.js";
 import type { Allowances, Body } from "./gate.js";
 import { textBox } from "./parts.js";
+import { plainLabelText } from "./text_metrics.js";
 import type { LabelPosition } from "./types.js";
 
 export const LABEL_POSITIONS: LabelPosition[] = ["right", "above-right", "above", "above-left", "left", "below-left", "below", "below-right", "center"];
@@ -150,7 +151,7 @@ export function placeLabels(requests: LabelRequest[], obstacles: Body[], width: 
       issues.push({
         code: !c ? "E_LABEL_UNPLACEABLE" : oob && hits.length === 0 ? "E_OUT_OF_BOUNDS" : "E_COLLISION",
         elements: [`label:${r.owner}`, ...hits],
-        message: !c ? `label "${r.text}" of "${r.owner}" cannot sit at "${r.pinned}" (it does not fit inside its owner)` : `label "${r.text}" of "${r.owner}" at "${r.pinned}" ${hits.length ? `overlaps ${hits.map(h => `"${h}"`).join(", ")}` : `extends ${oob!.overflow.toFixed(1)} px past the ${oob!.side} edge`}; free positions: ${free.length ? free.join(", ") : "none"}`,
+        message: !c ? `label "${plainLabelText(r.text)}" of "${r.owner}" cannot sit at "${r.pinned}" (it does not fit inside its owner)` : `label "${plainLabelText(r.text)}" of "${r.owner}" at "${r.pinned}" ${hits.length ? `overlaps ${hits.map(h => `"${h}"`).join(", ")}` : `extends ${oob!.overflow.toFixed(1)} px past the ${oob!.side} edge`}; free positions: ${free.length ? free.join(", ") : "none"}`,
         measured: { position: r.pinned, box: c?.body.box, blockers: hits, freePositions: free },
         suggestion: free.length ? `Set "position": "${free[0]}" or remove "position" to let the placer choose.` : "Remove \"position\" so a leader line can be used, or move nearby elements.",
       });
@@ -197,7 +198,7 @@ export function placeLabels(requests: LabelRequest[], obstacles: Body[], width: 
     const near = [...new Set(tried.flatMap(t => t.blockedBy))];
     issues.push({
       code: "E_LABEL_UNPLACEABLE", elements: [`label:${r.owner}`, ...near.filter(n => n !== "canvas edge" && n !== "not inside owner")],
-      message: `No free position for label "${r.text}" of "${r.owner}"${r.leader ? ", even with a leader line" : " (leader lines disabled)"}`,
+      message: `No free position for label "${plainLabelText(r.text)}" of "${r.owner}"${r.leader ? ", even with a leader line" : " (leader lines disabled)"}`,
       measured: { tried },
       suggestion: `Space out ${near.slice(0, 4).map(n => `"${n}"`).join(", ")}, shorten the label, lower another label's priority, or enlarge the canvas.`,
     });

@@ -208,7 +208,7 @@ export interface KitDef<P> {
   category: Category;
   description: string;
   positioning: "placed" | "points";
-  pointProps?: { name: string; list?: boolean; optional?: boolean }[];
+  pointProps?: { name: string; list?: boolean; optional?: boolean; min?: number }[];
   propKeys: string[];
   props(spec: ElementSpec, ctx: PartContext): P;
   /** Documented anchors; "name(arg)" for argument anchors. */

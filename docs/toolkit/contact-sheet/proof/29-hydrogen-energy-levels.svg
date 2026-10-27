@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 620" width="720" height="620">
+
+<rect x="0" y="0" width="720" height="620" fill="#fff"/>
+<g>
+<text x="360" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Hydrogen energy levels and emission lines
+</text>
+<line x1="183.5294117647059" y1="502" x2="635.2941176470589" y2="502" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+<line x1="183.5294117647059" y1="178" x2="635.2941176470589" y2="178" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+<line x1="183.5294117647059" y1="117.99999999999989" x2="635.2941176470589" y2="117.99999999999989" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+<line x1="183.5294117647059" y1="96.99999999999994" x2="635.2941176470589" y2="96.99999999999994" stroke="#222" stroke-width="2" stroke-linecap="round"/>
+<line x1="183.5294117647059" y1="70" x2="635.2941176470589" y2="70" stroke="#222" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<rect x="36.204705882352954" y="496" width="111.12" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="91.76470588235296" y="505.85" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+n = 1   −13.6 eV
+</text>
+<rect x="36.204705882352954" y="172.00000000000009" width="111.12" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="91.76470588235296" y="181.85000000000008" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+n = 2   −3.40 eV
+</text>
+<rect x="36.204705882352954" y="111.99999999999991" width="111.12" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="91.76470588235296" y="121.84999999999991" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+n = 3   −1.51 eV
+</text>
+<rect x="36.204705882352954" y="90.99999999999991" width="111.12" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="91.76470588235296" y="100.84999999999991" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+n = 4   −0.85 eV
+</text>
+<rect x="49.844705882352955" y="64.00000000000003" width="83.84" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="91.76470588235296" y="73.85000000000002" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+n = ∞   0 eV
+</text>
+<defs>
+<marker id="arr-23376133613131-16" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#7a3a11"/>
+</marker>
+</defs>
+<line x1="247.0588235294118" y1="178" x2="247.0588235294118" y2="502" stroke="#7a3a11" stroke-width="1.6" marker-end="url(#arr-23376133613131-16)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23626134623337-18" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#ba4b37"/>
+</marker>
+</defs>
+<line x1="437.6470588235295" y1="117.99999999999989" x2="437.6470588235295" y2="178" stroke="#ba4b37" stroke-width="1.6" marker-end="url(#arr-23626134623337-18)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323637396130-20" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#2679a0"/>
+</marker>
+</defs>
+<line x1="529.4117647058824" y1="96.99999999999994" x2="529.4117647058824" y2="178" stroke="#2679a0" stroke-width="1.6" marker-end="url(#arr-23323637396130-20)" stroke-dasharray=""/>
+<rect x="193.97882352941178" y="508.34" width="106.16" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="194.97882352941178" y="519.04" fill="#7a3a11" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Lyman α 122 nm
+</text>
+<rect x="403.1670588235295" y="184.34000000000003" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="404.1670588235295" y="195.04000000000002" fill="#ba4b37" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Hα 656 nm
+</text>
+<rect x="494.9317647058824" y="184.34000000000003" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="495.9317647058824" y="195.04000000000002" fill="#2679a0" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Hβ 486 nm
+</text>
+<text x="360" y="612" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Eₙ = −13.6 eV/n²; drawn to scale (vertical: 0.45 m per eV); λ = hc/ΔE
+</text>
+</g>
+</svg>

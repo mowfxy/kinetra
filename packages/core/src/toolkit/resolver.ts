@@ -102,7 +102,8 @@ export function resolveLayout(elements: ElementSpec[], ctx: PartContext): Resolv
         const v = el[p.name];
         if (v === undefined) { if (p.optional) continue; fail("E_SCHEMA", [id], `${el.type} "${id}" needs "${p.name}"`, { path: `elements[${id}].${p.name}`, suggestion: p.list ? `Add "${p.name}": a list of points such as [{"x":0,"y":0}, "block.top"].` : `Add "${p.name}": a point such as {"x":0,"y":0} or "block.top".` }); }
         if (p.list) {
-          if (!Array.isArray(v) || v.length < 2) fail("E_SCHEMA", [id], `"${p.name}" of "${id}" must list at least two points`, { path: `elements[${id}].${p.name}` });
+          const min = p.min ?? 2;
+          if (!Array.isArray(v) || v.length < min) fail("E_SCHEMA", [id], `"${p.name}" of "${id}" must list at least ${min === 1 ? "one point" : `${min} points`}`, { path: `elements[${id}].${p.name}` });
           inst.points[p.name] = (v as PointRef[]).map((r, k) => resolvePoint(r, instances, ctx, [id], `elements[${id}].${p.name}[${k}]`));
         } else inst.points[p.name] = resolvePoint(v as PointRef, instances, ctx, [id], `elements[${id}].${p.name}`);
       }
