@@ -22,7 +22,11 @@
     "demo:workflow-c": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts workflow-c",
     "demo:workflow-d": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts workflow-d",
     "benchmark": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts benchmark",
-    "test:compat": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/core/test/compat/*.test.ts"
+    "test:compat": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/core/test/compat/*.test.ts",
+    "test:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/core/test/toolkit/*.test.ts",
+    "typecheck:toolkit": "node scripts/typecheck-toolkit.mjs",
+    "compose": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts compose",
+    "examples:toolkit": "node --experimental-strip-types --import ./scripts/_register.mjs examples/toolkit/render-toolkit.mjs"
   },
   "engines": { "node": ">=25" }
 }

@@ -118,7 +118,7 @@ export function checkToolkitStyle(svg: string, expect: { title?: string; caption
     if (n !== 0 && !(TOOLKIT_STROKE_WIDTHS as readonly number[]).includes(n)) add("stroke-width", `stroke-width ${m[1]} not in contract`);
   }
   for (const m of svg.matchAll(/ stroke-dasharray="([^"]*)"/g)) if (!(TOOLKIT_DASHES as readonly string[]).includes(m[1]!)) add("dash", `dash ${m[1]} not in contract`);
-  const texts = [...svg.matchAll(/<text ([^>]*)>([^<]*)<\/text>/g)].map(m => ({ a: attrs(m[1]!), t: m[2]! }));
+  const texts = [...svg.matchAll(/<text ([^>]*)>([^<]*)<\/text>/g)].map(m => ({ a: attrs(m[1]!), t: m[2]!.trim() }));
   for (const { a, t } of texts) {
     const size = Number(a["font-size"]);
     const isTitle = a["font-family"] === TOOLKIT_FONTS.title;
