@@ -8,11 +8,13 @@
 import type { Vec2 } from "../diagram/primitives.js";
 
 export type CollisionShape =
-  | { kind: "stroke"; points: Vec2[]; r: number; closed?: boolean; strict?: boolean }
+  | { kind: "stroke"; points: Vec2[]; r: number; closed?: boolean; strict?: boolean; soft?: boolean }
   | { kind: "area"; points: Vec2[]; strict?: boolean }
   | { kind: "disc"; c: Vec2; r: number; strict?: boolean };
 // `strict` marks shapes (a part's own text) that must stay clear even of
 // elements the part is allowed to touch (mayTouch or a part's `touches`).
+// `soft` marks low-priority reference strokes (plot grid lines): a label may
+// sit over them; compose then draws a white halo behind that label.
 
 export interface Box { x0: number; y0: number; x1: number; y1: number }
 

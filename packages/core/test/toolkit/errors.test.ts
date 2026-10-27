@@ -25,7 +25,8 @@ const CASES: [string, ComposeModel][] = [
   ["E_CIRCULAR", model([{ id: "a", type: "rect", w: 1, h: 1, place: { rightOf: "b" } }, { id: "b", type: "rect", w: 1, h: 1, place: { rightOf: "a" } }])],
   ["E_CONSTRAINT_VIOLATED", model([{ id: "box", type: "rect", w: 1, h: 1, at: { x: 0, y: 0 } }, { id: "c", type: "circle", r: 0.3, place: [{ at: { x: 3, y: 0 } }, { inside: "box" }] }])],
   ["E_CHECK_FAILED", model([pt("a")], { checks: [{ id: "c", type: "equal", left: "a.x", right: "1 m" }] })],
-  ["E_TEXT_UNSUPPORTED", model([{ ...pt("a"), label: "F_Q" }])],
+  // Capital subscripts render as real SVG scripts since Agent 3, so an unknown symbol is the rejected case.
+  ["E_TEXT_UNSUPPORTED", model([{ ...pt("a"), label: "\\foo_Q" }])],
   ["E_STYLE", model([{ id: "a", type: "segment", from: { x: 0, y: 0 }, to: { x: 1, y: 0 }, color: "hotpink" }])],
   ["E_ARROW_TOO_SHORT", model([{ id: "a", type: "arrow", from: { x: 0, y: 0 }, angle: 0, length: 0.1 }])],
   ["E_COLLISION", model([{ id: "a", type: "circle", r: 1, fill: "bodyFill", at: { x: 0, y: 0 } }, { id: "b", type: "circle", r: 1, fill: "bodyFill", at: { x: 1, y: 0 } }])],

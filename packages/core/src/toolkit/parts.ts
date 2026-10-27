@@ -11,7 +11,7 @@ import { ANGLE, DIMLESS, LENGTH, dimLabel, evalAngle, evalLength, evalNumber, ev
 import type { QDim, TkQuantity, ValueContext } from "./expr.js";
 import type { CollisionShape } from "./geometry.js";
 import { TOOLKIT_STROKE_WIDTHS, TOOLKIT_TEXT, resolvePaletteColor } from "./style.js";
-import { formatLabelText, labelVerticalExtent, measureLabelWidth } from "./text_metrics.js";
+import { formatLabelMarkup, labelVerticalExtent, labelVerticalExtentFor, measureLabelWidth } from "./text_metrics.js";
 import type { ElementSpec, LabelPosition, NumLike } from "./types.js";
 
 /** World-to-view mapping (equal scaling, +y up in world, y down in view). */
@@ -26,6 +26,8 @@ export interface PartContext extends ValueContext {
   view: ViewMap;
   /** SI quantity per world unit of arrow length, by quantity name. */
   scales: Map<string, { per: TkQuantity; text: string }>;
+  /** Canvas rectangle in world units (set by compose); routers keep paths inside it. */
+  canvas?: { x0: number; y0: number; x1: number; y1: number };
 }
 
 export interface PartInstance<P = any> {
@@ -99,6 +101,12 @@ export interface PartDefinition<P = any> {
   elementRefs?(spec: ElementSpec): string[];
   /** Runs once after the part's own origin and points are resolved; may read the referenced elements and update its props or `touches`. */
   link?(inst: PartInstance<P>, get: LinkLookup, ctx: PartContext): void;
+  /**
+   * Built-in contact rule (Agent 3): return a reason when this part may touch
+   * `other` without a model mayTouch (phasors sharing the polar origin, wires
+   * crossing without a junction), else undefined. Called once per pair.
+   */
+  contactWith?(inst: PartInstance<P>, other: PartInstance, ctx: PartContext): string | undefined;
 }
 
 const registry = new Map<string, PartDefinition>();
@@ -569,7 +577,7 @@ registerPart({
     if (typeof s.text !== "string" || s.text === "") fail("E_SCHEMA", [s.id], `Text "${s.id}" needs a non-empty "text"`, { path: propPath(s, "text") });
     const size = s.size === undefined ? TOOLKIT_TEXT.defaultLabelSize : s.size;
     if (!(TOOLKIT_TEXT.labelSizes as readonly unknown[]).includes(size)) fail("E_STYLE", [s.id], `Font size ${JSON.stringify(size)} on "${s.id}" is not in the style contract`, { path: propPath(s, "size"), suggestion: "Use 11, 12 or 13." });
-    const text = formatLabelText(s.text as string, [s.id]);
+    const text = formatLabelMarkup(s.text as string, [s.id]);
     return { text, size: size as number, color: colorProp(s, "color", "#333"), wPx: measureLabelWidth(text, size as number) };
   },
   anchorNames: ["center", "left", "right", "top", "bottom"],
@@ -608,7 +616,7 @@ export function textBox(x: number, baseline: number, text: string, size: number,
   const glyphW = measureLabelWidth(text, size);
   const bgW = (text.length || 1) * size * 0.62; // Scene2D backdrop heuristic
   const off = (w: number) => anchor === "middle" ? w / 2 : anchor === "end" ? w : 0;
-  const e = labelVerticalExtent(size);
+  const e = labelVerticalExtentFor(text, size);
   const gx0 = x - off(glyphW), bx0 = x - off(bgW) - 1;
   return {
     x0: Math.min(gx0, bx0), x1: Math.max(gx0 + glyphW, bx0 + bgW + 2),

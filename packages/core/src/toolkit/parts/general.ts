@@ -12,7 +12,7 @@ import {
   pickOf, polar, poly, polylineLen, propPath, ptsOf, px, rot, roundedRectPoints, shape, sizeProp, strokeWidthProp, sub, text, textProp, textPx, unit, v, vector,
 } from "./kit.js";
 import type { ElementSpec, Geo, PartContext, PartInstance, Prim, Vec2 } from "./kit.js";
-import { formatLabelText } from "../text_metrics.js";
+import { formatLabelMarkup } from "../text_metrics.js";
 
 const boxAnchors = (c: Vec2, w: number, h: number, a = 0): Record<string, Vec2> => {
   const f = (x: number, y: number) => add(c, rot(v(x * w / 2, y * h / 2), a));
@@ -95,7 +95,7 @@ definePart<TextBlockProps>({
     else if (typeof s.text === "string" && s.text !== "") raw = s.text.split("\n");
     else return fail("E_SCHEMA", [s.id], `textBlock "${s.id}" needs "text" or "lines"`, { path: propPath(s, "text") });
     if (raw.some(l => typeof l !== "string" || l === "")) fail("E_SCHEMA", [s.id], `Every line of "${s.id}" must be a non-empty string`, { path: propPath(s, "lines") });
-    return { lines: (raw as string[]).map(l => formatLabelText(l, [s.id])), size: sizeProp(s, "size"), color: colorProp(s, "color", "#333"), align: enumProp(s, "align", ["left", "center", "right"] as const, "center"), frame: boolProp(s, "frame"), padding: numProp(s, "padding", ctx, { default: 4, min: 0, max: 40 }), fill: colorProp(s, "fill", "#fff"), lineGap: 3 };
+    return { lines: (raw as string[]).map(l => formatLabelMarkup(l, [s.id])), size: sizeProp(s, "size"), color: colorProp(s, "color", "#333"), align: enumProp(s, "align", ["left", "center", "right"] as const, "center"), frame: boolProp(s, "frame"), padding: numProp(s, "padding", ctx, { default: 4, min: 0, max: 40 }), fill: colorProp(s, "fill", "#fff"), lineGap: 3 };
   },
   anchors: ["center", "top", "bottom", "left", "right", "topLeft", "topRight", "bottomLeft", "bottomRight", "line(i)"],
   anchorArgs: { line: "number" },
@@ -254,8 +254,11 @@ definePart<ConnProps>({
     const obstacleIds = [...new Set([...ends, ...p.avoid])].filter(id => get(id).inst.type !== "connector");
     const obstacles = obstacleIds.map(boxOfId);
     const others = p.avoid.map(id => get(id)).filter(o => o.inst.type === "connector").map(o => (o.inst.props as ConnProps).path ?? []);
-    const route = routeOrthogonal(a, dA, b, dB, obstacles, others, m, { a: idA ? obstacleIds.indexOf(idA) : -1, b: idB ? obstacleIds.indexOf(idB) : -1 });
-    if (!route) fail("E_CONTRADICTORY", [i.id, ...ends, ...p.avoid], `No orthogonal route for "${i.id}" clears the parts it must avoid`, { suggestion: "Move the parts apart, reduce \"margin\", give \"fromSide\"/\"toSide\", or give \"via\" corner points." });
+    // Keep the route (and its stroke) inside the canvas.
+    const inset = px(ctx, p.width / 2 + 1), cv = ctx.canvas;
+    const bounds = cv ? { x0: cv.x0 + inset, y0: cv.y0 + inset, x1: cv.x1 - inset, y1: cv.y1 - inset } : undefined;
+    const route = routeOrthogonal(a, dA, b, dB, obstacles, others, m, { a: idA ? obstacleIds.indexOf(idA) : -1, b: idB ? obstacleIds.indexOf(idB) : -1 }, bounds);
+    if (!route) fail("E_CONTRADICTORY", [i.id, ...ends, ...p.avoid], `No orthogonal route for "${i.id}" clears the parts it must avoid inside the canvas`, { suggestion: "Move the parts apart, reduce \"margin\", give \"fromSide\"/\"toSide\", enlarge the world bounds, or give \"via\" corner points." });
     p.path = route;
   },
   anchors: ["start", "end", "mid", "at(t)", "slot(t)", "bend(i)"],
@@ -288,7 +291,7 @@ function arrowPathEnds(pts: Vec2[], ctx: PartContext, color: string, w: number, 
  * of `a` along `dA` and ends with a stub into `b` against `dB`; `others` are
  * polylines whose crossings are penalised.
  */
-export function routeOrthogonal(a: Vec2, dA: Vec2, b: Vec2, dB: Vec2, boxes: { x0: number; y0: number; x1: number; y1: number }[], others: Vec2[][], m: number, own: { a?: number; b?: number } = {}): Vec2[] | undefined {
+export function routeOrthogonal(a: Vec2, dA: Vec2, b: Vec2, dB: Vec2, boxes: { x0: number; y0: number; x1: number; y1: number }[], others: Vec2[][], m: number, own: { a?: number; b?: number } = {}, bounds?: { x0: number; y0: number; x1: number; y1: number }): Vec2[] | undefined {
   const obstacles = boxes.map(o => ({ x0: o.x0 - m, y0: o.y0 - m, x1: o.x1 + m, y1: o.y1 + m }));
   // Each stub leaves the grown box of its own part (the box index in `own`, else any box
   // whose edge the point lies on); a point strictly inside another part cannot be routed.
@@ -305,6 +308,10 @@ export function routeOrthogonal(a: Vec2, dA: Vec2, b: Vec2, dB: Vec2, boxes: { x
   const sA = stub(a, dA, own.a), sB = stub(b, dB, own.b);
   const xs = new Set([sA.x, sB.x]), ys = new Set([sA.y, sB.y]);
   for (const o of obstacles) { xs.add(o.x0); xs.add(o.x1); ys.add(o.y0); ys.add(o.y1); }
+  // Canvas bounds (optional): grid lines at the edges, and no node outside them.
+  const outside = (p: Vec2) => !!bounds && (p.x < bounds.x0 - 1e-9 || p.x > bounds.x1 + 1e-9 || p.y < bounds.y0 - 1e-9 || p.y > bounds.y1 + 1e-9);
+  if (bounds) { xs.add(bounds.x0); xs.add(bounds.x1); ys.add(bounds.y0); ys.add(bounds.y1); }
+  if (outside(sA) || outside(sB)) return undefined;
   const sortU = (s: Set<number>) => { const arr = [...s].sort((p, q) => p - q); const out: number[] = []; for (const x of arr) { if (out.length && Math.abs(x - out[out.length - 1]!) < 1e-9) continue; out.push(x); } const mids = out.slice(1).map((x, k) => (x + out[k]!) / 2); return [...out, ...mids].sort((p, q) => p - q); };
   const X = sortU(xs), Y = sortU(ys);
   const inside = (p: Vec2) => obstacles.some(o => p.x > o.x0 + 1e-9 && p.x < o.x1 - 1e-9 && p.y > o.y0 + 1e-9 && p.y < o.y1 - 1e-9);
@@ -337,7 +344,7 @@ export function routeOrthogonal(a: Vec2, dA: Vec2, b: Vec2, dB: Vec2, boxes: { x
       const ni = i + dirs[nd]!.x, nj = j + dirs[nd]!.y;
       if (ni < 0 || nj < 0 || ni >= X.length || nj >= Y.length) continue;
       const p = v(X[i]!, Y[j]!), q = v(X[ni]!, Y[nj]!);
-      if (inside(q) || segBlocked(p, q)) continue;
+      if (inside(q) || outside(q) || segBlocked(p, q)) continue;
       const nk = key(ni, nj, nd), nc = c + dist(p, q) + crossPenalty * crossCount(p, q);
       if (nc < cost[nk]!) { cost[nk] = nc; prev[nk] = k; push(nc, nk); }
     }
@@ -544,7 +551,7 @@ definePart<LegendProps>({
     const entries = raw.map((e, k) => {
       if (!e || typeof e !== "object" || typeof e.text !== "string" || e.text === "") fail("E_SCHEMA", [s.id], `entries[${k}] of "${s.id}" needs "text"`, { path: `${propPath(s, "entries")}[${k}]` });
       const fake = { ...s, kind: e.kind, color: e.color, fill: e.fill } as ElementSpec;
-      return { text: formatLabelText(e.text as string, [s.id]), kind: enumProp(fake, "kind", ["line", "dashed", "arrow", "box", "dot", "circle"] as const, "line"), color: colorProp(fake, "color", "#222"), fill: colorProp(fake, "fill", "#cfe4ff") };
+      return { text: formatLabelMarkup(e.text as string, [s.id]), kind: enumProp(fake, "kind", ["line", "dashed", "arrow", "box", "dot", "circle"] as const, "line"), color: colorProp(fake, "color", "#222"), fill: colorProp(fake, "fill", "#cfe4ff") };
     });
     return { entries, size: sizeProp(s, "size", 11), frame: boolProp(s, "frame", true) };
   },
@@ -591,7 +598,7 @@ definePart<TableProps>({
   props: (s, ctx) => {
     const rows = listProp<unknown[]>(s, "rows", { min: 1, max: 40 });
     if (!rows.every(r => Array.isArray(r) && r.length === (rows[0] as unknown[]).length && r.length > 0)) fail("E_SCHEMA", [s.id], `Every row of "${s.id}" must be a list with the same number of cells`, { path: propPath(s, "rows") });
-    return { rows: rows.map(r => r.map(cell => formatLabelText(typeof cell === "number" ? String(cell) : typeof cell === "string" ? (cell === "" ? " " : cell) : fail("E_SCHEMA", [s.id], `Cells of "${s.id}" must be strings or numbers`, { path: propPath(s, "rows") }), [s.id]))), size: sizeProp(s, "size", 11), header: boolProp(s, "header", true), padding: numProp(s, "padding", ctx, { default: 5, min: 1, max: 30 }), align: enumProp(s, "align", ["left", "center"] as const, "center") };
+    return { rows: rows.map(r => r.map(cell => formatLabelMarkup(typeof cell === "number" ? String(cell) : typeof cell === "string" ? (cell === "" ? " " : cell) : fail("E_SCHEMA", [s.id], `Cells of "${s.id}" must be strings or numbers`, { path: propPath(s, "rows") }), [s.id]))), size: sizeProp(s, "size", 11), header: boolProp(s, "header", true), padding: numProp(s, "padding", ctx, { default: 5, min: 1, max: 30 }), align: enumProp(s, "align", ["left", "center"] as const, "center") };
   },
   anchors: ["center", "top", "bottom", "left", "right", "topLeft", "topRight", "bottomLeft", "bottomRight", "row(i)", "col(j)", "cell(k)"],
   anchorArgs: { row: "number", col: "number", cell: "number" },

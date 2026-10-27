@@ -1999,7 +1999,7 @@ Polar axes centred on the origin: radius r (world) for data radius rMax, `rings`
 
 ### `phasor`
 
-Phasor on polarAxes: an arrow of data length `magnitude` at `angle`, from the centre or from the tip of another phasor (`from`, for phasor sums; it may touch that phasor). Exposes magnitude, angle, re and im. Phasors sharing the centre touch there, so list each other in mayTouch.
+Phasor on polarAxes: an arrow of data length `magnitude` at `angle`, from the centre or from the tip of another phasor (`from`, for phasor sums; it may touch that phasor). Exposes magnitude, angle, re and im. Phasors that both start at the centre may touch there automatically (no mayTouch), as long as each tip stays clear of the other phasor.
 
 **Positioning:** by point references · **Aliases:** `polarVector`
 

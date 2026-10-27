@@ -63,6 +63,13 @@ export const TOOLKIT_TEXT = {
   edgeInset: 2,
 } as const;
 
+/**
+ * Real sub/superscripts (toolkit addition): a <tspan> with font-size =
+ * round(size x scale) and a dy shift (+0.3 em sub, -0.4 em sup), followed by a
+ * <tspan dy> that returns to the baseline. Template output never has tspans.
+ */
+export const TOOLKIT_SCRIPT = { scale: 0.75, subShiftEm: 0.3, supShiftEm: -0.4, maxShiftEm: 0.71 } as const;
+
 /** Arrow marker emitted by renderScene2D for every vector. */
 export const TOOLKIT_MARKER = {
   idPattern: /^arr-[0-9a-f]+-\d+$/,
@@ -118,9 +125,18 @@ export function checkToolkitStyle(svg: string, expect: { title?: string; caption
     if (n !== 0 && !(TOOLKIT_STROKE_WIDTHS as readonly number[]).includes(n)) add("stroke-width", `stroke-width ${m[1]} not in contract`);
   }
   for (const m of svg.matchAll(/ stroke-dasharray="([^"]*)"/g)) if (!(TOOLKIT_DASHES as readonly string[]).includes(m[1]!)) add("dash", `dash ${m[1]} not in contract`);
-  const texts = [...svg.matchAll(/<text ([^>]*)>([^<]*)<\/text>/g)].map(m => ({ a: attrs(m[1]!), t: m[2]!.trim() }));
-  for (const { a, t } of texts) {
+  // Text content may carry sub/superscript tspans (toolkit addition, see the contract's "Scripts").
+  const texts = [...svg.matchAll(/<text ([^>]*)>((?:[^<]|<tspan [^>]*>[^<]*<\/tspan>|<tspan>[^<]*<\/tspan>)*)<\/text>/g)].map(m => ({ a: attrs(m[1]!), t: m[2]!.replace(/<\/?tspan[^>]*>/g, "").trim(), spans: [...m[2]!.matchAll(/<tspan([^>]*)>/g)].map(x => attrs(x[1]!)) }));
+  if (texts.length !== (svg.match(/<text /g) ?? []).length) add("text", "every <text> must hold plain text or script tspans only");
+  for (const { a, t, spans } of texts) {
     const size = Number(a["font-size"]);
+    if (spans.length && a["font-family"] === TOOLKIT_FONTS.title) add("script", `title "${t}" may not contain tspans`);
+    for (const sp of spans) {
+      const keys = Object.keys(sp);
+      if (keys.some(k => k !== "font-size" && k !== "dy")) add("script", `tspan in "${t}" has attributes other than font-size and dy`);
+      if (sp["font-size"] !== undefined && Number(sp["font-size"]) !== Math.round(size * TOOLKIT_SCRIPT.scale)) add("script", `script font-size ${sp["font-size"]} in "${t}" must be round(${size} x ${TOOLKIT_SCRIPT.scale})`);
+      if (sp.dy !== undefined && !(Math.abs(Number(sp.dy)) <= size * TOOLKIT_SCRIPT.maxShiftEm)) add("script", `script shift ${sp.dy} in "${t}" exceeds ${TOOLKIT_SCRIPT.maxShiftEm} em`);
+    }
     const isTitle = a["font-family"] === TOOLKIT_FONTS.title;
     if (isTitle) {
       if (size !== TOOLKIT_TEXT.title.size || a["font-weight"] !== TOOLKIT_TEXT.title.weight || Number(a.y) !== TOOLKIT_TEXT.title.y || Number(a.x) !== w / 2 || a["text-anchor"] !== "middle") add("title", `title "${t}" must be ${TOOLKIT_TEXT.title.size}px/600, centred at y=16`);

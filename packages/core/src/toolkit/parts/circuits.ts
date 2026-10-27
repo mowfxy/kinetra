@@ -10,6 +10,7 @@
  */
 import { fail } from "../errors.js";
 import { DIMLESS } from "../expr.js";
+import { pointSegDist } from "../geometry.js";
 import type { ComponentKind } from "../../diagram/circuit_schematic.js";
 import {
   ABOVE_FIRST, AROUND, DEG, P, add, addSample, angleProp, arcSamples, between, boolProp, circle, colorProp, definePart, dist, dot, enumProp, fittedText,
@@ -257,6 +258,10 @@ definePart<WireProps>({
   positioning: "points", pointProps: [{ name: "points", list: true }], touchRefs: ["points"],
   propKeys: ["points", "orthogonal", "width"],
   props: s => ({ color: colorProp(s, "color", INK), width: strokeWidthProp(s, "width", WIRE), orthogonal: enumProp(s, "orthogonal", ["none", "hv", "vh"] as const, "none") }),
+  contactWith: (i, o, ctx) => {
+    if (o.type !== "wire" && o.type !== "conductor") return undefined;
+    return wiresCrossCleanly(wirePath(listOf(i, "points"), i.props.orthogonal).map(ctx.view.toView), wirePath((o.points.points as Vec2[]), (o.props as WireProps).orthogonal).map(ctx.view.toView), (i.props.width + (o.props as WireProps).width) / 2 + 0.5) ? "wires cross without connecting (no junction)" : undefined;
+  },
   anchors: ["start", "end", "vertex(k)", "at(t)"], anchorArgs: { vertex: "number", at: "number" },
   hooks: ["curve"],
   geometry: (i, ctx) => {
@@ -265,6 +270,30 @@ definePart<WireProps>({
     return { prims: [poly(pts, i.props.color, i.props.width)], curve: pts, anchors: { start: pts[0]!, end: pts[pts.length - 1]! }, argAnchors: { vertex: k => Number.isInteger(k) ? pts[k] : undefined, at }, label: { at: at(0.5)!, candidates: AROUND }, refs: { length: lengthQ(pts.slice(1).reduce((s, q, k) => s + dist(q, pts[k]!), 0), ctx) } };
   },
 });
+/**
+ * True when two wire paths (view px) come close only at clean crossings: each
+ * near pair of segments properly intersects at >= 30 degrees, at least 4 px
+ * from every vertex of both wires. A T (an end on the other wire), a shared
+ * corner or a collinear overlap is not a crossing and stays a collision.
+ */
+export function wiresCrossCleanly(a: Vec2[], b: Vec2[], near: number): boolean {
+  let crossings = 0;
+  const cr = (u: Vec2, w: Vec2) => u.x * w.y - u.y * w.x;
+  for (let s = 1; s < a.length; s++) for (let t = 1; t < b.length; t++) {
+    const p = a[s - 1]!, q = a[s]!, r = b[t - 1]!, e = b[t]!;
+    const close = Math.min(pointSegDist(p, r, e), pointSegDist(q, r, e), pointSegDist(r, p, q), pointSegDist(e, p, q));
+    const d1 = sub(q, p), d2 = sub(e, r), den = cr(d1, d2);
+    const tt = den === 0 ? NaN : cr(sub(r, p), d2) / den, uu = den === 0 ? NaN : cr(sub(r, p), d1) / den;
+    const hit = tt > 0 && tt < 1 && uu > 0 && uu < 1;
+    if (!hit && close >= near) continue;
+    if (!hit) return false;
+    const x = add(p, mul(d1, tt));
+    const sin = Math.abs(den) / (Math.hypot(d1.x, d1.y) * Math.hypot(d2.x, d2.y));
+    if (sin < Math.sin(30 * Math.PI / 180) || [...a, ...b].some(vx => dist(vx, x) < 4)) return false;
+    crossings++;
+  }
+  return crossings > 0;
+}
 export function wirePath(pts: Vec2[], mode: "none" | "hv" | "vh"): Vec2[] {
   if (mode === "none") return pts;
   const out: Vec2[] = [pts[0]!];

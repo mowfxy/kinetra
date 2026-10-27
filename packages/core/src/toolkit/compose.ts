@@ -14,7 +14,7 @@ import type { TkQuantity } from "./expr.js";
 import { containedIn } from "./geometry.js";
 import { elementScope, runChecks } from "./checks.js";
 import type { CheckResult } from "./checks.js";
-import { makeBody, runGate } from "./gate.js";
+import { makeBody, overSoft, runGate } from "./gate.js";
 import type { Body, GateResult } from "./gate.js";
 import { placeLabels } from "./labels.js";
 import type { LabelRequest } from "./labels.js";
@@ -23,7 +23,7 @@ import type { PartContext, ViewMap } from "./parts.js";
 import { resolveLayout } from "./resolver.js";
 import type { Resolved } from "./resolver.js";
 import { TOOLKIT_TEXT, checkToolkitStyle } from "./style.js";
-import { formatLabelText, measureTitleWidth } from "./text_metrics.js";
+import { formatLabelMarkup, measureTitleWidth, renderScriptTspans } from "./text_metrics.js";
 import type { ComposeModel, LabelPosition, LabelSpec } from "./types.js";
 
 export interface ComposeReport {
@@ -94,7 +94,8 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
     scales.set(name, { per, text: typeof spec.per === "number" ? String(spec.per) : spec.per.trim() });
     report.scales.push({ quantity: name, per: typeof spec.per === "number" ? String(spec.per) : spec.per, perSI: per.value, unit: dimLabel(per.dim) });
   }
-  const ctx: PartContext = { ...vctx, view, scales };
+  const tl = view.toWorld({ x: 0, y: 0 }), br = view.toWorld({ x: c.width, y: c.height });
+  const ctx: PartContext = { ...vctx, view, scales, canvas: { x0: tl.x, y0: br.y, x1: br.x, y1: tl.y } };
 
   // 1. Resolve geometry.
   report.stage = "resolve";
@@ -127,10 +128,20 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
   }
   if (caption) bodies.push(makeBody("caption", "caption", "caption", [{ kind: "area", points: textBoxPolygon(c.width / 2, c.height - TOOLKIT_TEXT.caption.bottomOffset, caption, TOOLKIT_TEXT.caption.size, "middle") }]));
   const allow = { mayTouch: new Map(res.order.map(id => [id, new Set([...(res.instances.get(id)!.spec.mayTouch ?? []), ...(res.instances.get(id)!.touches ?? [])])])) };
+  // Built-in contact rules of the parts themselves (no model mayTouch needed).
+  const builtIn = new Map<string, string>();
+  for (const [k, a] of res.order.entries()) for (const b of res.order.slice(k + 1)) {
+    const ia = res.instances.get(a)!, ib = res.instances.get(b)!;
+    const why = res.defs.get(a)!.contactWith?.(ia, ib, ctx) ?? res.defs.get(b)!.contactWith?.(ib, ia, ctx);
+    if (!why) continue;
+    allow.mayTouch.get(a)!.add(b); allow.mayTouch.get(b)!.add(a);
+    builtIn.set(`${a} ${b}`, why); builtIn.set(`${b} ${a}`, why);
+  }
+  const named = (cs: GateResult["contacts"]) => cs.map(x => x.reason === "mayTouch" && builtIn.has(`${x.a} ${x.b}`) ? { ...x, reason: builtIn.get(`${x.a} ${x.b}`)! } : x);
   // Geometry must be clean before labels are placed, so the root cause is reported.
   report.stage = "gate";
   const fixedGate = runGate(bodies, c.width, c.height, allow);
-  if (fixedGate.issues.length) { report.gate = fixedGate.stats; report.contacts = fixedGate.contacts; return { ok: false, errors: fixedGate.issues, report }; }
+  if (fixedGate.issues.length) { report.gate = fixedGate.stats; report.contacts = named(fixedGate.contacts); return { ok: false, errors: fixedGate.issues, report }; }
 
   // 4. Labels.
   report.stage = "labels";
@@ -157,7 +168,7 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
     if (spec.position !== undefined && !valid(spec.position)) fail("E_SCHEMA", [id], `label position ${JSON.stringify(spec.position)} of "${id}" is not a position`, { path: `elements[${id}].label.position`, suggestion: "Positions: right, above-right, above, above-left, left, below-left, below, below-right, center." });
     if (spec.candidates !== undefined && (!Array.isArray(spec.candidates) || !spec.candidates.every(valid))) fail("E_SCHEMA", [id], `label candidates of "${id}" must be a list of positions`, { path: `elements[${id}].label.candidates` });
     const candidates = (spec.candidates ?? base.candidates).filter(p => p !== "center" || (outline && atCenter));
-    requests.push({ owner: id, text: formatLabelText(spec.text, [id]), size, color, priority: spec.priority ?? 0, order, candidates, pinned: spec.position, leader: spec.leader !== false, anchor, extent, outline: atCenter ? outline : undefined });
+    requests.push({ owner: id, text: formatLabelMarkup(spec.text, [id]), size, color, priority: spec.priority ?? 0, order, candidates, pinned: spec.position, leader: spec.leader !== false, anchor, extent, outline: atCenter ? outline : undefined });
   }
   const { placed, issues: labelIssues } = placeLabels(requests, bodies, c.width, c.height, allow);
   report.labels = placed.map(p => ({ owner: p.request.owner, text: p.request.text, position: p.position, box: p.body.box, ...(p.leader ? { leader: { from: p.leader.from, to: p.leader.to } } : {}) }));
@@ -168,7 +179,7 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
   const all = [...bodies, ...placed.flatMap(p => p.leader ? [p.body, p.leader.body] : [p.body])];
   const gate = runGate(all, c.width, c.height, allow);
   report.gate = gate.stats;
-  report.contacts = gate.contacts;
+  report.contacts = named(gate.contacts);
   if (gate.issues.length) return { ok: false, errors: gate.issues, report };
 
   // 6. Render through the template pipeline.
@@ -176,8 +187,13 @@ function composeInner(model: ComposeModel, report: ComposeReport): ComposeResult
   scene.caption = caption;
   for (const id of res.order) for (const sh of res.defs.get(id)!.draw(res.instances.get(id)!, ctx)) addShape(scene, sh);
   for (const p of placed) if (p.leader) addShape(scene, { kind: "segment", from: view.toWorld(p.leader.from), to: view.toWorld(p.leader.to), color: LEADER_COLOR, width: LEADER_WIDTH });
+  // A label over grid lines gets a white halo covering its whole collision box (glyphs and backdrop).
+  for (const p of placed) if (bodies.some(b => b.kind === "element" && overSoft(p.body, b))) {
+    const bx = p.body.box, lo = view.toWorld({ x: bx.x0, y: bx.y1 }), hi = view.toWorld({ x: bx.x1, y: bx.y0 });
+    addShape(scene, { kind: "rect", origin: lo, size: { w: hi.x - lo.x, h: hi.y - lo.y }, fill: "#fff", stroke: "none" });
+  }
   for (const p of placed) addShape(scene, { kind: "label", at: view.toWorld(p.baseline), text: p.request.text, color: p.request.color, size: p.request.size, anchor: "start" });
-  const svg = renderScene2D(scene);
+  const svg = renderScriptTspans(renderScene2D(scene));
   const style = checkToolkitStyle(svg, { title: model.title, caption });
   if (style.length) fail("E_STYLE", [], `Rendered SVG violates the style contract: ${style.map(v => v.detail).join("; ")}`, { measured: { violations: style } });
   report.stage = "done";

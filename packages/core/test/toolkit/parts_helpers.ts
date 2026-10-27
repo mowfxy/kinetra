@@ -48,7 +48,11 @@ export function svgOracle(svg: string, width: number, height: number): string[] 
     if (a.x0 < b.x1 && b.x0 < a.x1 && a.y0 < b.y1 && b.y0 < a.y1) problems.push(`label backdrops overlap ${JSON.stringify([a, b])}`);
   }
   const lines = [...svg.matchAll(/<line ([^>]*)\/>/g)].map(m => attrs(m[1]!)).filter(a => !(a.stroke === "#777" && a["stroke-width"] === "0.8"));
+  // Grid lines (#eee) may pass under a label only when a white halo rect covers that label's backdrop.
+  const halos: Rect[] = [...svg.matchAll(/<rect ([^>]*fill="#fff" stroke="none"[^>]*)\/>/g)].map(m => { const a = attrs(m[1]!); return { x0: +a.x!, y0: +a.y!, x1: +a.x! + +a.width!, y1: +a.y! + +a.height! }; });
+  const haloed = (b: Rect) => halos.some(h => h.x0 <= b.x0 + 0.02 && h.y0 <= b.y0 + 0.02 && h.x1 >= b.x1 - 0.02 && h.y1 >= b.y1 - 0.02);
   for (const l of lines) for (const b of backdrops) {
+    if (l.stroke === "#eee" && haloed(b)) continue;
     const d = segRectDist({ x: +l.x1!, y: +l.y1! }, { x: +l.x2!, y: +l.y2! }, b);
     if (d < +l["stroke-width"]! / 2) problems.push(`line crosses a label backdrop (${d.toFixed(2)} px)`);
   }

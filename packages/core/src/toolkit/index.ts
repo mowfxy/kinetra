@@ -16,5 +16,6 @@ export { registerPart, getPart as getToolkitPart, listParts as listToolkitParts,
 export type { PartDefinition, PartInstance, PartContext, ViewMap, ArrowQuantity, LinkLookup } from "./parts.js";
 export type { CollisionShape } from "./geometry.js";
 export { formatLabelText, measureLabelWidth } from "./text_metrics.js";
+export { formatLabelMarkup, plainLabelText, renderScriptTspans as toolkitRenderScriptTspans } from "./text_metrics.js";
 export * from "./style.js";
 export type { ComposeModel, ElementSpec, Relation, LabelSpec, LabelPosition, CheckSpec, PointRef, NumLike, ScaleSpec, Side } from "./types.js";

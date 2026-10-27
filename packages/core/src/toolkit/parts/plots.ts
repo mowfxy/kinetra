@@ -12,7 +12,8 @@
 import { fail } from "../errors.js";
 import { ANGLE, DIMLESS, evalQuantity, mapScope, qdimEqual, dimLabel } from "../expr.js";
 import type { PartDefinition } from "../parts.js";
-import { formatLabelText } from "../text_metrics.js";
+import { pointSegDist } from "../geometry.js";
+import { formatLabelMarkup, formatLabelText } from "../text_metrics.js";
 import type { NumLike } from "../types.js";
 import {
   ABOVE_FIRST, AROUND, DEG, P, add, addSample, angleOf, arc, arcSamples, between, boolProp, circle, colorProp, definePart, dist, dot, enumProp, head,
@@ -85,7 +86,7 @@ function axisProp(s: ElementSpec, key: string, ctx: PartContext, required: boole
   const label = o.label === undefined ? undefined : typeof o.label === "string" && o.label !== "" ? o.label : fail("E_SCHEMA", [s.id], `${key}.label of "${s.id}" must be a non-empty string`, { path: `${propPath(s, key)}.label` });
   const unitS = o.unit === undefined ? undefined : String(o.unit);
   const minor = scale === "log" && o.minor === true ? autoTicks(min, max, "log").flatMap(d => [2, 3, 4, 5, 6, 7, 8, 9].map(m => d * m)).filter(t => t > min && t < max) : [];
-  return { min, max, scale, ticks, label: label === undefined ? undefined : formatLabelText(unitS ? `${label} (${unitS})` : label, [s.id]), grid: o.grid === true, decimals: o.decimals === undefined ? undefined : numProp(fake, `${key}_decimals`, ctx, { min: 0, max: 8, integer: true }), minor };
+  return { min, max, scale, ticks, label: label === undefined ? undefined : formatLabelMarkup(unitS ? `${label} (${unitS})` : label, [s.id]), grid: o.grid === true, decimals: o.decimals === undefined ? undefined : numProp(fake, `${key}_decimals`, ctx, { min: 0, max: 8, integer: true }), minor };
 }
 
 /** Data -> world mapping of an axes instance. */
@@ -559,7 +560,7 @@ definePart<PolarProps>({
 interface PhasorProps { axes: string; magnitude: number; angle: number; color: string; dashed: boolean; polar?: PolarMap; tail?: Vec2; tip?: Vec2; from?: string }
 definePart<PhasorProps>({
   type: "phasor", aliases: ["polarVector"], category: "plots",
-  description: "Phasor on polarAxes: an arrow of data length `magnitude` at `angle`, from the centre or from the tip of another phasor (`from`, for phasor sums; it may touch that phasor). Exposes magnitude, angle, re and im. Phasors sharing the centre touch there, so list each other in mayTouch.",
+  description: "Phasor on polarAxes: an arrow of data length `magnitude` at `angle`, from the centre or from the tip of another phasor (`from`, for phasor sums; it may touch that phasor). Exposes magnitude, angle, re and im. Phasors that both start at the centre may touch there automatically (no mayTouch), as long as each tip stays clear of the other phasor.",
   options: { axes: "polarAxes id", magnitude: "data radius units", angle: "degrees", from: "phasor id to start at its tip", color: "palette colour (default force)", dashed: "boolean" },
   positioning: "points", pointProps: [],
   propKeys: ["axes", "magnitude", "angle", "from", "dashed"],
@@ -575,6 +576,15 @@ definePart<PhasorProps>({
     p.tail = tail; p.tip = add(tail, mul(v(Math.cos(p.angle), Math.sin(p.angle)), pm.R * p.magnitude / pm.rMax));
     i.touches = [...new Set([...(i.touches ?? []), p.axes])];
     i.origin = tail;
+  },
+  contactWith: (i, o, ctx) => {
+    if (o.type !== "phasor" && o.type !== "polarVector") return undefined;
+    const p = i.props, q = o.props as PhasorProps;
+    if (p.from || q.from || p.axes !== q.axes || dist(p.tail!, q.tail!) > 1e-9) return undefined;
+    // Only the shared tail may touch: each tip (and its head) must clear the other shaft.
+    const V = ctx.view.toView, segD = (x: Vec2, a: Vec2, b: Vec2) => pointSegDist(V(x), V(a), V(b));
+    if (segD(p.tip!, q.tail!, q.tip!) < 6 || segD(q.tip!, p.tail!, p.tip!) < 6 || dist(V(p.tip!), V(q.tip!)) < 8) return undefined;
+    return "phasors share the polar origin";
   },
   anchors: ["tail", "tip", "mid"],
   geometry: (i, ctx) => {

@@ -15,7 +15,7 @@ import { pointInPolygon, pointPolylineDist } from "../geometry.js";
 import { ARROW_HEAD, angleProp, textBox, boolProp, colorProp, lengthProp, propPath, registerPart, strokeWidthProp, textBaselineOffset, textBoxPolygon } from "../parts.js";
 import type { ArrowQuantity, LinkLookup, PartContext, PartDefinition, PartInstance } from "../parts.js";
 import { TOOLKIT_TEXT } from "../style.js";
-import { formatLabelText } from "../text_metrics.js";
+import { formatLabelMarkup } from "../text_metrics.js";
 import type { ElementSpec, LabelPosition, NumLike } from "../types.js";
 
 // --- vectors -------------------------------------------------------------------
@@ -115,6 +115,10 @@ export function drawPrims(prims: Prim[], ctx: PartContext): Scene2DShape[] {
   return out;
 }
 
+/** Grid-colour strokes (#eee) are low priority: labels may sit over them behind a halo. */
+export const GRID_COLOR = "#eee";
+const soft = (color: string): { soft?: true } => color === GRID_COLOR ? { soft: true } : {};
+
 export function collidePrims(prims: Prim[], ctx: PartContext): CollisionShape[] {
   const out: CollisionShape[] = [];
   const V = (p: Vec2) => ctx.view.toView(p);
@@ -124,16 +128,16 @@ export function collidePrims(prims: Prim[], ctx: PartContext): CollisionShape[] 
   };
   for (const p of prims) {
     switch (p.k) {
-      case "line": out.push({ kind: "stroke", points: [V(p.a), V(p.b)], r: p.w / 2 }); break;
-      case "poly": out.push({ kind: "stroke", points: p.pts.map(V), r: p.w / 2, closed: !!p.closed }); break;
+      case "line": out.push({ kind: "stroke", points: [V(p.a), V(p.b)], r: p.w / 2, ...soft(p.color) }); break;
+      case "poly": out.push({ kind: "stroke", points: p.pts.map(V), r: p.w / 2, closed: !!p.closed, ...soft(p.color) }); break;
       case "shape": closed(p.pts.map(V), p.fill, p.stroke); break;
       case "circle": {
         const c = V(p.c), r = p.r * ctx.view.scale;
         if (p.fill !== "none") out.push({ kind: "disc", c, r: r + (p.stroke !== "none" ? 0.5 : 0) });
-        else out.push({ kind: "stroke", points: circlePoly(c, r, 96), r: 0.5 + r * (1 - Math.cos(Math.PI / 96)), closed: true });
+        else out.push({ kind: "stroke", points: circlePoly(c, r, 96), r: 0.5 + r * (1 - Math.cos(Math.PI / 96)), closed: true, ...soft(p.stroke) });
         break;
       }
-      case "arc": out.push({ kind: "stroke", points: arcSamples(p.c, p.r, p.from, p.to).map(V), r: p.w / 2 }); break;
+      case "arc": out.push({ kind: "stroke", points: arcSamples(p.c, p.r, p.from, p.to).map(V), r: p.w / 2, ...soft(p.color) }); break;
       case "text": { const c = V(p.at); out.push({ kind: "area", points: textBoxPolygon(c.x, c.y + textBaselineOffset(p.size), p.text, p.size, p.anchor ?? "middle"), strict: true }); break; }
       case "vector": {
         const a = V(p.a), b = V(p.b), l = dist(a, b);
@@ -215,6 +219,8 @@ export interface KitDef<P> {
   gate?(inst: PartInstance<P>, ctx: PartContext, geo: Geo): void;
   elementRefs?(spec: ElementSpec): string[];
   link?(inst: PartInstance<P>, get: LinkLookup, ctx: PartContext): void;
+  /** Built-in contact rule; see PartDefinition.contactWith. */
+  contactWith?(inst: PartInstance<P>, other: PartInstance, ctx: PartContext): string | undefined;
   /** Point props whose referenced elements this part may touch (e.g. a leader's target). */
   touchRefs?: string[];
   /** Placed parts that sit on what they are attached to (supports, pivots, hinges): may touch the elements named by their `at`/`attach` relations. */
@@ -277,6 +283,7 @@ export function definePart<P extends object>(d: KitDef<P>): PartDefinition<P> {
   if (d.hooks?.includes("curve")) { def.curve = (inst, ctx) => geoOf(d, inst, ctx).curve ?? []; def.curveResidual = (inst, p) => geoOf(d, inst).residual?.(p); }
   if (d.quantity) def.quantity = inst => d.quantity!(inst, ctxOf(inst));
   if (d.elementRefs) def.elementRefs = d.elementRefs;
+  if (d.contactWith) def.contactWith = d.contactWith;
   if (d.link || d.touchRefs || d.touchPlacement) def.link = (inst, get, ctx) => {
     if (d.touchPlacement) {
       const rels = [inst.spec.at === undefined ? [] : [{ at: inst.spec.at }], inst.spec.place === undefined ? [] : Array.isArray(inst.spec.place) ? inst.spec.place : [inst.spec.place]].flat() as Record<string, unknown>[];
@@ -371,9 +378,9 @@ export function enumProp<T extends string>(spec: ElementSpec, key: string, value
 
 export function textProp(spec: ElementSpec, key: string, def?: string): string | undefined {
   const val = spec[key];
-  if (val === undefined) return def === undefined ? undefined : formatLabelText(def, [spec.id]);
+  if (val === undefined) return def === undefined ? undefined : formatLabelMarkup(def, [spec.id]);
   if (typeof val !== "string" || val === "") fail("E_SCHEMA", [spec.id], `"${key}" of "${spec.id}" must be a non-empty string`, { path: propPath(spec, key) });
-  return formatLabelText(val, [spec.id]);
+  return formatLabelMarkup(val, [spec.id]);
 }
 
 export function sizeProp(spec: ElementSpec, key = "textSize", def: number = TOOLKIT_TEXT.defaultLabelSize): number {

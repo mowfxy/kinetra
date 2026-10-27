@@ -74,7 +74,8 @@ const CASES: [string, ComposeModel, keyof typeof TOOLKIT_ERROR_CODES, string, Re
   ["rope around a missing pulley", model([{ id: "r", type: "rope", route: [{ x: -2, y: 0 }, { around: "ghost" }, { x: 2, y: 0 }] }]), "E_UNKNOWN_REF", "r"],
   ["off-palette colour in a legend", model([{ id: "l", type: "legend", at: O, entries: [{ text: "a", color: "pink" }] }]), "E_STYLE", "l", /palette/],
   ["text size off the contract", model([{ id: "b", type: "roundedBox", at: O, w: 2, h: 1, text: "A", textSize: 14 }]), "E_STYLE", "b"],
-  ["capital subscript in part text", model([{ id: "b", type: "roundedBox", at: O, w: 2, h: 1, text: "F_N" }]), "E_TEXT_UNSUPPORTED", "b"],
+  ["unknown symbol in part text", model([{ id: "b", type: "roundedBox", at: O, w: 2, h: 1, text: "\\foo_N" }]), "E_TEXT_UNSUPPORTED", "b"],
+  ["non-Latin script in part text", model([{ id: "b", type: "roundedBox", at: O, w: 2, h: 1, text: "F_{→}" }]), "E_TEXT_UNSUPPORTED", "b"],
   // gate
   ["an allowed contact through text", model([{ ...AX, x: { min: -2, max: 2, ticks: [-2, -1, 1, 2] }, y: { min: -2, max: 2, ticks: [-2, 2] }, frame: "cross" }, { id: "s", type: "series", axes: "ax", fn: "x - 1.15" }]), "E_COLLISION", "s", /text/],
   ["two parts overlapping", model([{ id: "a", type: "pulley", at: O, r: 1 }, { id: "b", type: "gear", at: { x: 0.5, y: 0 }, r: 1 }]), "E_COLLISION", "b"],

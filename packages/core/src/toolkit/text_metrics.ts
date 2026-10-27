@@ -57,6 +57,8 @@ export function formatLabelText(src: string, owner: string[] = []): string {
 }
 
 export function charWidth(ch: string): number {
+  const script = scriptOf(ch);
+  if (script) return charWidth(script.ch) * SCRIPT_MEASURE;
   const w = ASCII[ch] ?? EXTRA[ch];
   if (w !== undefined) return w;
   if (SUB.includes(ch) || SUP.includes(ch)) return SCRIPT_WIDTH;
@@ -68,6 +70,104 @@ export function measureLabelWidth(text: string, size: number): number {
   let w = 0;
   for (const ch of text) w += charWidth(ch);
   return w * size / 1000;
+}
+
+// --- real sub- and superscripts (Agent 3) ------------------------------------------------
+//
+// formatLabelMarkup() keeps `_x` / `^x` runs as real SVG scripts instead of
+// Unicode glyphs, so capital and multi-letter scripts work (F_N, V_{CC}, R_L).
+// Until rendering, a script character is carried as one private-use code
+// point (sub: U+E000 + c, sup: U+E400 + c, for c < U+0400), so the string keeps
+// one code unit per visible glyph: Scene2D's backdrop (length based) and the
+// toolkit's measurement both see the right count. renderScriptTspans() turns
+// the runs into <tspan font-size dy> after renderScene2D.
+
+const SUB_BASE = 0xe000, SUP_BASE = 0xe400, SCRIPT_RANGE = 0x400;
+/** Script glyphs are set at 0.75 em (rounded to whole px) and shifted from the baseline. */
+export const SCRIPT_SCALE = 0.75;
+export const scriptFontSize = (size: number) => Math.round(size * SCRIPT_SCALE);
+/** Width factor for measuring script glyphs: an upper bound of scriptFontSize(size) / size for sizes 11-13. */
+const SCRIPT_MEASURE = 0.77;
+/** Baseline shift (px, SVG y down): subscripts +0.3 em, superscripts -0.4 em, one decimal. */
+export const scriptShift = (size: number, kind: "sub" | "sup") => Math.round(size * (kind === "sub" ? 3 : -4)) / 10;
+
+export function scriptOf(ch: string): { kind: "sub" | "sup"; ch: string } | undefined {
+  const c = ch.codePointAt(0)!;
+  if (c >= SUB_BASE && c < SUB_BASE + SCRIPT_RANGE) return { kind: "sub", ch: String.fromCodePoint(c - SUB_BASE) };
+  if (c >= SUP_BASE && c < SUP_BASE + SCRIPT_RANGE) return { kind: "sup", ch: String.fromCodePoint(c - SUP_BASE) };
+  return undefined;
+}
+
+/**
+ * Convert label markup for rendering with real SVG scripts. Like
+ * formatLabelText, but any character below U+0400 (Latin, digits, Greek,
+ * punctuation) may be a sub- or superscript, capitals included.
+ */
+export function formatLabelMarkup(src: string, owner: string[] = []): string {
+  const s = src.replace(/\\([A-Za-z]+)/g, (m, name: string) => GREEK[name] ?? m);
+  if (/\\[A-Za-z]/.test(s)) {
+    const bad = s.match(/\\[A-Za-z]+/)![0];
+    fail("E_TEXT_UNSUPPORTED", owner, `Unknown symbol ${bad} in label "${src}"`, { suggestion: `Use one of ${Object.keys(GREEK).slice(0, 12).map(k => "\\" + k).join(", ")}, ... or type the Unicode character.` });
+  }
+  return s.replace(/([_^])(\{([^}]*)\}|(.))/gu, (_m, kind: string, _g, group: string | undefined, single: string | undefined) => {
+    const body = group ?? single ?? "";
+    const bad = [...body].filter(c => c.codePointAt(0)! >= SCRIPT_RANGE || scriptOf(c));
+    if (bad.length || body === "") fail("E_TEXT_UNSUPPORTED", owner, body === "" ? `Empty ${kind === "_" ? "subscript" : "superscript"} in label "${src}"` : `"${bad.join("")}" cannot be a ${kind === "_" ? "subscript" : "superscript"} in label "${src}"`, { suggestion: "Scripts take Latin letters, digits, Greek and punctuation; write other symbols inline." });
+    const base = kind === "_" ? SUB_BASE : SUP_BASE;
+    return [...body].map(c => String.fromCodePoint(base + c.codePointAt(0)!)).join("");
+  });
+}
+
+/** Visible text of a formatted label (scripts as their plain characters). */
+export function plainLabelText(text: string): string {
+  return [...text].map(c => scriptOf(c)?.ch ?? c).join("");
+}
+
+/** Vertical extent around the baseline (px) of formatted text, scripts included. */
+export function labelVerticalExtentFor(text: string, size: number): { above: number; below: number } {
+  const e = labelVerticalExtent(size), ss = scriptFontSize(size);
+  let { above, below } = e;
+  for (const ch of text) {
+    const k = scriptOf(ch)?.kind;
+    if (k === "sub") below = Math.max(below, scriptShift(size, "sub") + ss * 0.22);
+    if (k === "sup") above = Math.max(above, -scriptShift(size, "sup") + ss * 0.92);
+  }
+  return { above, below };
+}
+
+const escapeXml = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+/**
+ * Rewrite every <text> whose content carries script code points into tspans:
+ * `F<tspan font-size="9" dy="3.6">N</tspan>`, with a reset `dy` on the base
+ * text that follows. Text without scripts is returned byte-for-byte.
+ */
+export function renderScriptTspans(svg: string): string {
+  return svg.replace(/<text ([^>]*)>([^<]*)<\/text>/g, (whole, attrs: string, content: string) => {
+    if (![...content].some(c => scriptOf(c))) return whole;
+    const size = Number(/font-size="([^"]*)"/.exec(attrs)?.[1] ?? 12);
+    let out = "", shift = 0, run = "", mode: "base" | "sub" | "sup" = "base";
+    const flush = () => {
+      if (!run) return;
+      const target = mode === "base" ? 0 : scriptShift(size, mode);
+      const dy = Math.round((target - shift) * 10) / 10;
+      if (mode === "base" && dy === 0) out += escapeXml(run);
+      else out += `<tspan${mode === "base" ? "" : ` font-size="${scriptFontSize(size)}"`}${dy !== 0 ? ` dy="${dy}"` : ""}>${escapeXml(run)}</tspan>`;
+      shift = target; run = "";
+    };
+    // Content is already escaped by Scene2D; decode entities before re-escaping runs.
+    // Keep Scene2D's surrounding whitespace outside the tspans.
+    const [, lead, body, trail] = /^(\s*)([\s\S]*?)(\s*)$/.exec(content)!;
+    const raw = body!.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, "\"").replace(/&amp;/g, "&");
+    for (const ch of raw) {
+      const sc = scriptOf(ch);
+      const m = sc ? sc.kind : "base";
+      if (m !== mode) { flush(); mode = m; }
+      run += sc ? sc.ch : ch;
+    }
+    flush();
+    return `<text ${attrs}>${lead}${out}${trail}</text>`;
+  });
 }
 
 /** Vertical extent around the baseline (px): Arial ascent incl. accents, descent. */

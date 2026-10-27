@@ -66,10 +66,18 @@ test("circuits: a junction is accepted only at a real node of three or more wire
   err(model([w("a", [{ x: -2, y: 0 }, { x: 2, y: 0 }]), w("b", [o, { x: 0, y: -2 }])]), "E_COLLISION");
 });
 
-test("circuits: crossing wires without a junction are not connected and need mayTouch", () => {
+test("circuits: crossing wires without a junction are not connected and are allowed by the wire part itself", () => {
+  // Agent 3: a clean crossing no longer needs mayTouch; the contact is reported with its reason.
   const els: ElementSpec[] = [{ id: "a", type: "wire", points: [{ x: -2, y: 0 }, { x: 2, y: 0 }] }, { id: "b", type: "wire", points: [{ x: 0, y: 2 }, { x: 0, y: -2 }] }];
-  err(model(els), "E_COLLISION");
+  const r = ok(model(els));
+  assert.ok(r.report.contacts.some(c => c.reason === "wires cross without connecting (no junction)"));
+  assert.ok(!r.svg.includes("<circle"), "no junction dot is drawn at a crossing");
   ok(model([{ ...els[0]!, mayTouch: ["b"] }, els[1]!]));
+  // Not crossings: a T without a junction, a shared corner, a collinear overlap, a crossing next to a corner.
+  err(model([els[0]!, { id: "b", type: "wire", points: [{ x: 0, y: 0 }, { x: 0, y: -2 }] }]), "E_COLLISION");
+  err(model([{ id: "a", type: "wire", points: [{ x: -2, y: 0 }, { x: 0, y: 0 }, { x: 0, y: 2 }] }, { id: "b", type: "wire", points: [{ x: 0, y: 0 }, { x: 2, y: 0 }] }]), "E_COLLISION");
+  err(model([els[0]!, { id: "b", type: "wire", points: [{ x: -1, y: 0 }, { x: 1, y: 0 }] }]), "E_COLLISION");
+  err(model([els[0]!, { id: "b", type: "wire", points: [{ x: 0.02, y: 2 }, { x: 0.02, y: 0.02 }, { x: 1, y: -1 }] }]), "E_COLLISION");
 });
 
 test("circuits: wires attached to pins may touch their components; the op-amp and transistors expose role pins", () => {
