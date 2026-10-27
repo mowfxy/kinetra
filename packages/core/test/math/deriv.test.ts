@@ -35,17 +35,31 @@ test("deriv: other variables are held constant", () => {
 });
 
 test("deriv: derivatives nest and compose with arithmetic", () => {
-  close(at("d/dx(d/dx(x^3))", { x: 2 }), 12);
+  close(at("d/dx(d/dx(x^3))", { x: 1 }), 6);
+  close(at("d/dy(d/dx(x^2*y^3))", { x: 2, y: 1 }), 12);
   close(at("1 + d/dx(x^2)", { x: 5 }), 11);
   const order2: Expr = { type: "deriv", var: "x", body: parseExpr("x^4"), order: 2 };
   close(evaluate(order2, { vars: { x: 2 } }), 48);
 });
 
-// derivative() expands f^g with ln(f), so powers of x are only finite for x > 0.
+test("deriv: constant powers use the power rule and stay finite for x <= 0", () => {
+  close(at("d/dx(x^2)", { x: -1 }), -2);
+  close(at("d/dx(x^2)", { x: 0 }), 0);
+  close(at("d/dx(x^3)", { x: -2 }), 12);
+  close(at("d/dx(x^1)", { x: 0 }), 1);
+  close(at("d/dx(x^0)", { x: 0 }), 0);
+  close(at("d/dx((1 + x^2)^3)", { x: -1 }), -24);
+  close(at("d/dx(x^n)", { x: -2, n: 3 }), 12);
+  close(at("d/dx(d/dx(x^4))", { x: -1 }), 12);
+  // Variable exponent keeps the general rule: d/dx 2^x = 2^x ln 2.
+  close(at("d/dx(2^x)", { x: 3 }), 8 * Math.LN2);
+  close(at("d/dx(x^x)", { x: 2 }), 4 * (Math.LN2 + 1));
+});
+
 test("deriv: d/dx agrees with a central difference across a domain", () => {
   const f = parseExpr("sin(x)*x^2");
   const h = 1e-5;
-  for (const { x, y } of sample1d(parseExpr("d/dx(sin(x)*x^2)"), "x", 0.25, 3, 12)) {
+  for (const { x, y } of sample1d(parseExpr("d/dx(sin(x)*x^2)"), "x", -3, 3, 13)) {
     const fd = (evaluate(f, { vars: { x: x + h } }) - evaluate(f, { vars: { x: x - h } })) / (2 * h);
     close(y, fd, 1e-6);
   }
