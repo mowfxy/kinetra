@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380">
+
+<rect x="0" y="0" width="640" height="380" fill="#fff"/>
+<g>
+<text x="320" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Half adder
+</text>
+<path d="M 323.2 158.4 L 412.80000000000007 158.4 L 412.80000000000007 81.60000000000002 L 323.2 81.60000000000002 Z" fill="#fff" stroke="none" stroke-width="1"/>
+<line x1="323.2" y1="158.4" x2="412.80000000000007" y2="158.4" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="412.80000000000007" y1="158.4" x2="412.80000000000007" y2="81.60000000000002" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="412.80000000000007" y1="81.60000000000002" x2="323.2" y2="81.60000000000002" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="323.2" y1="81.60000000000002" x2="323.2" y2="158.4" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="358.94" y="113.00000000000001" width="18.12" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="368" y="124.55000000000001" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+=1
+</text>
+<line x1="307.20000000000005" y1="107.19999999999999" x2="323.2" y2="107.19999999999999" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="307.20000000000005" y1="132.8" x2="323.2" y2="132.8" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="412.80000000000007" y1="120" x2="432" y2="120" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M 323.2 318.4 L 412.80000000000007 318.4 L 412.80000000000007 241.6 L 323.2 241.6 Z" fill="#fff" stroke="none" stroke-width="1"/>
+<line x1="323.2" y1="318.4" x2="412.80000000000007" y2="318.4" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="412.80000000000007" y1="318.4" x2="412.80000000000007" y2="241.6" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="412.80000000000007" y1="241.6" x2="323.2" y2="241.6" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="323.2" y1="241.6" x2="323.2" y2="318.4" stroke="#333" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="362.97" y="273" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="368" y="284.55" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+&amp;
+</text>
+<line x1="307.20000000000005" y1="267.2" x2="323.2" y2="267.2" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="307.20000000000005" y1="292.8" x2="323.2" y2="292.8" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="412.80000000000007" y1="280" x2="432" y2="280" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<circle cx="64.00000000000001" cy="107.19999999999999" r="3" fill="#222"/>
+<circle cx="64.00000000000001" cy="132.8" r="3" fill="#222"/>
+<line x1="64.00000000000001" y1="107.19999999999999" x2="307.20000000000005" y2="107.19999999999999" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="64.00000000000001" y1="132.8" x2="307.20000000000005" y2="132.8" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="144" y1="107.19999999999999" x2="144" y2="267.2" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="144" y1="267.2" x2="307.20000000000005" y2="267.2" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="216" y1="132.8" x2="216" y2="292.8" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="216" y1="292.8" x2="307.20000000000005" y2="292.8" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<ellipse cx="144" cy="107.19999999999999" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
+<ellipse cx="216" cy="132.8" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
+<circle cx="560" cy="120" r="3" fill="#222"/>
+<circle cx="560" cy="280" r="3" fill="#222"/>
+<line x1="432" y1="120" x2="560" y2="120" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="432" y1="280" x2="560" y2="280" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="48.56000000000002" y="99.97000000000001" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="49.56000000000002" y="110.67000000000002" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+A
+</text>
+<rect x="48.56000000000002" y="125.57000000000001" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="49.56000000000002" y="136.27" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+B
+</text>
+<rect x="566" y="112.77000000000002" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="567" y="123.47000000000003" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+S = A ⊕ B
+</text>
+<rect x="566" y="272.77000000000004" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="567" y="283.47" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+C = AB
+</text>
+</g>
+</svg>

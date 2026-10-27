@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+
+<rect x="0" y="0" width="800" height="460" fill="#fff"/>
+<g>
+<text x="400" y="18" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+RC low-pass circuit
+</text>
+<line x1="216" y1="167.44" x2="216" y2="92" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="216" y1="92" x2="372.4" y2="92" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="427.6" y1="92" x2="584" y2="92" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="584" y1="92" x2="584" y2="170.2" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="584" y1="197.8" x2="584" y2="322" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="584" y1="322" x2="400" y2="322" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="216" y1="200.56" x2="216" y2="322" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="216" y1="322" x2="400" y2="322" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<g data-component="V" transform="matrix(5.633375276077825e-15 -92 -92 -5.633375276077825e-15 216 184)">
+<circle cx="0" cy="0" r="0.18" fill="#fff" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+<line x1="-0.126" y1="0" x2="-0.036" y2="0" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="-0.081" y1="-0.045" x2="-0.081" y2="0.045" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="0.036" y1="0" x2="0.126" y2="0" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="170" y="184" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Vᵢₙ
+</text>
+<g data-component="R" transform="matrix(92 0 0 -92 400 92)">
+<path d="M -0.3 0 l 0.06 -0.18 l 0.12 0.36 l 0.12 -0.36 l 0.12 0.36 l 0.12 -0.36 l 0.06 0.18" fill="none" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="400" y="46" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R
+</text>
+<g data-component="C" transform="matrix(5.633375276077825e-15 -92 -92 -5.633375276077825e-15 584 184)">
+<line x1="-0.15" y1="-0.15" x2="-0.15" y2="0.15" stroke="#222" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+<line x1="0.15" y1="-0.15" x2="0.15" y2="0.15" stroke="#222" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="538" y="184" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+C
+</text>
+<g data-component="G" transform="matrix(92 0 0 -92 400 322)">
+<line x1="0" y1="0" x2="0" y2="-0.2" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+<line x1="-0.15" y1="-0.2" x2="0.15" y2="-0.2" stroke="#222" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+<line x1="-0.1" y1="-0.27" x2="0.1" y2="-0.27" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="-0.05" y1="-0.34" x2="0.05" y2="-0.34" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+</g>
+</g>
+</svg>

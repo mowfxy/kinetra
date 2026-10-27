@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560">
+
+<rect x="0" y="0" width="720" height="560" fill="#fff"/>
+<g>
+<text x="360" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Atwood machine
+</text>
+<line x1="282.2222222222223" y1="31.111111111111143" x2="437.7777777777778" y2="31.111111111111143" stroke="#222" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="286.3157894736843" y1="30.111111111111143" x2="281.4157894736843" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="294.50292397660826" y1="30.111111111111143" x2="289.6029239766082" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="302.6900584795322" y1="30.111111111111143" x2="297.7900584795322" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="310.87719298245617" y1="30.111111111111143" x2="305.9771929824562" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="319.06432748538015" y1="30.111111111111143" x2="314.16432748538017" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="327.25146198830413" y1="30.111111111111143" x2="322.35146198830415" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="335.4385964912281" y1="30.111111111111143" x2="330.5385964912281" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="343.6257309941521" y1="30.111111111111143" x2="338.7257309941521" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="351.8128654970761" y1="30.111111111111143" x2="346.91286549707604" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="360.00000000000006" y1="30.111111111111143" x2="355.1" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="368.18713450292404" y1="30.111111111111143" x2="363.287134502924" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="376.37426900584796" y1="30.111111111111143" x2="371.474269005848" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="384.561403508772" y1="30.111111111111143" x2="379.66140350877197" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="392.748538011696" y1="30.111111111111143" x2="387.84853801169595" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="400.9356725146199" y1="30.111111111111143" x2="396.03567251461993" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="409.12280701754395" y1="30.111111111111143" x2="404.2228070175439" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="417.3099415204679" y1="30.111111111111143" x2="412.4099415204679" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="425.49707602339186" y1="30.111111111111143" x2="420.5970760233918" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<line x1="433.68421052631584" y1="30.111111111111143" x2="428.78421052631586" y2="24.111111111111143" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<ellipse cx="360.00000000000006" cy="108.88888888888891" rx="46.666666666666664" ry="46.666666666666664" fill="#e8edef" stroke="#65757d" stroke-width="1"/>
+<ellipse cx="360.00000000000006" cy="108.88888888888891" rx="5" ry="5" fill="#65757d" stroke="#65757d" stroke-width="1"/>
+<line x1="360.00000000000006" y1="108.88888888888891" x2="360.00000000000006" y2="31.111111111111143" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<rect x="286.11111111111114" y="237.22222222222223" width="54.44444444444446" height="54.44444444444446" fill="#d6e1e6" stroke="#586d78" stroke-width="1" rx="0"/>
+<rect x="304.8933333333334" y="257.94444444444446" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="313.33333333333337" y="268.64444444444445" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+m<tspan font-size="9" dy="3.6">1</tspan>
+</text>
+<rect x="373.6111111111112" y="332.5" width="66.11111111111109" height="66.11111111111109" fill="#d6e1e6" stroke="#586d78" stroke-width="1" rx="0"/>
+<rect x="398.22666666666674" y="359.05555555555554" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="406.66666666666674" y="369.75555555555553" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+m<tspan font-size="9" dy="3.6">2</tspan>
+</text>
+<line x1="313.33333333333337" y1="237.22222222222223" x2="313.3333333333334" y2="108.88888888888891" stroke="#444" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="406.66666666666674" y1="108.88888888888891" x2="406.66666666666674" y2="332.5" stroke="#444" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M 313.33333333333337 108.88888888888891 L 313.3972883781199 106.44654426421818 L 313.5889782161473 104.01089393639842 L 313.9078774388936 101.58861385367811 L 314.3531119657558 99.18634331739344 L 314.92346143984355 96.81066678410457 L 315.6173625728929 94.46809581805798 L 316.4329134301306 92.16505124344155 L 317.36787864334536 89.90784554535156 L 318.41969553787624 87.70266556771008 L 319.58548115672625 85.5555555555556 L 320.8620401625469 83.47240058818767 L 322.24587359583586 81.45891044857348 L 323.7331884653414 79.52060397322975 L 325.3199081443883 77.66279392547551 L 327.00168354462784 75.8905724335167 L 328.77390503658665 74.20879703327716 L 330.63171508434095 72.62207735423027 L 332.5700215596847 71.13476248472466 L 334.58351169929875 69.75092905143578 L 336.66666666666674 68.4743700456151 L 338.8137766788212 67.3085844267651 L 341.0189566564627 66.25676753223416 L 343.2761623545527 65.32180231901947 L 345.5792069291692 64.50625146178174 L 347.92177789521577 63.81235032873235 L 350.29745442850464 63.24200085464463 L 352.69972496478925 62.79676632778245 L 355.12200504750956 62.47786710503618 L 357.5576553753293 62.28617726700884 L 360.00000000000006 62.222222222222285 L 362.44234462467074 62.28617726700884 L 364.8779949524905 62.47786710503618 L 367.3002750352108 62.79676632778245 L 369.7025455714955 63.24200085464463 L 372.07822210478434 63.81235032873235 L 374.42079307083094 64.50625146178174 L 376.7238376454474 65.32180231901947 L 378.9810433435374 66.25676753223416 L 381.1862233211789 67.3085844267651 L 383.33333333333337 68.4743700456151 L 385.4164883007013 69.75092905143578 L 387.42997844031544 71.13476248472466 L 389.36828491565916 72.62207735423027 L 391.2260949634134 74.20879703327716 L 392.9983164553723 75.8905724335167 L 394.6800918556118 77.66279392547551 L 396.2668115346587 79.52060397322987 L 397.7541264041643 81.45891044857348 L 399.1379598374532 83.47240058818767 L 400.41451884327387 85.5555555555556 L 401.5803044621239 87.70266556771008 L 402.63212135665475 89.90784554535156 L 403.56708656986945 92.16505124344155 L 404.38263742710717 94.46809581805798 L 405.07653856015656 96.81066678410457 L 405.64688803424434 99.18634331739344 L 406.09212256110646 101.58861385367811 L 406.4110217838528 104.01089393639842 L 406.60271162188013 106.44654426421818 L 406.66666666666674 108.88888888888891" fill="none" stroke="#444" stroke-width="1.5"/>
+<defs>
+<marker id="arr-23333737663563-33" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="272.11111111111114" y1="264.44444444444446" x2="272.11111111111114" y2="149.99444444444447" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-33)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23633033393262-35" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="272.11111111111114" y1="264.44444444444446" x2="272.11111111111114" y2="356.00444444444446" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-35)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-37" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="453.7222222222223" y1="365.55555555555554" x2="453.7222222222223" y2="251.10555555555555" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-37)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23633033393262-39" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="453.7222222222223" y1="365.55555555555554" x2="453.7222222222223" y2="518.1555555555556" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-39)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23376133613131-41" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#7a3a11"/>
+</marker>
+</defs>
+<line x1="212.22222222222229" y1="264.44444444444446" x2="212.22222222222229" y2="169.0694444444445" stroke="#7a3a11" stroke-width="1.6" marker-end="url(#arr-23376133613131-41)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23376133613131-43" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#7a3a11"/>
+</marker>
+</defs>
+<line x1="507.7777777777778" y1="365.55555555555554" x2="507.7777777777778" y2="460.93055555555554" stroke="#7a3a11" stroke-width="1.6" marker-end="url(#arr-23376133613131-43)" stroke-dasharray=""/>
+<rect x="256.67111111111114" y="142.76444444444445" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="257.67111111111114" y="153.46444444444444" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+T
+</text>
+<rect x="241.79111111111115" y="348.0344444444445" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="242.79111111111115" y="358.7344444444445" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+m<tspan font-size="9" dy="3.6">1</tspan><tspan dy="-3.6">g</tspan>
+</text>
+<rect x="459.7222222222223" y="243.87555555555556" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="460.7222222222223" y="254.57555555555555" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+T
+</text>
+<rect x="459.7222222222223" y="510.1855555555556" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="460.7222222222223" y="520.8855555555556" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+m<tspan font-size="9" dy="3.6">2</tspan><tspan dy="-3.6">g</tspan>
+</text>
+<rect x="207.5022222222223" y="148.26944444444456" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="208.5022222222223" y="158.96944444444455" fill="#7a3a11" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+a
+</text>
+<rect x="503.0577777777778" y="467.2705555555556" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="504.0577777777778" y="477.97055555555556" fill="#7a3a11" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+a
+</text>
+<text x="360" y="552" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+m₁ = 3 kg rises, m₂ = 5 kg falls · Arrow scale: 1 unit = 25 N (force); 1 unit = 2 m/s^2 (acceleration)
+</text>
+</g>
+</svg>

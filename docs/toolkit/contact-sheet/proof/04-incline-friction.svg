@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 420" width="780" height="420">
+
+<rect x="0" y="0" width="780" height="420" fill="#fff"/>
+<g>
+<text x="390" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Block at rest on a rough incline
+</text>
+<path d="M 36 366 L 432 366 L 432 181.3421673706206 Z" fill="#e8edef" stroke="#526873" stroke-width="1"/>
+<path d="M 70 366 L 69.96005029396231 364.3522791402819 L 69.84029505696763 362.7084303960919 L 69.64101571175212 361.0723167835536 L 69.36268056133108 359.44778314136494 L 69.00594368849508 357.8386470954938 L 68.57164341872662 356.2486900878229 L 68.06080035014978 354.681648489827 L 67.47461495514227 353.1412048221642 L 66.8144647592461 351.6309791008162" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="80.54120966975725" y="348.57905274088006" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="85.26120966975725" y="359.27905274088005" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+θ
+</text>
+<path d="M 218.45399630557066 280.9203042617286 L 289.14600369442934 247.95607984595404 L 268.86032713087576 204.45330606819485 L 198.16831974201708 237.41753048396941 Z" fill="#cfe4ff" stroke="#1f4f8b" stroke-width="1"/>
+<rect x="553.76" y="29.49999999999999" width="128.48000000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="618" y="40.19999999999999" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Free-body diagram
+</text>
+<path d="M 598.4178951002331 214.99208801888068 L 652.7963623224321 189.6349923144387 L 637.5821048997668 157.00791198111932 L 583.2036376775678 182.3650076855613 Z" fill="#cfe4ff" stroke="#1f4f8b" stroke-width="1"/>
+<defs>
+<marker id="arr-23633033393262-9" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="618" y1="186" x2="618" y2="303.72" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-9)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-11" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="618" y1="186" x2="572.910624078017" y2="89.30552129385029" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-11)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333537616136-13" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#357aa6"/>
+</marker>
+</defs>
+<line x1="618" y1="186" x2="663.089375921983" y2="164.97447870614968" stroke="#357aa6" stroke-width="1.6" marker-end="url(#arr-23333537616136-13)" stroke-dasharray=""/>
+<path d="M 618 240 L 620.6169684242582 239.93655046688133 L 623.2277870179717 239.74635097283095 L 625.8263204025913 239.42984848337102 L 628.4064620695968 238.98778677387875 L 630.9621487306863 238.4212046817275 L 633.4873745663988 237.7314336650364 L 635.9762053396865 236.9200946737673 L 638.4227923412686 235.98909434052007 L 640.8213861339977 234.9406204999791" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="627.6542213516921" y="244.33792248459793" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="632.3742213516921" y="255.0379224845979" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+θ
+</text>
+<line x1="618" y1="186" x2="649.6963696305523" y2="253.97308402774874" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<rect x="594.68" y="310.06000000000006" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="595.68" y="320.76000000000005" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+W = mg
+</text>
+<rect x="551.2306240780171" y="68.22552129385029" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="552.2306240780171" y="78.9255212938503" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+F<tspan font-size="9" dy="3.6">N</tspan>
+</text>
+<rect x="667.889375921983" y="143.89447870614967" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="668.889375921983" y="154.59447870614966" fill="#357aa6" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+F<tspan font-size="9" dy="3.6">f</tspan>
+</text>
+<text x="390" y="412" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+m = 5 kg, θ = 25°, μₛ = 0.6, block at rest · Arrow scale: 1 unit = 25 N (force)
+</text>
+</g>
+</svg>

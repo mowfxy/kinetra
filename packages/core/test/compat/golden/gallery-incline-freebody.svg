@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520">
+
+<rect x="0" y="0" width="800" height="520" fill="#fff"/>
+<g>
+<path d="M 369.59167900320915 311.3312430606948 L 459.6583209967908 259.3312430606948 L 430.40832099679085 208.66875693930518 L 340.3416790032092 260.6687569393052 Z" fill="#cfe4ff" stroke="#1f4f8b" stroke-width="1"/>
+<rect x="382.88" y="293.7" width="34.24" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="400" y="305.25" fill="#1f4f8b" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+5 kg
+</text>
+<defs>
+<marker id="arr-23363637313761-3" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#66717a"/>
+</marker>
+</defs>
+<line x1="400" y1="260" x2="557.6166234887678" y2="169" stroke="#66717a" stroke-width="1.6" marker-end="url(#arr-23363637313761-3)" stroke-dasharray="4 4"/>
+<text x="562.6166234887678" y="164" fill="#66717a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+x
+</text>
+<defs>
+<marker id="arr-23363637313761-6" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#66717a"/>
+</marker>
+</defs>
+<line x1="400" y1="260" x2="309.00000000000006" y2="102.38337651123217" stroke="#66717a" stroke-width="1.6" marker-end="url(#arr-23363637313761-6)" stroke-dasharray="4 4"/>
+<text x="314.00000000000006" y="97.38337651123217" fill="#66717a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+y
+</text>
+<line x1="400" y1="260" x2="339.20501665433244" y2="295.09999999999997" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="339.20501665433244" y1="295.09999999999997" x2="400" y2="400.4" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<defs>
+<marker id="arr-23633033393262-11" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="400" y1="260" x2="400" y2="400.4" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-11)" stroke-dasharray=""/>
+<text x="405" y="395.4" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+W = 49.05 N
+</text>
+<line x1="400" y1="260" x2="400" y2="260" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="400" y1="260" x2="339.2050166543324" y2="154.69999999999996" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<defs>
+<marker id="arr-23333737663563-16" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="400" y1="260" x2="339.2050166543324" y2="154.69999999999996" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-16)" stroke-dasharray=""/>
+<text x="344.2050166543324" y="149.69999999999996" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+N = 42.48 N
+</text>
+<line x1="400" y1="260" x2="460.7949833456676" y2="224.9" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="460.7949833456676" y1="224.9" x2="460.7949833456676" y2="224.9" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<defs>
+<marker id="arr-23333537616136-21" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#357aa6"/>
+</marker>
+</defs>
+<line x1="400" y1="260" x2="460.7949833456676" y2="224.9" stroke="#357aa6" stroke-width="1.6" marker-end="url(#arr-23333537616136-21)" stroke-dasharray=""/>
+<text x="465.7949833456676" y="219.9" fill="#357aa6" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+static friction = 24.52 N
+</text>
+<text x="400" y="512" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Force arrows share one scale; components refer to the displayed frame
+</text>
+</g>
+</svg>

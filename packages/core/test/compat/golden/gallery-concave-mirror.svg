@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460">
+
+<rect x="0" y="0" width="800" height="460" fill="#fff"/>
+<g>
+<text x="400" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+concave mirror
+</text>
+<line x1="65.71428571428572" y1="227" x2="734.2857142857142" y2="227" stroke="#a0a0a0" stroke-width="1" stroke-linecap="round"/>
+<path d="M -0.21 1.75 Q 0 1.75 0 1.1375 L 0 -1.1375 Q 0 -1.75 -0.21 -1.75" fill="none" stroke="#526873" stroke-width="2.5" vector-effect="non-scaling-stroke" transform="matrix(55.714285714285715 0 0 -55.714285714285715 400 227)"/>
+<line x1="344.2857142857143" y1="234.02" x2="344.2857142857143" y2="219.98" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<rect x="339.56571428571425" y="237.36" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="344.2857142857143" y="248.06" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+F
+</text>
+<line x1="288.57142857142856" y1="234.02" x2="288.57142857142856" y2="219.98" stroke="#666" stroke-width="1" stroke-linecap="round"/>
+<rect x="283.8514285714285" y="237.36" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="288.57142857142856" y="248.06" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+C
+</text>
+<line x1="232.85714285714286" y1="171.28571428571428" x2="400" y2="171.28571428571428" stroke="#ba4b37" stroke-width="1.3" stroke-linecap="round"/>
+<defs>
+<marker id="arr-23626134623337-10" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#ba4b37"/>
+</marker>
+</defs>
+<line x1="313.0857142857143" y1="171.28571428571428" x2="333.1428571428571" y2="171.28571428571428" stroke="#ba4b37" stroke-width="1.6" marker-end="url(#arr-23626134623337-10)" stroke-dasharray=""/>
+<line x1="400" y1="171.28571428571428" x2="149.28571428571428" y2="422" stroke="#ba4b37" stroke-width="1.3" stroke-linecap="round"/>
+<defs>
+<marker id="arr-23626134623337-13" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#ba4b37"/>
+</marker>
+</defs>
+<line x1="279.65714285714284" y1="291.62857142857143" x2="249.57142857142856" y2="321.7142857142857" stroke="#ba4b37" stroke-width="1.6" marker-end="url(#arr-23626134623337-13)" stroke-dasharray=""/>
+<line x1="232.85714285714286" y1="171.28571428571428" x2="400" y2="227" stroke="#2679a0" stroke-width="1.3" stroke-linecap="round"/>
+<defs>
+<marker id="arr-23323637396130-16" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#2679a0"/>
+</marker>
+</defs>
+<line x1="313.0857142857143" y1="198.02857142857144" x2="333.1428571428571" y2="204.71428571428572" stroke="#2679a0" stroke-width="1.6" marker-end="url(#arr-23323637396130-16)" stroke-dasharray=""/>
+<line x1="400" y1="227" x2="65.71428571428572" y2="338.42857142857144" stroke="#2679a0" stroke-width="1.3" stroke-linecap="round"/>
+<defs>
+<marker id="arr-23323637396130-19" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#2679a0"/>
+</marker>
+</defs>
+<line x1="239.54285714285714" y1="280.48571428571427" x2="199.42857142857144" y2="293.8571428571429" stroke="#2679a0" stroke-width="1.6" marker-end="url(#arr-23323637396130-19)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333333-21" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#333"/>
+</marker>
+</defs>
+<line x1="232.85714285714286" y1="227" x2="232.85714285714286" y2="171.28571428571428" stroke="#333" stroke-width="1.6" marker-end="url(#arr-23333333-21)" stroke-dasharray=""/>
+<rect x="179.21714285714285" y="148.5857142857143" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="224.85714285714283" y="159.28571428571428" fill="#222" font-size="12" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+object
+</text>
+<defs>
+<marker id="arr-23333837373563-25" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#38775c"/>
+</marker>
+</defs>
+<line x1="316.42857142857144" y1="227" x2="316.42857142857144" y2="254.85714285714286" stroke="#38775c" stroke-width="1.6" marker-end="url(#arr-23333837373563-25)" stroke-dasharray=""/>
+<rect x="323.42857142857144" y="262.1571428571429" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="324.42857142857144" y="272.8571428571429" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+real image
+</text>
+<text x="400" y="452" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Paraxial model · solid: light rays · dashed: backward extensions
+</text>
+</g>
+</svg>

@@ -1,5 +1,11 @@
 # Diagram APIs and assumptions
 
+For the portable Python templates for straight-wire magnetic fields, solenoids
+and reactor-loop cutaways, see the
+[textbook skill and its model contract](../packages/plugin/skills/kinetra-textbook-diagrams/SKILL.md).
+Those templates have a separate `npm run test:textbook` suite. The TypeScript
+API assumptions and historical review counts below refer to the original engine.
+
 Run the commands in the root README for the CLI and examples. For application code, import the specific module under `packages/core/src/diagram/`; the current verified workflow runs source with Node's TypeScript loader.
 
 ## Charged rods

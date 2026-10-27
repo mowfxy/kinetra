@@ -1,6 +1,6 @@
 ---
 name: kinetra-diagrams
-description: Render physics diagrams and textbook-style charged-rod illustrations to deterministic SVG using Kinetra. Use for free-body diagrams, projectile motion, lenses, mirrors, supported pulley systems, fields, or electrostatic attraction/repulsion with suspended rods. Do not use for CAD, arbitrary 3D scenes, chemical structures, circuit schematics (use kinetra-circuits), or animation/video.
+description: Create accurate technical and physics diagrams using Kinetra renderers or a custom illustration fallback when no available specialized skill covers the requested figure, including static 3D apparatus views. Use for labeled educational diagrams, free-body diagrams, projectile motion, optics, pulleys, fields, and charged rods. Route circuit schematics to kinetra-circuits. Do not use for production CAD or animation/video.
 ---
 
 # Kinetra Diagrams
@@ -12,14 +12,82 @@ rendered figure. Six diagram families are supported.
 
 ## When to activate
 
+For a straight-wire magnetic field, solenoid, or reactor-loop cutaway, route to
+[kinetra-textbook-diagrams](../kinetra-textbook-diagrams/SKILL.md) first. That
+skill bundles the renderer, measured typography and regression checks for those
+families; do not replace them with the open-ended fallback below.
+
 - User describes a physics scene and asks for a diagram.
 - User posts equations and wants the corresponding free body / field
   visualization.
 - User asks to convert a textual problem ("block on incline at 30 deg,
   mass 5 kg, friction mu=0.2") into a labeled SVG.
 
-Do not activate for 3D scenes, chemical structures, circuit diagrams
-(use kinetra-circuits), or animation/video.
+For circuit diagrams use kinetra-circuits. Prefer another available specialized
+skill when it covers the requested subject or output. For uncovered static
+technical illustrations, use the fallback below. Production CAD and
+animation/video remain outside this skill.
+
+## Fallback for an uncovered figure
+
+For reusable coverage, follow the template-extension requirements in
+[kinetra-textbook-diagrams](../kinetra-textbook-diagrams/SKILL.md#coverage-boundary).
+Its bundled layout module is available for measured text and collision checks.
+A custom figure is not verified coverage until its parameter limits, geometry
+tests and rendered reference have been checked.
+
+Do not substitute the nearest supported example if that changes the requested
+apparatus, topology, or physical meaning. Keep supported renderers for the parts
+they represent correctly; create a custom SVG or an appropriate programmatic
+3D scene for the missing geometry. This is an authoring fallback, not a claim
+that the core engine now supports or solves the new system.
+
+1. Establish the required objects, connections, dimensions, labels, viewpoint,
+   and physical relationships from the request and supplied references. Use
+   relevant available skills for their actual expertise. For unfamiliar science
+   or symbol conventions, consult authoritative references before drawing; state
+   consequential assumptions rather than inventing missing facts.
+2. Construct geometry from explicit coordinates and parameters. Independently
+   check units, scale, signs, force/ray directions, connectivity, and any computed
+   values against the underlying equations or reference. Mark schematic or
+   not-to-scale views where applicable. Appearance must not imply an unsupported
+   calculation or a physically impossible arrangement.
+3. For depth, use a consistent perspective or orthographic projection, coherent
+   occlusion, aligned cylinder ends/axes, and consistent lighting and shading.
+   Ropes, supports, wires, and arrows must attach to the intended surfaces or
+   terminals. Use cutaways, dashed hidden edges, or a second view when needed
+   to expose important relationships. Decorative shading must not obscure them.
+4. Match the clarity and finish of the reviewed examples and relevant skills:
+   legible typography, consistent strokes and arrowheads, balanced whitespace,
+   clear depth cues, and restrained colors with meaningful contrast. Preserve
+   the user's reference style where supplied without copying its errors.
+5. Apply the visual acceptance pass below before delivery. Save the editable
+   source/model and final export so corrections remain reproducible. If tools or
+   evidence prevent verification, identify exactly what remains unverified and
+   deliver the best supported result without claiming it is fully validated.
+
+## Visual acceptance for every figure
+
+These checks apply to both built-in output and custom fallback illustrations.
+
+- Render the actual final export and inspect it at its intended display size
+  and enlarged. Compare with supplied references and the reviewed gallery when
+  relevant; passing numeric tests or inspecting SVG source is insufficient.
+- Fix unintended label-label overlaps, text touching geometry, clipped content,
+  crowded dimensions, ambiguous leaders, and arrows hidden behind objects.
+  Place labels outside busy regions and route leaders to unambiguous anchors;
+  enlarge or rearrange the composition instead of shrinking text excessively.
+- Distinguish intentional intersections from errors: ray intersections, connected
+  terminals, and physical occlusion may be necessary. Verify that crossings,
+  junction dots, hidden lines, depth order, and attachments communicate the
+  intended relationships without ambiguity.
+- Inspect 3D projection, proportions, visible/hidden surfaces, and shading
+  separately from scientific correctness. Re-render after corrections and check
+  the final artifact again. For a batch, inspect every figure; for a reusable
+  layout, also exercise long labels, dense inputs, and target output sizes.
+- Report unresolved visual defects or uninspected output explicitly. Never
+  promise overlap-free arbitrary inputs or general 3D support based on a few
+  polished examples.
 
 ## Core entry points
 

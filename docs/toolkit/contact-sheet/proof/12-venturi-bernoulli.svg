@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 560" width="820" height="560">
+
+<rect x="0" y="0" width="820" height="560" fill="#fff"/>
+<g>
+<text x="410" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Venturi meter: continuity and Bernoulli
+</text>
+<path d="M 62.89256198347111 439.6694214876033 L 271.1570247933885 439.6694214876033 L 386.85950413223145 451.23966942148763 L 479.4214876033058 451.23966942148763 L 710.8264462809917 439.6694214876033 L 757.1074380165288 439.6694214876033 L 757.1074380165288 485.9504132231405 L 710.8264462809917 485.9504132231405 L 479.4214876033058 474.3801652892562 L 386.85950413223145 474.3801652892562 L 271.1570247933885 485.9504132231405 L 62.89256198347111 485.9504132231405 Z" fill="#cfe4ff" stroke="#fff" stroke-width="1"/>
+<line x1="62.89256198347111" y1="439.6694214876033" x2="171.6528925619835" y2="439.6694214876033" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="171.6528925619835" y1="439.6694214876033" x2="171.6528925619835" y2="34.71074380165294" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="185.53719008264466" y1="34.71074380165294" x2="185.53719008264466" y2="439.6694214876033" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="185.53719008264466" y1="439.6694214876033" x2="271.1570247933885" y2="439.6694214876033" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="271.1570247933885" y1="439.6694214876033" x2="386.85950413223145" y2="451.23966942148763" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="386.85950413223145" y1="451.23966942148763" x2="426.19834710743805" y2="451.23966942148763" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="426.19834710743805" y1="451.23966942148763" x2="426.19834710743805" y2="34.71074380165294" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="440.0826446280992" y1="34.71074380165294" x2="440.0826446280992" y2="451.23966942148763" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="440.0826446280992" y1="451.23966942148763" x2="479.4214876033058" y2="451.23966942148763" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="479.4214876033058" y1="451.23966942148763" x2="710.8264462809917" y2="439.6694214876033" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="710.8264462809917" y1="439.6694214876033" x2="757.1074380165288" y2="439.6694214876033" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="62.89256198347111" y1="485.9504132231405" x2="271.1570247933885" y2="485.9504132231405" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="271.1570247933885" y1="485.9504132231405" x2="386.85950413223145" y2="474.3801652892562" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="386.85950413223145" y1="474.3801652892562" x2="479.4214876033058" y2="474.3801652892562" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="479.4214876033058" y1="474.3801652892562" x2="710.8264462809917" y2="485.9504132231405" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<line x1="710.8264462809917" y1="485.9504132231405" x2="757.1074380165288" y2="485.9504132231405" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
+<rect x="171.6528925619835" y="92.56198347107443" width="13.884297520661164" height="347.1074380165289" fill="#cfe4ff" stroke="#fff" stroke-width="1" rx="0"/>
+<rect x="426.19834710743805" y="379.3659506139416" width="13.884297520661164" height="71.87371880754603" fill="#cfe4ff" stroke="#fff" stroke-width="1" rx="0"/>
+<defs>
+<marker id="arr-23313137613361-20" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#117a3a"/>
+</marker>
+</defs>
+<line x1="86.0330578512397" y1="462.8099173553719" x2="115.49645227486329" y2="462.8099173553719" stroke="#117a3a" stroke-width="1.6" marker-end="url(#arr-23313137613361-20)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23313137613361-22" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#117a3a"/>
+</marker>
+</defs>
+<line x1="375.2892561983471" y1="462.8099173553719" x2="493.14283389284145" y2="462.8099173553719" stroke="#117a3a" stroke-width="1.6" marker-end="url(#arr-23313137613361-22)" stroke-dasharray=""/>
+<line x1="178.59504132231407" y1="92.56198347107443" x2="340.57851239669424" y2="92.56198347107443" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="433.1404958677686" y1="379.3659506139416" x2="340.57851239669424" y2="379.3659506139416" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="340.57851239669424" y1="235.963967042508" x2="340.57851239669424" y2="95.56198347107443" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 340.57851239669424 91.56198347107443 L 344.07851239669424 98.56198347107443 L 337.07851239669424 98.56198347107443 Z" fill="#444" stroke="none" stroke-width="1"/>
+<line x1="340.57851239669424" y1="235.963967042508" x2="340.57851239669424" y2="376.3659506139416" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 340.57851239669424 380.3659506139416 L 337.07851239669424 373.3659506139416 L 344.07851239669424 373.3659506139416 Z" fill="#444" stroke="none" stroke-width="1"/>
+<rect x="260.55851239669425" y="229.963967042508" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="299.06851239669425" y="239.81396704250798" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Δh = 124 cm
+</text>
+<rect x="88.57785123966946" y="516.4752066115702" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="123.05785123966945" y="527.1752066115703" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+section 1
+</text>
+<rect x="402.3804958677686" y="516.4752066115702" width="61.519999999999996" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="433.1404958677686" y="527.1752066115703" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+throat 2
+</text>
+<rect x="121.49645227486329" y="454.83991735537194" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="122.49645227486329" y="465.5399173553719" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+v<tspan font-size="9" dy="3.6">1</tspan>
+</text>
+<rect x="499.1428338928414" y="454.83991735537194" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="500.1428338928414" y="465.5399173553719" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+v<tspan font-size="9" dy="3.6">2</tspan>
+</text>
+<text x="410" y="552" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+D₁ = 20 cm, D₂ = 10 cm, Q = 40 L/s; heads differ by (v₂² − v₁²)/2g · Arrow scale: 1 unit = 0.1 m/s (velocity)
+</text>
+</g>
+</svg>

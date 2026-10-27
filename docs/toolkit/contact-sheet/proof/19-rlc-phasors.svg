@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600">
+
+<rect x="0" y="0" width="640" height="600" fill="#fff"/>
+<g>
+<text x="320" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Series RLC circuit: voltage phasors
+</text>
+<line x1="320" y1="292.7272727272727" x2="567.2727272727273" y2="292.7272727272727" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="534.144463481243" y2="169.0909090909091" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="443.6363636363636" y2="78.58280924602971" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="320" y2="45.45454545454544" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="196.36363636363643" y2="78.58280924602971" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="105.85553651875702" y2="169.0909090909091" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="72.72727272727275" y2="292.72727272727263" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="105.85553651875702" y2="416.3636363636364" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="196.36363636363626" y2="506.87173620851564" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="319.99999999999994" y2="540" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="443.6363636363636" y2="506.8717362085157" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="320" y1="292.7272727272727" x2="534.144463481243" y2="416.36363636363643" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<ellipse cx="320" cy="292.7272727272727" rx="35.32467532467532" ry="35.32467532467532" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.7272727272727" rx="70.64935064935064" ry="70.64935064935064" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.7272727272727" rx="105.97402597402596" ry="105.97402597402596" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.7272727272727" rx="141.29870129870127" ry="141.29870129870127" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.7272727272727" rx="176.6233766233766" ry="176.6233766233766" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.7272727272727" rx="211.94805194805193" ry="211.94805194805193" fill="none" stroke="#eee" stroke-width="1"/>
+<ellipse cx="320" cy="292.7272727272727" rx="247.27272727272725" ry="247.27272727272725" fill="none" stroke="#777" stroke-width="1"/>
+<rect x="571.2727272727271" y="286.7272727272727" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="579.0927272727272" y="296.5772727272727" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0°
+</text>
+<rect x="537.8148335015505" y="154.48817644865946" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="549.0448335015506" y="164.33817644865945" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+30°
+</text>
+<rect x="440.22763204153347" y="59.035974988642316" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="451.4576320415335" y="68.88597498864232" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+60°
+</text>
+<rect x="308.77" y="28.494545454545452" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="320" y="38.344545454545454" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+90°
+</text>
+<rect x="173.04986795846662" y="57.559401675189854" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="187.6898679584666" y="67.40940167518986" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+120°
+</text>
+<rect x="73.75766649844941" y="153.011603135207" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="88.39766649844941" y="162.861603135207" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+150°
+</text>
+<rect x="39.44727272727276" y="286.72727272727263" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="54.08727272727276" y="296.57727272727266" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+180°
+</text>
+<rect x="73.75766649844944" y="420.44294231933844" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="88.39766649844944" y="430.29294231933847" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+210°
+</text>
+<rect x="173.0498679584664" y="515.8951437793555" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="187.68986795846638" y="525.7451437793555" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+240°
+</text>
+<rect x="305.35999999999996" y="544.9599999999999" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="319.99999999999994" y="554.81" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+270°
+</text>
+<rect x="437.6701320415335" y="515.8951437793555" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="452.3101320415335" y="525.7451437793555" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+300°
+</text>
+<rect x="536.9623335015505" y="420.4429423193385" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="551.6023335015504" y="430.2929423193385" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+330°
+</text>
+<defs>
+<marker id="arr-23323232-44" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#222"/>
+</marker>
+</defs>
+<line x1="320" y1="292.7272727272727" x2="461.2987012987013" y2="292.7272727272727" stroke="#222" stroke-width="1.6" marker-end="url(#arr-23323232-44)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333537616136-46" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#357aa6"/>
+</marker>
+</defs>
+<line x1="320" y1="292.7272727272727" x2="320" y2="80.77922077922076" stroke="#357aa6" stroke-width="1.6" marker-end="url(#arr-23333537616136-46)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23333737663563-48" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
+</marker>
+</defs>
+<line x1="320" y1="292.7272727272727" x2="320" y2="405.7662337662337" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-48)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23633033393262-50" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#c0392b"/>
+</marker>
+</defs>
+<line x1="320" y1="292.7272727272727" x2="461.2987012987013" y2="193.8181818181818" stroke="#c0392b" stroke-width="1.6" marker-end="url(#arr-23633033393262-50)" stroke-dasharray=""/>
+<line x1="461.2987012987013" y1="292.7272727272727" x2="461.2987012987013" y2="193.8181818181818" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
+<path d="M 400 292.7272727272727 L 399.8964150827727 288.6575237274829 L 399.5859285769677 284.5983138430251 L 399.06934452556027 280.5601548968965 L 398.3480006864553 276.5535041981018 L 397.4237650681996 272.58873746116575 L 396.29903109254354 268.6761219369452 L 394.9767113963814 264.82578982432057 L 393.46023028912003 261.0477120316215 L 391.75351488500877 257.35167235573374 L 389.8609849333942 253.74724214575483 L 387.7875413732361 250.2437555168085 L 385.5385536415232 246.85028517820643" fill="none" stroke="#444" stroke-width="1"/>
+<rect x="401.85792495301087" y="258.93598608389595" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="406.5779249530109" y="269.63598608389594" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+φ
+</text>
+<rect x="467.2987012987013" y="284.4172727272727" width="68.96000000000004" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="285.52" y="58.15922077922076" width="68.95999999999998" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="285.52" y="411.7662337662337" width="68.95999999999998" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="404.4987012987013" y="172.67818181818183" width="113.59999999999997" height="15.139999999999986" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="467.2987012987013" y="284.7572727272727" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="468.2987012987013" y="295.4572727272727" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V<tspan font-size="9" dy="3.6">R</tspan><tspan dy="-3.6"> = 20 V</tspan>
+</text>
+<rect x="285.52" y="58.49922077922075" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="286.52" y="69.19922077922075" fill="#357aa6" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V<tspan font-size="9" dy="3.6">L</tspan><tspan dy="-3.6"> = 30 V</tspan>
+</text>
+<rect x="285.52" y="412.10623376623374" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="286.52" y="422.80623376623373" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V<tspan font-size="9" dy="3.6">C</tspan><tspan dy="-3.6"> = 16 V</tspan>
+</text>
+<rect x="404.4987012987013" y="173.01818181818183" width="113.6" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="405.4987012987013" y="183.71818181818182" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V = 24.4 V ∠35°
+</text>
+<text x="320" y="592" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+I = 2 A at 0° (reference); R = 10 Ω, X_L = 15 Ω, X_C = 8 Ω; V = V_R + V_L + V_C
+</text>
+</g>
+</svg>

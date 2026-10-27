@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+
+<rect x="0" y="0" width="600" height="300" fill="#fff"/>
+<g>
+<g transform="translate(8 24) scale(0.8862876254180602)">
+<path data-net="net_a" data-input="G1:0" d="M 123 92 H 150.9 V 86 H 185" fill="none" stroke="#333" stroke-width="1.2"/>
+<path data-net="net_b" data-input="G1:1" d="M 123 172 H 157.1 V 102 H 185" fill="none" stroke="#333" stroke-width="1.2"/>
+<path data-net="net_ab" data-input="G2:0" d="M 263 94 H 290.9 V 86 H 325" fill="none" stroke="#333" stroke-width="1.2"/>
+<path data-net="net_c" data-input="G2:1" d="M 123 252 H 234.09999999999997 V 102 H 325" fill="none" stroke="#333" stroke-width="1.2"/>
+<path data-net="net_y" data-input="OUT_Y:0" d="M 403 94 H 434 V 92 H 465" fill="none" stroke="#333" stroke-width="1.2"/>
+<rect x="55" y="70" width="56" height="44" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<line x1="111" y1="92" x2="123" y2="92" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<text x="83" y="97" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+A
+</text>
+<rect x="55" y="150" width="56" height="44" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<line x1="111" y1="172" x2="123" y2="172" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<text x="83" y="177" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+B
+</text>
+<rect x="55" y="230" width="56" height="44" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<line x1="111" y1="252" x2="123" y2="252" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<text x="83" y="257" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+C
+</text>
+<rect x="195" y="70" width="56" height="48" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<line x1="185" y1="86" x2="195" y2="86" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="185" y1="102" x2="195" y2="102" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="251" y1="94" x2="263" y2="94" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<text x="223" y="99" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+&amp;
+</text>
+<rect x="335" y="70" width="56" height="48" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<line x1="325" y1="86" x2="335" y2="86" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="325" y1="102" x2="335" y2="102" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="391" y1="94" x2="403" y2="94" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<text x="363" y="99" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+&amp;
+</text>
+<rect x="475" y="70" width="56" height="44" fill="#fff" stroke="#333" stroke-width="1.4"/>
+<line x1="465" y1="92" x2="475" y2="92" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="531" y1="92" x2="543" y2="92" stroke="#333" stroke-width="1.2" stroke-linecap="round"/>
+<text x="503" y="97" fill="#222" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Y
+</text>
+</g>
+<text x="300" y="18" fill="#222" font-size="14" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+3-input AND
+</text>
+</g>
+</svg>

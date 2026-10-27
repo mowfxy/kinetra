@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 600" width="640" height="600">
+
+<rect x="0" y="0" width="640" height="600" fill="#fff"/>
+<g>
+<text x="320" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Karnaugh map: F(A, B, C, D) = Σm(0, 2, 5, 7, 8, 10, 13, 15)
+</text>
+<rect x="193.2394366197183" y="135.21126760563374" width="338.0281690140846" height="338.02816901408454" fill="none" stroke="#222" stroke-width="1" rx="0"/>
+<line x1="277.7464788732394" y1="135.21126760563374" x2="277.7464788732394" y2="473.2394366197183" stroke="#222" stroke-width="1" stroke-linecap="round"/>
+<line x1="362.2535211267606" y1="135.21126760563374" x2="362.2535211267606" y2="473.2394366197183" stroke="#222" stroke-width="1" stroke-linecap="round"/>
+<line x1="446.7605633802817" y1="135.21126760563374" x2="446.7605633802817" y2="473.2394366197183" stroke="#222" stroke-width="1" stroke-linecap="round"/>
+<line x1="193.2394366197183" y1="219.71830985915489" x2="531.2676056338029" y2="219.71830985915489" stroke="#222" stroke-width="1" stroke-linecap="round"/>
+<line x1="193.2394366197183" y1="304.225352112676" x2="531.2676056338029" y2="304.225352112676" stroke="#222" stroke-width="1" stroke-linecap="round"/>
+<line x1="193.2394366197183" y1="388.7323943661971" x2="531.2676056338029" y2="388.7323943661971" stroke="#222" stroke-width="1" stroke-linecap="round"/>
+<rect x="227.05295774647888" y="103.3591549295774" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="235.49295774647888" y="114.0591549295774" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+00
+</text>
+<rect x="311.56" y="103.3591549295774" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="320" y="114.0591549295774" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+01
+</text>
+<rect x="396.06704225352115" y="103.3591549295774" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="404.50704225352115" y="114.0591549295774" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+11
+</text>
+<rect x="480.5740845070423" y="103.3591549295774" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="489.0140845070423" y="114.0591549295774" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+10
+</text>
+<rect x="155.22197183098592" y="170.9647887323943" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="163.66197183098592" y="181.6647887323943" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+00
+</text>
+<rect x="155.22197183098592" y="255.4718309859154" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="163.66197183098592" y="266.1718309859154" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+01
+</text>
+<rect x="155.22197183098592" y="339.97887323943655" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="163.66197183098592" y="350.67887323943654" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+11
+</text>
+<rect x="155.22197183098592" y="424.4859154929577" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="163.66197183098592" y="435.1859154929577" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+10
+</text>
+<rect x="115.49521126760564" y="65.33098591549289" width="54.08" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="142.53521126760563" y="76.03098591549289" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+AB \ CD
+</text>
+<rect x="230.46295774647888" y="170.4647887323943" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="235.49295774647888" y="182.01478873239432" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="314.97" y="170.4647887323943" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="320" y="182.01478873239432" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="399.4770422535212" y="170.4647887323943" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="404.50704225352115" y="182.01478873239432" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="483.9840845070423" y="170.4647887323943" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="489.0140845070423" y="182.01478873239432" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="230.46295774647888" y="254.9718309859154" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="235.49295774647888" y="266.5218309859154" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="314.97" y="254.9718309859154" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="320" y="266.5218309859154" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="399.4770422535212" y="254.9718309859154" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="404.50704225352115" y="266.5218309859154" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="483.9840845070423" y="254.9718309859154" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="489.0140845070423" y="266.5218309859154" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="230.46295774647888" y="339.47887323943655" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="235.49295774647888" y="351.02887323943656" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="314.97" y="339.47887323943655" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="320" y="351.02887323943656" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="399.4770422535212" y="339.47887323943655" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="404.50704225352115" y="351.02887323943656" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="483.9840845070423" y="339.47887323943655" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="489.0140845070423" y="351.02887323943656" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="230.46295774647888" y="423.9859154929577" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="235.49295774647888" y="435.5359154929577" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="314.97" y="423.9859154929577" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="320" y="435.5359154929577" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="399.4770422535212" y="423.9859154929577" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="404.50704225352115" y="435.5359154929577" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+0
+</text>
+<rect x="483.9840845070423" y="423.9859154929577" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<text x="489.0140845070423" y="435.5359154929577" fill="#333" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+1
+</text>
+<rect x="290.4225352112676" y="232.39436619718305" width="143.66197183098592" height="143.66197183098592" fill="none" stroke="#2679a0" stroke-width="1" rx="25.35211267605634"/>
+<rect x="198.30985915492957" y="140.281690140845" width="60.84507042253526" height="60.84507042253523" fill="none" stroke="#c0392b" stroke-width="1" rx="16.901408450704228"/>
+<rect x="465.3521126760563" y="140.281690140845" width="60.84507042253529" height="60.84507042253523" fill="none" stroke="#c0392b" stroke-width="1" rx="16.901408450704228"/>
+<rect x="198.30985915492957" y="407.3239436619718" width="60.84507042253526" height="60.84507042253523" fill="none" stroke="#c0392b" stroke-width="1" rx="16.901408450704228"/>
+<rect x="465.3521126760563" y="407.3239436619718" width="60.84507042253529" height="60.84507042253523" fill="none" stroke="#c0392b" stroke-width="1" rx="16.901408450704228"/>
+<rect x="266.2335211267606" y="498.2183098591549" width="192.03999999999996" height="43.00000000000006" fill="#fff" stroke="#aaa" stroke-width="1" rx="0"/>
+<rect x="276.2335211267606" y="506.2183098591549" width="14" height="10.000000000000057" fill="#fff" stroke="#2679a0" stroke-width="1" rx="0"/>
+<rect x="300.2335211267606" y="505.21830985915483" width="145.22" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="372.8435211267606" y="515.0683098591549" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+BD (m5, m7, m13, m15)
+</text>
+<rect x="276.2335211267606" y="523.2183098591549" width="14" height="10" fill="#fff" stroke="#c0392b" stroke-width="1" rx="0"/>
+<rect x="300.2335211267606" y="522.2183098591549" width="152.04" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="376.2535211267606" y="532.068309859155" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+B'D' (m0, m2, m8, m10)
+</text>
+<text x="320" y="592" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Rows AB and columns CD in Gray-code order; groups give F = B'D' + BD (corners wrap around)
+</text>
+</g>
+</svg>

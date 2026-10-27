@@ -65,6 +65,11 @@ import { samplePlot } from "../../../../core/src/graph/sample.js";
    spec.
 5. **Render schematic.** Build a `Schematic` model with `components`
    (id, kind, x, y, label) and `wires`, then `renderSchematic`.
+6. **Inspect the exported figure.** Apply the visual acceptance checks in
+   [kinetra-diagrams](../kinetra-diagrams/SKILL.md#visual-acceptance-for-every-figure).
+   For symbols or geometry the renderer cannot represent, use that skill's
+   custom illustration fallback while preserving the actual netlist. A custom
+   symbol does not extend the circuit solver's supported components.
 
 ## Solver limits to surface honestly
 
