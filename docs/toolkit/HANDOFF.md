@@ -374,3 +374,125 @@ PARTS_FUZZ_NEGATIVE {"cases":300,"rejected":300}
 - **Run before handing off:** `npm test`, `npm run test:compat`,
   `npm run typecheck:toolkit`, `npm run test:diagrams` and
   `npm run audit:diagrams`.
+
+
+# Toolkit handoff: Agent 3 (final)
+
+Branch: `kinetra/toolkit`, continued from Agent 2's `2481a03`. Agent 3 opens
+the single pull request into `main`; it is not merged.
+
+## What was built
+
+1. **Priority fixes from Agents 1–2** (commit `438a17d`).
+   - **Real sub/superscripts.** `F_N`, `V_{CC}`, `R_L`, `I_B`, `x^2` in labels
+     and part text render as `<tspan font-size dy>`; measurement and label boxes
+     include the script size and shift. The style contract gained a "Scripts"
+     section and `checkToolkitStyle` enforces it. The rejection for capital and
+     multi-letter scripts is gone; unknown `\symbols` and non-Latin script
+     characters still raise `E_TEXT_UNSUPPORTED`. `formatLabelText` itself is
+     unchanged (public API).
+   - **Labels over grid lines** sit behind a white halo; curves, arrows, axes
+     text and other labels still block them.
+   - **Router bounds:** orthogonal routes stay inside the canvas.
+   - **Built-in contacts** through a new optional `PartDefinition.contactWith`
+     hook: phasors sharing the polar origin, and wires crossing without a
+     junction. T-joints, shared corners and overlaps still fail; junction dots
+     still appear only at real nodes.
+   - **Expression parser:** untouched. `priority_fixes.test.ts` proves the
+     toolkit workaround gives `-3^2 = -9` and handles numbers before `)`; the
+     quirk is documented in `rules.md`.
+2. **Proof set** (`examples/toolkit/proof/`, 30 diagrams; commit `c75232c`).
+   Every requested topic, built only from toolkit parts. Two use small
+   generators in `gen/` (dipole streamlines by RK4, root-locus branches by
+   Durand–Kerner). `npm run proof:toolkit` writes the SVGs, the PNGs and
+   `docs/toolkit/contact-sheet/proof.html`/`.png`. I looked at every render and
+   fixed crowding, mis-sided labels, arrows overlapping body edges, a
+   self-overlapping datapath loop and low-contrast guide labels.
+3. **Weaknesses found and fixed while building the proof set** (all additive,
+   pinned by `proof_fixes.test.ts`):
+   - checks could not read positions: added `<id>.<anchor>.x/.y`;
+   - filled media (glass, fluid) forced `mayTouch` on everything: `background: true`;
+   - leaders and arrows could not cross grid lines: grid strokes are soft for
+     other elements' lines (part text still strict);
+   - a plot marker blocked its own label: marker-sized label extent;
+   - current arrows and crossing signal connectors needed `mayTouch`: built-in contacts;
+   - connector `via` needed two points: one is enough now;
+   - no `eV`/`nm`: added eV, keV, MeV, nm, um, pm;
+   - errors showed script carrier code points: messages and reports use plain text.
+   The checks also caught real mistakes in my own drafts: friction drawn down
+   the slope (incline), uneven FSM spacing from `rightOf` measuring bounding
+   boxes, and a 0.2 mm stage-gap drift in the datapath.
+4. **Rules** (`docs/toolkit/rules.md`) and the plugin skill
+   `packages/plugin/skills/kinetra-compose/` (`SKILL.md`, `agents/openai.yaml`):
+   the seven rules, practical rules from the proof set, a cheat-sheet of parts,
+   anchors, relations and checks, and six worked examples.
+5. **Docs:** a "Toolkit" section in `README.md`, `docs/toolkit/index.md`, an
+   "Agent 3 additions" table in `engine.md` and the "Scripts" section in
+   `style-contract.md`. `npm run proof:toolkit` is a new script.
+
+## Tests changed on purpose (and why)
+
+Four existing assertions tested behaviour that the priority fixes were asked
+to remove or that adding a skill necessarily changes. Each was replaced by an
+equally strict assertion of the new behaviour; nothing was skipped or loosened.
+
+| File | Before | After |
+| --- | --- | --- |
+| `errors.test.ts` | `E_TEXT_UNSUPPORTED` reproduced with label `F_Q` | reproduced with `\foo_Q` (unknown symbol); `F_Q` now renders |
+| `parts_errors.test.ts` | part text `F_N` rejected | `\foo_N` rejected, plus a new case for a non-Latin script character |
+| `parts_behaviour.test.ts` | crossing wires without a junction must collide | they compose with the contact reason and no dot; T-joints, shared corners, collinear overlaps and near-corner crossings must still collide |
+| `parts_helpers.ts` (SVG oracle) | no line under a label backdrop | same, except `#eee` grid lines under a backdrop that a white halo rect fully covers |
+| `compat/api-lock.json` | README.md hash `2d665354…` | `4e820495…`: `packages/plugin/README.md` gained the `kinetra-compose` row, which the plugin structure test requires for every skill. Decided with the user; no other lock entry changed |
+
+## Test counts
+
+| Command | Before (Agent 2 final) | After |
+| --- | --- | --- |
+| `npm test` | 1186/1186 | 1297/1297 (+111) |
+| `npm run test:toolkit` | 833/833 | 944/944 |
+| `npm run test:compat` | 56/56 | 56/56 |
+| `npm run test:diagrams` | 82/82 | 82/82 |
+| `npm run audit:diagrams` | 9/9 | 9/9 |
+| `npm run typecheck:diagrams` | pass | pass |
+| `npm run typecheck:toolkit` | pass (1 pre-existing error elsewhere) | same |
+| `npm run test:plugin` | 6/6 | 6/6 |
+
+New test files: `priority_fixes.test.ts` (10), `proof_fixes.test.ts` (9),
+`proof_set.test.ts` (91: a presence test, then for each diagram a
+compose/gate/style/determinism test, an independent-physics test and a
+wrong-physics mutation test).
+
+Fuzz (unchanged seeds): basic 320 cases, 0 collisions, 0 out of bounds,
+0 oracle or style problems, 320/320 negatives rejected; parts 300 cases, all 92
+types, 0 problems, 300/300 negatives rejected. Pairs and contacts differ
+slightly from Agent 1–2's numbers (719 vs 724, 3642 vs 3648) because grid
+strokes are now low priority.
+
+## Compat proof
+
+- `git diff 37831c7 -- packages/core/test/compat/golden` is empty;
+  `golden/manifest.json` sha256 is still `6a6d3e0f…5f726b73`; the 35
+  byte-identical golden tests pass.
+- Core exports, CLI usage, `diagram --help`, npm scripts (one added) and every
+  plugin file except the README row above match the lock.
+
+## Known gaps
+
+- The toolkit verifies the diagram against the agent's declared model. It
+  cannot tell whether that model is the right physics.
+- Structural diagrams (FSM, flowchart, datapath, K-map) have weaker in-model
+  checks (layout, tables); their logic is verified by the proof tests outside
+  the model.
+- Part text (tick labels, leader text) gets no halo, so it still may not sit
+  on grid lines.
+- Captions and titles take no markup.
+- `rightOf`/`leftOf` gaps are measured between bounding boxes, which include
+  initial arrows, rings and strokes; use `at` with formulas for exact spacing.
+- Untested on a fresh `core.autocrlf=true` clone (goldens are `-text`).
+
+## Known issues outside the toolkit (not fixed, existing code is frozen)
+
+- `workflow-a` crashes on `main`: `dld/truth_table.ts` raises
+  `variable is not defined`.
+- `math/eval.ts:73` references an undefined `derivative` (TypeScript error
+  TS2304); `typecheck:toolkit` reports it as pre-existing.

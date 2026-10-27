@@ -157,7 +157,7 @@ Each result in `report.checks` has `expected`, `actual`, `residual`,
   - `v_{max}` becomes `vₘₐₓ`.
   - `x^2` becomes `x²`.
   - `\theta` becomes `θ`, and `\deg` becomes `°`.
-  - Unicode has no capital subscripts, so `F_N` raises `E_TEXT_UNSUPPORTED`.
+  - Unicode has no capital subscripts, so `formatLabelText("F_N")` raises `E_TEXT_UNSUPPORTED`. Since Agent 3, labels and part text use `formatLabelMarkup` instead and render every script as a real SVG `<tspan>` (see "Agent 3 additions").
 - **Collision shapes** are in view pixels (`geometry.ts`), with stroke widths included:
   - `stroke`: a thick polyline, used for lines, shafts, wires, outlines, arcs and curves.
   - `area`: a filled polygon, used for text boxes, arrowheads and filled bodies.
@@ -321,3 +321,22 @@ In their `gate` hook, kit parts also check two things:
 - A part's own lines never cross its own text (tick labels, ring labels, angle marks).
 
 Both report `E_INVALID_VALUE` with a suggestion. No error code was added.
+
+## Agent 3 additions
+
+All additive; no existing export, signature or error code changed. The agent
+rules are in [rules.md](rules.md).
+
+| Addition | Where | Behaviour |
+| --- | --- | --- |
+| Real sub/superscripts | `text_metrics.ts` (`formatLabelMarkup`, `renderScriptTspans`, `plainLabelText`), `compose.ts`, `style.ts` | `F_N`, `V_{CC}`, `x^2` in labels, part text, legends, tables and axis titles become `<tspan font-size dy>` after `renderScene2D`. Until then each script glyph is one private-use code point, so Scene2D's length-based backdrop and the toolkit's measurement both count glyphs. Script glyphs are measured at 0.77 em; label boxes grow by the shift. `formatLabelText` is unchanged (tick labels still use Unicode). |
+| Low-priority grid | `geometry.ts` (`soft`), `gate.ts`, `parts/kit.ts`, `compose.ts` | Grid-colour (#eee) strokes are soft. Labels may sit over them and get a white halo rect covering their box; other elements' lines and fills may cross them. A part's own text (strict) still may not. |
+| Background regions | `parts.ts` (`rect`, `block`, `polygon`: `background`) | Fill and outline become soft areas, so anything may be drawn over a medium. |
+| Canvas-bounded router | `PartContext.canvas`, `routeOrthogonal(..., bounds?)` | Orthogonal connector routes stay inside the canvas (inset by half the stroke + 1 px). |
+| Built-in contacts | `PartDefinition.contactWith` (hook), `compose.ts` | Called once per pair; a reason replaces the need for `mayTouch` and appears in `report.contacts`. Used by phasors sharing the polar origin (tips must clear the other shaft), wires and signal connectors that cross cleanly (≥ 30°, away from vertices; T-joints and overlaps still fail), and inline current arrows on their conductor. |
+| Anchor coordinates in checks | `checks.ts` (`elementScope`) | `<id>.<anchor>.x` / `.y` for every argument-free anchor, in SI length. Part refs keep priority. |
+| Marker-sized label extent | `compose.ts` | A label on a small open part (box ≤ 24 px) clears the part's own box, so markers do not block their labels. |
+| `via` with one corner | `resolver.ts` (`pointProps[].min`) | Connector `via` accepts one point; other point lists still need two. |
+| Units | `expr.ts` | eV, keV, MeV, nm, um/µm, pm. |
+| Plain text in reports | `labels.ts`, `compose.ts` | Error messages and `report.labels[].text` show visible text, not the script carriers. |
+

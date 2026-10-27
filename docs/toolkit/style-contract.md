@@ -76,6 +76,22 @@ occurs in template output.
 | greenDark | #38775c | optics |
 | point | #225 | projectile points |
 
+## Scripts (toolkit addition)
+
+Sub- and superscripts in toolkit labels are `<tspan>` children of the label
+`<text>`; template output never contains them.
+
+| Rule | Value |
+| --- | --- |
+| Allowed attributes | `font-size` and `dy` only |
+| Script size | `round(size × 0.75)`: 8 px for 11, 9 px for 12, 10 px for 13 |
+| Shift | `dy` = +0.3 em (subscript) or −0.4 em (superscript), one decimal; a following base run gets the opposite `dy` |
+| Limits | `|dy|` ≤ 0.71 em; no tspans in the title |
+
+Labels over plot grid lines additionally get a white halo: a
+`<rect fill="#fff" stroke="none">` covering the label box, drawn just before
+the label. `checkToolkitStyle` enforces the tspan rules (`TOOLKIT_SCRIPT`).
+
 ## Scope
 
 The charged-rod, circuit, logic and timing renderers use their own serif or

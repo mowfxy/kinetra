@@ -45,6 +45,7 @@ packages/plugin/
 |  +- kinetra-retrieval/   # Hybrid lexical + vector retrieval, benchmark
 |  +- kinetra-study-plan/  # Ingest -> chunk -> mastery -> spaced study plan PDF
 |  +- kinetra-assess/      # Quiz / exam / flashcard generation with mastery
+|  +- kinetra-compose/     # Custom diagrams composed from toolkit parts, with checks
 +- test/
 |  +- plugin_structure.test.ts   # node --test self-tests for the plugin manifest + skills
 +- README.md
@@ -61,6 +62,7 @@ packages/plugin/
 | `kinetra-retrieval` | Ingest a local corpus, build a hybrid (lexical + vector) index, run benchmark | user wants to query local lecture notes, papers, or transcripts |
 | `kinetra-study-plan` | Build a spaced-repetition study plan PDF from a topic list, track mastery over time | user wants a study plan, syllabus tracker, or revision schedule |
 | `kinetra-assess` | Generate quiz / exam / flashcards from topics, score attempts, update mastery | user wants practice questions, an exam, or flashcards for a topic |
+| `kinetra-compose` | Compose a custom engineering diagram from toolkit parts with declared physics checks and an overlap gate | no Kinetra template fits the figure the user needs |
 
 ## How to test
 

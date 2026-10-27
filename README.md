@@ -89,6 +89,32 @@ These are model-driven renderers. They can illustrate the supported physical sys
 
 See [diagram usage and assumptions](docs/diagrams.md). Correct calculations, SVG geometry and visual readability are separate checks; no universal accuracy percentage is claimed.
 
+## Toolkit
+
+When no template fits, an agent can compose a diagram from the toolkit's 103
+part types (mechanics, structures, fields, fluids, thermodynamics, circuits,
+logic, controls and plots). Values are formulas with units, parts are placed
+by relationships, and every law the figure claims is a declared check.
+`compose` renders only when the checks pass and nothing overlaps; otherwise it
+returns errors naming the elements and the fix. The output uses the same
+Scene2D pipeline and style as the templates.
+
+```sh
+npm run compose -- examples/toolkit/proof/02-truss-method-of-joints.json out/truss.svg
+npm run proof:toolkit     # the 30-diagram proof set and its contact sheet
+npm run test:toolkit
+```
+
+What it verifies: geometry and relations, units and dimensions, the declared
+checks (equilibrium, conservation, KCL/KVL, points on curves, linked plots),
+arrow scales, overlaps between everything drawn, canvas bounds and the SVG
+style contract. What it cannot verify: whether the agent chose the right
+physics, inputs or idealisations. A diagram that passes is consistent with its
+own declared model, not proven correct for the problem.
+
+See [docs/toolkit/index.md](docs/toolkit/index.md), the agent
+[rules](docs/toolkit/rules.md) and the `kinetra-compose` plugin skill.
+
 ## Repository map
 
 | Path | Purpose |
@@ -99,7 +125,7 @@ See [diagram usage and assumptions](docs/diagrams.md). Correct calculations, SVG
 | `packages/plugin/` | Codex manifest, skills, metadata and plugin checks |
 | `examples/` | Editable models and runnable example generation |
 | `scripts/` | Source loader and reproducible diagram accuracy checks |
-| `docs/` | Diagram usage, supported assumptions and the reviewed preview |
+| `docs/` | Diagram usage, supported assumptions and the reviewed preview; `docs/toolkit/` for the composition toolkit |
 | `out/` | Ignored generated diagrams, previews and check results |
 
 ## License
