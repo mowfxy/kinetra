@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" width="900" height="760">
+<defs><linearGradient id="rod-rubber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8c9396"/><stop offset="0.24" stop-color="#e9edee"/><stop offset="0.46" stop-color="#f9faf9"/><stop offset="0.8" stop-color="#a4abad"/><stop offset="1" stop-color="#707b80"/></linearGradient>
+<linearGradient id="rod-glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#87c2d1"/><stop offset="0.22" stop-color="#eafaff"/><stop offset="0.48" stop-color="#f9ffff"/><stop offset="0.8" stop-color="#c6e9ef"/><stop offset="1" stop-color="#8abecb"/></linearGradient>
+<linearGradient id="rod-metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6d8490"/><stop offset="0.4" stop-color="#f2f6f7"/><stop offset="1" stop-color="#82949d"/></linearGradient>
+<linearGradient id="support" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f1eb"/><stop offset="1" stop-color="#a9a398"/></linearGradient></defs>
+<rect x="0" y="0" width="900" height="760" fill="#fff"/>
+<g>
+<rect x="293.5" y="88" width="423" height="22" rx="1.5" fill="url(#support)"/>
+<line x1="293.5" y1="110" x2="716.5" y2="110" stroke="#8d8b81" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="505" y1="110" x2="505" y2="280" stroke="#737773" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="505" y1="280" x2="431.5368476847169" y2="399.89975946996276" stroke="#6c706e" stroke-width="1.8" stroke-linecap="round"/>
+<line x1="505" y1="280" x2="571.5368476847169" y2="369.44975946996277" stroke="#6c706e" stroke-width="1.8" stroke-linecap="round"/>
+<g data-rod="suspended" transform="translate(300 450) rotate(-12.270720357815323)">
+<path d="M 0 -21 L 409.35192683069175 -21 A 8.4 21 0 0 1 409.35192683069175 21 L 0 21 A 8.4 21 0 0 1 0 -21 Z" fill="url(#rod-rubber)" stroke="#737c80" stroke-width="1.4"/>
+<ellipse cx="0" cy="0" rx="8.4" ry="21" fill="#c7cdce" stroke="#879194" stroke-width="1"/>
+<line x1="12.600000000000001" y1="-14.280000000000001" x2="400.9519268306918" y2="-14.280000000000001" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
+<text x="16.37407707322767" y="5" fill="#39454a" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+−
+</text>
+<text x="41.958572500145905" y="5" fill="#39454a" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+−
+</text>
+<text x="67.54306792706413" y="5" fill="#39454a" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+−
+</text>
+<text x="93.12756335398237" y="5" fill="#39454a" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+−
+</text>
+<text x="118.7120587809006" y="5" fill="#39454a" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+−
+</text>
+<path d="M 139.1796551224352 -21 C 150.72965512243522 -9.450000000000001 150.72965512243522 9.450000000000001 139.1796551224352 21" stroke="#666c6a" fill="none" stroke-width="1.6"/>
+<path d="M 282.4528295131773 -21 C 294.0028295131773 -9.450000000000001 294.0028295131773 9.450000000000001 282.4528295131773 21" stroke="#666c6a" fill="none" stroke-width="1.6"/>
+</g>
+<text x="606.8611643068012" y="339.25236462897135" fill="#272d30" font-size="26" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+Rubber
+</text>
+<g data-rod="nearby" transform="translate(155 610) rotate(-12.290257393897559)">
+<path d="M 0 -19 L 286.56761854752534 -19 A 7.6000000000000005 19 0 0 1 286.56761854752534 19 L 0 19 A 7.6000000000000005 19 0 0 1 0 -19 Z" fill="url(#rod-glass)" stroke="#84b8c6" stroke-width="1.4"/>
+<ellipse cx="0" cy="0" rx="7.6000000000000005" ry="19" fill="#daeff1" stroke="#95c2cc" stroke-width="1"/>
+<line x1="11.4" y1="-12.920000000000002" x2="278.9676185475253" y2="-12.920000000000002" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
+<text x="20.059733298326776" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="50.86575229218575" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="81.67177128604473" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="112.4777902799037" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="143.28380927376267" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="174.0898282676217" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="204.89584726148064" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="235.7018662553396" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+<text x="266.50788524919864" y="5" fill="#538492" font-size="21" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
++
+</text>
+</g>
+<text x="469" y="549" fill="#272d30" font-size="26" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+Glass
+</text>
+<line data-force="on-suspended" x1="352.4631523152831" y1="460.08024053003726" x2="369.630577500057" y2="486.07501042444176" stroke="#19aac8" stroke-width="3"/>
+<path d="M 369.630577500057 486.07501042444176 L 359.0203605613532 478.1492116932874 L 366.50685429094165 473.20499324007255 Z" fill="#19aac8"/>
+<text x="342.6889902348325" y="485.20150429123254" fill="#2f444b" font-size="24" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold">
+F
+</text>
+<line data-force="on-nearby" x1="402.955579329324" y1="536.5354461018152" x2="385.7881541445501" y2="510.5406762074107" stroke="#19aac8" stroke-width="3"/>
+<path d="M 385.7881541445501 510.5406762074107 L 396.3983710832539 518.466474938565 L 388.91187735366543 523.41069339178 Z" fill="#19aac8"/>
+<text x="412.7297414097746" y="511.4141823406199" fill="#2f444b" font-size="24" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="bold">
+F
+</text>
+<path d="M 466 173.75 A 52 17 0 1 0 544 173.75" fill="none" stroke="#a9aeab" stroke-width="7"/>
+<path d="M 466 165.75 L 455 181.75 L 476 178.75 Z" fill="#a9aeab"/>
+<path d="M 544 165.75 L 555 181.75 L 534 178.75 Z" fill="#a9aeab"/>
+<text x="581" y="189.8" fill="#737b79" font-size="15" text-anchor="start" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+free to rotate
+</text>
+<text x="450" y="698" fill="#354c56" font-size="23" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="normal">
+Opposite charges attract
+</text>
+<text x="450" y="728" fill="#727c80" font-size="13" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Equal and opposite electric forces · qualitative diagram; suspension forces omitted
+</text>
+</g>
+</svg>

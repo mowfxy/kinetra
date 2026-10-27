@@ -21,7 +21,8 @@
     "demo:workflow-b": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts workflow-b",
     "demo:workflow-c": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts workflow-c",
     "demo:workflow-d": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts workflow-d",
-    "benchmark": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts benchmark"
+    "benchmark": "node --experimental-strip-types --import ./scripts/_register.mjs packages/cli/src/bin/kinetra.ts benchmark",
+    "test:compat": "node --experimental-strip-types --import ./scripts/_register.mjs --test packages/core/test/compat/*.test.ts"
   },
   "engines": { "node": ">=25" }
 }

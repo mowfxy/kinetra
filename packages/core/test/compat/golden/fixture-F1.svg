@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+
+<rect x="0" y="0" width="600" height="400" fill="#fff"/>
+<g>
+<text x="300" y="16" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Uniform flow
+</text>
+<line x1="138" y1="204" x2="462" y2="204" stroke="#777" stroke-width="1" stroke-linecap="round"/>
+<rect x="449.18" y="209.65" width="10.82" height="14.649999999999999" fill="#ffffff"/>
+<text x="458" y="220" fill="#777" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+x
+</text>
+<line x1="300" y1="366" x2="300" y2="42" stroke="#777" stroke-width="1" stroke-linecap="round"/>
+<rect x="289.18" y="35.65" width="10.82" height="14.649999999999999" fill="#ffffff"/>
+<text x="291.18" y="46" fill="#777" font-size="11" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+y
+</text>
+<line x1="178.5" y1="366" x2="178.5" y2="42" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="138" y1="325.5" x2="462" y2="325.5" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="219" y1="366" x2="219" y2="42" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="138" y1="285" x2="462" y2="285" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="259.5" y1="366" x2="259.5" y2="42" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="138" y1="244.5" x2="462" y2="244.5" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="300" y1="366" x2="300" y2="42" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="138" y1="204" x2="462" y2="204" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="340.5" y1="366" x2="340.5" y2="42" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="138" y1="163.5" x2="462" y2="163.5" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="381" y1="366" x2="381" y2="42" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="138" y1="123" x2="462" y2="123" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="421.5" y1="366" x2="421.5" y2="42" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<line x1="138" y1="82.5" x2="462" y2="82.5" stroke="#eee" stroke-width="1" stroke-linecap="round"/>
+<defs>
+<marker id="arr-23323235-21" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="165" y1="339" x2="186.6" y2="339" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-21)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-23" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="219" y1="339" x2="240.6" y2="339" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-23)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-25" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="273" y1="339" x2="294.6" y2="339" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-25)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-27" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="327" y1="339" x2="348.6" y2="339" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-27)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-29" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="381" y1="339" x2="402.6" y2="339" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-29)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-31" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="435" y1="339" x2="456.6" y2="339" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-31)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-33" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="165" y1="285" x2="186.6" y2="285" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-33)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-35" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="219" y1="285" x2="240.6" y2="285" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-35)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-37" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="273" y1="285" x2="294.6" y2="285" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-37)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-39" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="327" y1="285" x2="348.6" y2="285" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-39)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-41" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="381" y1="285" x2="402.6" y2="285" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-41)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-43" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="435" y1="285" x2="456.6" y2="285" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-43)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-45" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="165" y1="231" x2="186.6" y2="231" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-45)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-47" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="219" y1="231" x2="240.6" y2="231" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-47)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-49" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="273" y1="231" x2="294.6" y2="231" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-49)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-51" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="327" y1="231" x2="348.6" y2="231" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-51)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-53" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="381" y1="231" x2="402.6" y2="231" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-53)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-55" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="435" y1="231" x2="456.6" y2="231" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-55)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-57" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="165" y1="177" x2="186.6" y2="177" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-57)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-59" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="219" y1="177" x2="240.6" y2="177" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-59)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-61" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="273" y1="177" x2="294.6" y2="177" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-61)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-63" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="327" y1="177" x2="348.6" y2="177" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-63)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-65" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="381" y1="177" x2="402.6" y2="177" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-65)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-67" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="435" y1="177" x2="456.6" y2="177" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-67)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-69" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="165" y1="123" x2="186.6" y2="123" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-69)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-71" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="219" y1="123" x2="240.6" y2="123" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-71)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-73" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="273" y1="123" x2="294.6" y2="123" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-73)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-75" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="327" y1="123" x2="348.6" y2="123" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-75)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-77" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="381" y1="123" x2="402.6" y2="123" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-77)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-79" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="435" y1="123" x2="456.6" y2="123" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-79)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-81" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="165" y1="69" x2="186.6" y2="69" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-81)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-83" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="219" y1="69" x2="240.6" y2="69" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-83)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-85" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="273" y1="69" x2="294.6" y2="69" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-85)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-87" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="327" y1="69" x2="348.6" y2="69" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-87)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-89" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="381" y1="69" x2="402.6" y2="69" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-89)" stroke-dasharray=""/>
+<defs>
+<marker id="arr-23323235-91" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#225"/>
+</marker>
+</defs>
+<line x1="435" y1="69" x2="456.6" y2="69" stroke="#225" stroke-width="1.6" marker-end="url(#arr-23323235-91)" stroke-dasharray=""/>
+<text x="300" y="392" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+Direction field · equal arrow lengths do not encode magnitude
+</text>
+</g>
+</svg>

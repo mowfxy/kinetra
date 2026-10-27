@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+
+<rect x="0" y="0" width="800" height="400" fill="#fff"/>
+<g>
+<text x="400" y="18" fill="#222" font-size="14" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="600">
+Wheatstone bridge
+</text>
+<line x1="141" y1="250" x2="335" y2="350" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="141" y1="250" x2="335" y2="150" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="159" y1="250" x2="150" y2="50" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="365" y1="350" x2="535" y2="350" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="365" y1="150" x2="535" y2="150" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="565" y1="350" x2="150" y2="50" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="565" y1="150" x2="150" y2="50" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
+<g data-component="V1" transform="matrix(50 0 0 -50 150 250)">
+<circle cx="0" cy="0" r="0.18" fill="#fff" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+<line x1="-0.126" y1="0" x2="-0.036" y2="0" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="-0.081" y1="-0.045" x2="-0.081" y2="0.045" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="0.036" y1="0" x2="0.126" y2="0" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="150" y="225" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+V (5V)
+</text>
+<g data-component="R1" transform="matrix(50 0 0 -50 350 350)">
+<path d="M -0.3 0 l 0.06 -0.18 l 0.12 0.36 l 0.12 -0.36 l 0.12 0.36 l 0.12 -0.36 l 0.06 0.18" fill="none" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="350" y="325" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R1 (100Ohm)
+</text>
+<g data-component="R2" transform="matrix(50 0 0 -50 350 150)">
+<path d="M -0.3 0 l 0.06 -0.18 l 0.12 0.36 l 0.12 -0.36 l 0.12 0.36 l 0.12 -0.36 l 0.06 0.18" fill="none" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="350" y="125" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R2 (100Ohm)
+</text>
+<g data-component="R3" transform="matrix(50 0 0 -50 550 350)">
+<path d="M -0.3 0 l 0.06 -0.18 l 0.12 0.36 l 0.12 -0.36 l 0.12 0.36 l 0.12 -0.36 l 0.06 0.18" fill="none" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="550" y="325" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R3 (100Ohm)
+</text>
+<g data-component="R4" transform="matrix(50 0 0 -50 550 150)">
+<path d="M -0.3 0 l 0.06 -0.18 l 0.12 0.36 l 0.12 -0.36 l 0.12 0.36 l 0.12 -0.36 l 0.06 0.18" fill="none" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="550" y="125" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R4 (100Ohm)
+</text>
+<g data-component="M1" transform="matrix(50 0 0 -50 450 250)">
+<circle cx="0" cy="0" r="0.18" fill="#fff" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+<line x1="-0.126" y1="0" x2="-0.036" y2="0" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="-0.081" y1="-0.045" x2="-0.081" y2="0.045" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="0.036" y1="0" x2="0.126" y2="0" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+</g>
+<text x="450" y="225" fill="#222" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+M (0)
+</text>
+<g data-component="G1" transform="matrix(50 0 0 -50 150 50)">
+<line x1="0" y1="0" x2="0" y2="-0.2" stroke="#222" stroke-width="1.4" vector-effect="non-scaling-stroke"/>
+<line x1="-0.15" y1="-0.2" x2="0.15" y2="-0.2" stroke="#222" stroke-width="1.6" vector-effect="non-scaling-stroke"/>
+<line x1="-0.1" y1="-0.27" x2="0.1" y2="-0.27" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+<line x1="-0.05" y1="-0.34" x2="0.05" y2="-0.34" stroke="#222" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+</g>
+</g>
+</svg>

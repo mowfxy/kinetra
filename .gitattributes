@@ -1,0 +1,2 @@
+# Compatibility goldens are compared byte-for-byte; never convert line endings.
+packages/core/test/compat/golden/** -text
