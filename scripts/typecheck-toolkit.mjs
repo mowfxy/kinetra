@@ -1,7 +1,6 @@
 // Strict TypeScript check of the composition toolkit and the compose CLI.
 // tsc also visits imported core modules; errors that already exist on main in
-// those files (currently math/eval.ts: `derivative` is undefined) are listed
-// as pre-existing and do not fail this check. Any error in toolkit-owned
+// those files are listed as pre-existing and do not fail this check. Any error in toolkit-owned
 // files fails it. Run: npm run typecheck:toolkit
 import { spawnSync } from 'node:child_process';
 import { createRequire } from 'node:module';
