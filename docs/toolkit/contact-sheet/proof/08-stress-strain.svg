@@ -13,65 +13,65 @@ Engineering stress–strain curve (idealised ductile steel)
 <line x1="102.97297297297297" y1="398.64864864864865" x2="670.5405405405406" y2="398.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="102.97297297297297" y1="398.64864864864865" x2="102.97297297297297" y2="74.32432432432432" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="102.97297297297297" y1="398.64864864864865" x2="102.97297297297297" y2="402.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="88.33297297297297" y="409.6086486486486" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="91.26997297297297" y="409.6086486486486" width="23.406000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="102.97297297297297" y="419.45864864864865" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.00
 </text>
 <line x1="204.32432432432432" y1="398.64864864864865" x2="204.32432432432432" y2="402.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="189.68432432432434" y="409.6086486486486" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="192.62132432432432" y="409.6086486486486" width="23.406000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="204.32432432432432" y="419.45864864864865" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.05
 </text>
 <line x1="305.6756756756757" y1="398.64864864864865" x2="305.6756756756757" y2="402.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="291.0356756756757" y="409.6086486486486" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="293.9726756756757" y="409.6086486486486" width="23.406000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="305.6756756756757" y="419.45864864864865" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.10
 </text>
 <line x1="407.02702702702703" y1="398.64864864864865" x2="407.02702702702703" y2="402.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="392.38702702702705" y="409.6086486486486" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="395.32402702702706" y="409.6086486486486" width="23.406000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="407.02702702702703" y="419.45864864864865" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.15
 </text>
 <line x1="508.3783783783784" y1="398.64864864864865" x2="508.3783783783784" y2="402.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="493.7383783783784" y="409.6086486486486" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="496.6753783783784" y="409.6086486486486" width="23.406000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="508.3783783783784" y="419.45864864864865" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.20
 </text>
 <line x1="609.7297297297297" y1="398.64864864864865" x2="609.7297297297297" y2="402.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="595.0897297297297" y="409.6086486486486" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="598.0267297297297" y="409.6086486486486" width="23.40599999999995" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="609.7297297297297" y="419.45864864864865" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.25
 </text>
 <line x1="102.97297297297297" y1="398.64864864864865" x2="98.97297297297297" y2="398.64864864864865" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="88.15297297297298" y="392.64864864864865" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="88.85697297297297" y="392.64864864864865" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="95.97297297297297" y="402.49864864864867" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="102.97297297297297" y1="326.5765765765766" x2="98.97297297297297" y2="326.5765765765766" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.51297297297296" y="320.5765765765766" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="76.62497297297297" y="320.5765765765766" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="95.97297297297297" y="330.4265765765766" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 100
 </text>
 <line x1="102.97297297297297" y1="254.5045045045045" x2="98.97297297297297" y2="254.5045045045045" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.51297297297296" y="248.50450450450452" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="76.62497297297297" y="248.50450450450452" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="95.97297297297297" y="258.3545045045045" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 200
 </text>
 <line x1="102.97297297297297" y1="182.43243243243245" x2="98.97297297297297" y2="182.43243243243245" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.51297297297296" y="176.43243243243245" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="76.62497297297297" y="176.43243243243245" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="95.97297297297297" y="186.28243243243244" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 300
 </text>
 <line x1="102.97297297297297" y1="110.36036036036035" x2="98.97297297297297" y2="110.36036036036035" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.51297297297296" y="104.36036036036037" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="76.62497297297297" y="104.36036036036037" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="95.97297297297297" y="114.21036036036037" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 400
 </text>
-<rect x="382.34675675675675" y="426.52864864864864" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="383.3037567567568" y="426.52864864864864" width="6.906000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="386.7567567567568" y="436.37864864864866" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 ε
 </text>
-<rect x="78.10297297297296" y="58.36432432432442" width="49.74" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="82.07397297297297" y="58.36432432432442" width="41.798" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="102.97297297297297" y="68.21432432432442" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 σ (MPa)
 </text>
@@ -677,25 +677,25 @@ Engineering stress–strain curve (idealised ductile steel)
 <line x1="608.7111231834849" y1="167.44000003639914" x2="609.7297297297297" y2="168.018018018018" stroke="#222" stroke-width="1.6" stroke-linecap="round"/>
 <line x1="609.7297297297297" y1="168.018018018018" x2="609.7297297297297" y2="398.64864864864865" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
 <ellipse cx="105.50675675675676" cy="218.46846846846847" rx="3.5" ry="3.5" fill="#fff" stroke="#222" stroke-width="1"/>
-<line x1="105.50675675675676" y1="218.46846846846847" x2="129.1554054054054" y2="69.81981981981977" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
-<line x1="129.1554054054054" y1="69.81981981981977" x2="139.1554054054054" y2="69.81981981981977" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
-<rect x="142.15540540540542" y="63.319819819819756" width="135.92" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="210.1154054054054" y="74.01981981981976" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<line x1="105.50675675675676" y1="218.46846846846847" x2="146.0472972972973" y2="69.81981981981977" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
+<line x1="146.0472972972973" y1="69.81981981981977" x2="156.0472972972973" y2="69.81981981981977" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
+<rect x="174.36175729729726" y="63.319819819819756" width="105.29108" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="227.00729729729727" y="74.01981981981976" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 yield σ<tspan font-size="9" dy="3.6">Y</tspan><tspan dy="-3.6"> = 250 MPa</tspan>
 </text>
 <ellipse cx="407.02702702702703" cy="110.36036036036035" rx="3.5" ry="3.5" fill="#fff" stroke="#222" stroke-width="1"/>
 <line x1="606.2297297297297" y1="171.518018018018" x2="613.2297297297297" y2="164.518018018018" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
 <line x1="606.2297297297297" y1="164.518018018018" x2="613.2297297297297" y2="171.518018018018" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="473.89837837837837" y="254.1417117117117" width="68.95999999999998" height="15.139999999999986" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
-<rect x="473.89837837837837" y="254.48171171171174" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="473.89837837837837" y="254.1417117117117" width="57.367999999999995" height="15.139999999999986" fill="#cfe4ff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="473.89837837837837" y="254.48171171171174" width="57.367999999999995" height="14.799999999999999" fill="#cfe4ff" stroke="none"/>
 <text x="474.89837837837837" y="265.1817117117117" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 toughness
 </text>
-<rect x="346.50702702702705" y="87.08036036036036" width="121.03999999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="346.50702702702705" y="87.08036036036036" width="105.12727999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="347.50702702702705" y="97.78036036036036" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 UTS σ<tspan font-size="9" dy="3.6">U</tspan><tspan dy="-3.6"> = 400 MPa</tspan>
 </text>
-<rect x="615.7297297297296" y="147.218018018018" width="61.519999999999996" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="615.7297297297296" y="147.218018018018" width="42.67999999999995" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="616.7297297297296" y="157.918018018018" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 fracture
 </text>

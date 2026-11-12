@@ -2058,20 +2058,20 @@ Electric dipole: field lines and equipotentials
 <line x1="453.7503759398496" y1="309.41052631578947" x2="454.94135338345865" y2="303.6270676691729" stroke="#38775c" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 4"/>
 <line x1="454.94135338345865" y1="303.6270676691729" x2="455.3383458646616" y2="297.7443609022556" stroke="#38775c" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 4"/>
 <line x1="320" y1="568.421052631579" x2="320" y2="27.067669172932312" stroke="#38775c" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="4 4"/>
-<rect x="79.94165413533838" y="290.51436090225565" width="98.72" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="79.94165413533838" y="290.51436090225565" width="73.388" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="80.94165413533838" y="301.21436090225563" fill="#38775c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 V = +1.6 kq/a
 </text>
-<rect x="461.3383458646616" y="290.51436090225565" width="98.72" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="461.3383458646616" y="290.51436090225565" width="73.38800000000003" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="462.3383458646616" y="301.21436090225563" fill="#38775c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 V = −1.6 kq/a
 </text>
-<rect x="326" y="561.1910526315788" width="39.2" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="326" y="561.1910526315788" width="30.355999999999995" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="327" y="571.8910526315789" fill="#38775c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 V = 0
 </text>
 <text x="320" y="592" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-Streamlines integrated from E; equipotentials of V = kq(1/r₊ − 1/r₋)
+Streamlines integrated from E; equipotentials of V = kq(1/r<tspan font-size="8" dy="3.3">+</tspan><tspan dy="-3.3"> − 1/r</tspan><tspan font-size="8" dy="3.3">-</tspan><tspan dy="-3.3">)</tspan>
 </text>
 </g>
 </svg>

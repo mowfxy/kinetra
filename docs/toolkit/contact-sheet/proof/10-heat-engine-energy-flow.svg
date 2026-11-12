@@ -8,18 +8,18 @@ Heat engine: energy flow
 </text>
 <rect x="113.27868852459011" y="39.344262295081904" width="346.2295081967213" height="62.950819672131175" fill="#fff" stroke="#c0392b" stroke-width="1" rx="0"/>
 <line x1="113.27868852459011" y1="102.29508196721308" x2="459.50819672131144" y2="102.29508196721308" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
-<rect x="196.11344262295077" y="64.31967213114753" width="180.56" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="219.86780262295076" y="64.31967213114753" width="133.05128000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="286.3934426229508" y="75.01967213114753" fill="#c0392b" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Hot reservoir T<tspan font-size="9" dy="3.6">H</tspan><tspan dy="-3.6"> = 600 K</tspan>
 </text>
 <rect x="113.27868852459011" y="377.70491803278685" width="346.2295081967213" height="62.95081967213116" fill="#fff" stroke="#2679a0" stroke-width="1" rx="0"/>
 <line x1="113.27868852459011" y1="377.70491803278685" x2="459.50819672131144" y2="377.70491803278685" stroke="#2679a0" stroke-width="3" stroke-linecap="round"/>
-<rect x="192.39344262295077" y="402.68032786885243" width="188" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="216.86780262295076" y="402.68032786885243" width="139.05128000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="286.3934426229508" y="413.3803278688524" fill="#2679a0" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Cold reservoir T<tspan font-size="9" dy="3.6">C</tspan><tspan dy="-3.6"> = 300 K</tspan>
 </text>
 <ellipse cx="286.3934426229508" cy="239.99999999999997" rx="48.786885245901644" ry="48.786885245901644" fill="#d6e1e6" stroke="#222" stroke-width="1"/>
-<rect x="263.0734426229508" y="233.49999999999997" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="267.3814426229508" y="233.49999999999997" width="38.024" height="14.799999999999999" fill="#d6e1e6" stroke="none"/>
 <text x="286.3934426229508" y="244.19999999999996" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 engine
 </text>
@@ -125,20 +125,20 @@ engine
 <path d="M 286.3934426229508 378.70491803278685 L 282.8934426229508 371.70491803278685 L 289.8934426229508 371.70491803278685 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
 <line x1="335.18032786885243" y1="239.99999999999997" x2="519.4590163934427" y2="239.99999999999997" stroke="#117a3a" stroke-width="2" stroke-linecap="round"/>
 <path d="M 523.4590163934427 239.99999999999997 L 516.4590163934427 243.49999999999997 L 516.4590163934427 236.49999999999997 Z" fill="#117a3a" stroke="none" stroke-width="1"/>
-<rect x="292.3934426229508" y="138.7840983606557" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="293.3934426229508" y="149.48409836065568" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="295.3934426229508" y="138.7840983606557" width="67.71127999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="296.3934426229508" y="149.48409836065568" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Q<tspan font-size="9" dy="3.6">H</tspan><tspan dy="-3.6"> = 1000 J</tspan>
 </text>
-<rect x="292.3934426229508" y="325.2759016393443" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="293.3934426229508" y="335.9759016393443" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="295.3934426229508" y="325.2759016393443" width="61.03928000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="296.3934426229508" y="335.9759016393443" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Q<tspan font-size="9" dy="3.6">C</tspan><tspan dy="-3.6"> = 650 J</tspan>
 </text>
-<rect x="394.3396721311475" y="219.19999999999996" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="394.3396721311475" y="219.19999999999996" width="56.360000000000014" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="395.3396721311475" y="229.89999999999995" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 W = 350 J
 </text>
 <text x="310" y="472" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-Q_H = W + Q_C (first law); η = W/Q_H must not exceed 1 − T_C/T_H (second law)
+Q<tspan font-size="8" dy="3.3">H</tspan><tspan dy="-3.3"> = W + Q</tspan><tspan font-size="8" dy="3.3">C</tspan><tspan dy="-3.3"> (first law); η = W/Q</tspan><tspan font-size="8" dy="3.3">H</tspan><tspan dy="-3.3"> must not exceed 1 − T</tspan><tspan font-size="8" dy="3.3">C</tspan><tspan dy="-3.3">/T</tspan><tspan font-size="8" dy="3.3">H</tspan><tspan dy="-3.3"> (second law)</tspan>
 </text>
 </g>
 </svg>

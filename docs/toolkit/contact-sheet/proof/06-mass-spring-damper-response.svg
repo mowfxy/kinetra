@@ -60,7 +60,7 @@ Mass–spring–damper: free response from x₀
 <line x1="298.4243697478993" y1="272.6071428571429" x2="293.52436974789924" y2="278.6071428571429" stroke="#666" stroke-width="1" stroke-linecap="round"/>
 <line x1="306.61764705882365" y1="272.6071428571429" x2="301.7176470588237" y2="278.6071428571429" stroke="#666" stroke-width="1" stroke-linecap="round"/>
 <rect x="176.78571428571436" y="191.25" width="75.00000000000003" height="80.35714285714289" fill="#d6e1e6" stroke="#586d78" stroke-width="1" rx="0"/>
-<rect x="209.56571428571436" y="224.92857142857142" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="209.28771428571437" y="224.92857142857142" width="9.99600000000001" height="14.799999999999999" fill="#d6e1e6" stroke="none"/>
 <text x="214.28571428571436" y="235.6285714285714" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 m
 </text>
@@ -105,62 +105,62 @@ m
 <line x1="428.57142857142867" y1="335.89285714285717" x2="867.857142857143" y2="335.89285714285717" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="428.57142857142867" y1="335.89285714285717" x2="428.57142857142867" y2="46.607142857142804" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="428.57142857142867" y1="335.89285714285717" x2="428.57142857142867" y2="339.89285714285717" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="417.34142857142865" y="346.85285714285715" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="419.9264285714287" y="346.85285714285715" width="17.29000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="428.57142857142867" y="356.70285714285717" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.0
 </text>
 <line x1="538.3928571428572" y1="335.89285714285717" x2="538.3928571428572" y2="339.89285714285717" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="527.1628571428572" y="346.85285714285715" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="529.7478571428572" y="346.85285714285715" width="17.289999999999964" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="538.3928571428572" y="356.70285714285717" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.5
 </text>
 <line x1="648.2142857142858" y1="335.89285714285717" x2="648.2142857142858" y2="339.89285714285717" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="636.9842857142858" y="346.85285714285715" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="639.5692857142858" y="346.85285714285715" width="17.289999999999964" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="648.2142857142858" y="356.70285714285717" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1.0
 </text>
 <line x1="758.0357142857144" y1="335.89285714285717" x2="758.0357142857144" y2="339.89285714285717" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="746.8057142857144" y="346.85285714285715" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="749.3907142857145" y="346.85285714285715" width="17.289999999999964" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="758.0357142857144" y="356.70285714285717" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1.5
 </text>
 <line x1="867.857142857143" y1="335.89285714285717" x2="867.857142857143" y2="339.89285714285717" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="856.627142857143" y="346.85285714285715" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="859.212142857143" y="346.85285714285715" width="17.289999999999964" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="867.857142857143" y="356.70285714285717" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2.0
 </text>
 <line x1="428.57142857142867" y1="335.89285714285717" x2="424.57142857142867" y2="335.89285714285717" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="393.2914285714287" y="329.89285714285717" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="398.85742857142867" y="329.89285714285717" width="23.714" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="421.57142857142867" y="339.7428571428572" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −1.0
 </text>
 <line x1="428.57142857142867" y1="263.57142857142856" x2="424.57142857142867" y2="263.57142857142856" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="393.2914285714287" y="257.57142857142856" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="398.85742857142867" y="257.57142857142856" width="23.714" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="421.57142857142867" y="267.4214285714286" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −0.5
 </text>
 <line x1="428.57142857142867" y1="191.25" x2="424.57142857142867" y2="191.25" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="400.1114285714287" y="185.25" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="405.28142857142865" y="185.25" width="17.29000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="421.57142857142867" y="195.1" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.0
 </text>
 <line x1="428.57142857142867" y1="118.92857142857137" x2="424.57142857142867" y2="118.92857142857137" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="400.1114285714287" y="112.92857142857137" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="405.28142857142865" y="112.92857142857137" width="17.29000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="421.57142857142867" y="122.77857142857137" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.5
 </text>
 <line x1="428.57142857142867" y1="46.607142857142804" x2="424.57142857142867" y2="46.607142857142804" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="400.1114285714287" y="40.6071428571428" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="405.28142857142865" y="40.6071428571428" width="17.29000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="421.57142857142867" y="50.4571428571428" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1.0
 </text>
-<rect x="630.1642857142858" y="363.7728571428571" width="36.1" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="637.7432857142858" y="363.7728571428571" width="20.942000000000007" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="648.2142857142858" y="373.62285714285713" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 t (s)
 </text>
-<rect x="413.9314285714287" y="23.68714285714281" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="418.18776857142865" y="23.68714285714281" width="20.767319999999984" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="428.57142857142867" y="33.53714285714281" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-x/x₀
+x/x<tspan font-size="8" dy="3.3">0</tspan>
 </text>
 <line x1="428.57142857142867" y1="46.607142857142804" x2="430.7788944723619" y2="49.48551172852447" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
 <line x1="430.7788944723619" y1="49.48551172852447" x2="432.98636037329516" y2="52.30660153667833" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
@@ -961,25 +961,25 @@ x/x₀
 <line x1="866.390412592416" y1="188.8189112685098" x2="867.1237777247795" y2="188.87746310604447" stroke="#2679a0" stroke-width="1.6" stroke-linecap="round"/>
 <line x1="867.1237777247795" y1="188.87746310604447" x2="867.857142857143" y2="188.93786528099017" stroke="#2679a0" stroke-width="1.6" stroke-linecap="round"/>
 <ellipse cx="498.9971558526382" cy="267.42190811741887" rx="3.4999999999999996" ry="3.4999999999999996" fill="#fff" stroke="#222" stroke-width="1"/>
-<rect x="504.7971558526382" y="273.2219081174189" width="225.19999999999993" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
-<rect x="99.74428571428574" y="182.20000000000002" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="99.74428571428574" y="182.20000000000002" width="8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="100.74428571428574" y="192.9" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 k
 </text>
-<rect x="99.74428571428574" y="222.3785714285714" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="99.74428571428574" y="222.3785714285714" width="8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="100.74428571428574" y="233.0785714285714" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 c
 </text>
-<rect x="251.97714285714287" y="130.27142857142857" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="252.97714285714287" y="140.97142857142856" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="251.97714285714287" y="128.77142857142857" width="19.328000000000003" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="252.97714285714287" y="139.47142857142856" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 x(t)
 </text>
-<rect x="504.7971558526382" y="273.5619081174189" width="225.2" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="504.7971558526382" y="273.2219081174189" width="154.69088" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="504.7971558526382" y="273.5619081174189" width="154.69088" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="505.7971558526382" y="284.2619081174189" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-first undershoot −0.53x₀ at t<tspan font-size="9" dy="3.6">p</tspan>
+first undershoot −0.53x<tspan font-size="9" dy="3.6">0</tspan><tspan dy="-3.6"> at t</tspan><tspan font-size="9" dy="3.6">p</tspan>
 </text>
 <text x="450" y="412" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-m = 1 kg, k = 100 N/m, c = 4 N·s/m: ωₙ = 10 rad/s, ζ = 0.2 (underdamped)
+m = 1 kg, k = 100 N/m, c = 4 N·s/m: ω<tspan font-size="8" dy="3.3">n</tspan><tspan dy="-3.3"> = 10 rad/s, ζ = 0.2 (underdamped)</tspan>
 </text>
 </g>
 </svg>

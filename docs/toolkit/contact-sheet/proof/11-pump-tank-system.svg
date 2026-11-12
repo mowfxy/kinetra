@@ -48,47 +48,47 @@ Pumping between two open tanks
 <path d="M 772.463768115942 100.44927536231887 L 775.963768115942 107.44927536231887 L 768.963768115942 107.44927536231887 Z" fill="#444" stroke="none" stroke-width="1"/>
 <line x1="772.463768115942" y1="226.23188405797106" x2="772.463768115942" y2="348.01449275362324" stroke="#444" stroke-width="1" stroke-linecap="round"/>
 <path d="M 772.463768115942 352.01449275362324 L 768.963768115942 345.01449275362324 L 775.963768115942 345.01449275362324 Z" fill="#444" stroke="none" stroke-width="1"/>
-<rect x="699.2637681159421" y="220.23188405797106" width="70.2" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="706.9142681159421" y="220.23188405797106" width="54.899" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="734.3637681159421" y="230.08188405797105" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Δz = 4.2 m
 </text>
 <line x1="136.66666666666666" y1="351.01449275362324" x2="772.463768115942" y2="351.01449275362324" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
 <line x1="683.3333333333334" y1="101.44927536231887" x2="772.463768115942" y2="101.44927536231887" stroke="#aaa" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 4"/>
 <rect x="225.0915942028985" y="119.1295652173913" width="203.44000000000003" height="83.48000000000005" fill="#fff" stroke="#444" stroke-width="1" rx="0"/>
-<rect x="229.09159420289853" y="124.93956521739135" width="135.92" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="229.09159420289853" y="124.93956521739135" width="102.05599999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="230.09159420289853" y="135.63956521739135" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 v = Q/A = 2.39 m/s
 </text>
-<rect x="229.09159420289853" y="144.5595652173913" width="195.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="229.09159420289853" y="144.5595652173913" width="139.86944" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="230.09159420289853" y="155.2595652173913" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 h<tspan font-size="9" dy="3.6">L</tspan><tspan dy="-3.6"> = 1.35 m (pipe + valve)</tspan>
 </text>
-<rect x="229.09159420289853" y="164.17956521739134" width="158.24" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="229.09159420289853" y="164.17956521739134" width="119.35088000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="230.09159420289853" y="174.87956521739133" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 H<tspan font-size="9" dy="3.6">p</tspan><tspan dy="-3.6"> = Δz + h</tspan><tspan font-size="9" dy="3.6">L</tspan><tspan dy="-3.6"> = 5.55 m</tspan>
 </text>
-<rect x="229.09159420289853" y="183.79956521739132" width="128.48000000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="229.09159420289853" y="183.79956521739132" width="108.70544000000001" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="230.09159420289853" y="194.4995652173913" fill="#333" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 P = ρgQH<tspan font-size="9" dy="3.6">p</tspan><tspan dy="-3.6"> = 653 W</tspan>
 </text>
-<rect x="113.34666666666666" y="321.7023188405798" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="113.34666666666666" y="321.7023188405798" width="36.02000000000001" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="114.34666666666666" y="332.40231884057977" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 tank A
 </text>
-<rect x="660.0133333333333" y="62.823188405797154" width="46.64" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="660.0133333333333" y="62.823188405797154" width="36.01999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="661.0133333333333" y="73.52318840579716" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 tank B
 </text>
-<rect x="322.815652173913" y="429.8182608695653" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="322.815652173913" y="429.8182608695653" width="31.75999999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="323.815652173913" y="440.51826086956527" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 pump
 </text>
-<rect x="454.98840579710156" y="362.00434782608704" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="454.98840579710156" y="362.00434782608704" width="56.696000000000026" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="455.98840579710156" y="372.70434782608703" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 gate valve
 </text>
 <text x="410" y="492" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-Q = 12 L/s through D = 80 mm pipe; pump head H_p = Δz + h_L
+Q = 12 L/s through D = 80 mm pipe; pump head H<tspan font-size="8" dy="3.3">p</tspan><tspan dy="-3.3"> = Δz + h</tspan><tspan font-size="8" dy="3.3">L</tspan>
 </text>
 </g>
 </svg>

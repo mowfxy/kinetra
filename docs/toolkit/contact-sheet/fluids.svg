@@ -14,7 +14,7 @@ Kinetra toolkit parts: fluids
 <path d="M 122.50000000000001 104.59000000000003 L 117.5 97.59000000000003 L 127.50000000000001 97.59000000000003 Z" fill="#fff" stroke="#2679a0" stroke-width="1"/>
 <line x1="117.5" y1="110.59000000000003" x2="127.50000000000001" y2="110.59000000000003" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
 <line x1="119.75" y1="113.59000000000003" x2="125.25000000000001" y2="113.59000000000003" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
-<rect x="85.36" y="195" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="88.605" y="195" width="22.790000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="100" y="204.85" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 tank
 </text>
@@ -26,7 +26,7 @@ tank
 <line x1="294.5" y1="95.5" x2="294.5" y2="145.50000000000003" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
 <line x1="294.5" y1="145.50000000000003" x2="375" y2="145.50000000000003" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M 300 119 L 296.5 112 L 303.5 112 Z" fill="#2679a0" stroke="none" stroke-width="1"/>
-<rect x="285.36" y="195" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="288.605" y="195" width="22.79000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="300" y="204.85" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 pipe
 </text>
@@ -40,7 +40,7 @@ pipe
 <path d="M 517.5 111.5 L 575 111.5 L 575 118.5 L 517.5 118.5 Z" fill="#cfe4ff" stroke="none" stroke-width="1"/>
 <line x1="517.5" y1="111.5" x2="575" y2="111.5" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
 <line x1="517.5" y1="118.5" x2="575" y2="118.5" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
-<rect x="481.95" y="195" width="36.1" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="486.163" y="195" width="27.673999999999978" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="500" y="204.85" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 valve
 </text>
@@ -53,7 +53,7 @@ valve
 <line x1="722.5" y1="111" x2="775" y2="111" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
 <line x1="722.5" y1="119" x2="775" y2="119" stroke="#526873" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M 752.75 115 L 745.75 118.5 L 745.75 111.5 Z" fill="#2679a0" stroke="none" stroke-width="1"/>
-<rect x="685.36" y="195" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="685.36" y="195" width="29.279999999999973" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="700" y="204.85" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 pump
 </text>
@@ -62,11 +62,11 @@ pump
 <line x1="865" y1="170" x2="935" y2="170" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
 <line x1="935" y1="170" x2="935" y2="70" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
 <path d="M 866.4999999999999 122.39999999999998 L 933.5000000000001 122.39999999999998 L 933.5000000000001 114.39999999999998 L 866.4999999999999 114.39999999999998 Z" fill="#8a969c" stroke="#526873" stroke-width="1"/>
-<rect x="887.84" y="139.7" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="889.328" y="139.7" width="21.34400000000005" height="14.799999999999999" fill="#e8edef" stroke="none"/>
 <text x="900" y="150.39999999999998" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 gas
 </text>
-<rect x="851.26" y="195" width="97.48" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="864.1575" y="195" width="71.68499999999995" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="900" y="204.85" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 pistonCylinder
 </text>
@@ -144,17 +144,17 @@ pistonCylinder
 <line x1="1150.4444444444443" y1="116.5" x2="1152" y2="115" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
 <line x1="1152" y1="115" x2="1157" y2="115" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
 <path d="M 1161 115 L 1154 118.5 L 1154 111.5 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
-<rect x="1071.72" y="195" width="56.56" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="1076.6865" y="195" width="46.62699999999995" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="1100" y="204.85" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 heatFlow
 </text>
 <rect x="35" y="265" width="130" height="40" fill="#fff" stroke="#c0392b" stroke-width="1" rx="0"/>
 <line x1="35" y1="305" x2="165" y2="305" stroke="#c0392b" stroke-width="3" stroke-linecap="round"/>
-<rect x="61.8" y="278.5" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="70.24728" y="278.5" width="59.50544000000001" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="100" y="289.2" fill="#c0392b" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-T₁ = 600 K
+T<tspan font-size="9" dy="3.6">1</tspan><tspan dy="-3.6"> = 600 K</tspan>
 </text>
-<rect x="68.31" y="364.85" width="63.38" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="77.6105" y="364.85" width="44.778999999999996" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="100" y="374.70000000000005" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 reservoir
 </text>
@@ -221,12 +221,12 @@ reservoir
 <path d="M 330 283 L 325 276 L 334.99999999999994 276 Z" fill="#fff" stroke="#2679a0" stroke-width="1"/>
 <line x1="325" y1="289" x2="334.99999999999994" y2="289" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
 <line x1="327.25" y1="292" x2="332.74999999999994" y2="292" stroke="#2679a0" stroke-width="1" stroke-linecap="round"/>
-<rect x="254.67000000000002" y="364.85" width="90.66" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="267.21" y="364.85" width="65.57999999999998" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="300" y="374.70000000000005" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 liquidSurface
 </text>
-<rect x="1094.832" y="94.19999999999997" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="1095.832" y="104.89999999999998" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="1094.832" y="91.19999999999997" width="10.336000000000013" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="1095.832" y="101.89999999999998" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Q
 </text>
 </g>
