@@ -11,45 +11,45 @@ Standing wave on a string fixed at both ends: third harmonic
 <line x1="76.52173913043478" y1="143.4782608695652" x2="714.2028985507246" y2="143.4782608695652" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="714.2028985507246" y1="347.536231884058" x2="714.2028985507246" y2="143.4782608695652" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="76.52173913043478" y1="347.536231884058" x2="76.52173913043478" y2="351.536231884058" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="65.29173913043478" y="358.496231884058" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.87673913043479" y="358.496231884058" width="17.290000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="76.52173913043478" y="368.346231884058" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.0
 </text>
 <line x1="289.0821256038648" y1="347.536231884058" x2="289.0821256038648" y2="351.536231884058" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="277.8521256038648" y="358.496231884058" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="280.43712560386484" y="358.496231884058" width="17.29000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="289.0821256038648" y="368.346231884058" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.4
 </text>
 <line x1="501.6425120772948" y1="347.536231884058" x2="501.6425120772948" y2="351.536231884058" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="490.41251207729476" y="358.496231884058" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="492.9975120772948" y="358.496231884058" width="17.29000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="501.6425120772948" y="368.346231884058" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.8
 </text>
 <line x1="714.2028985507246" y1="347.536231884058" x2="714.2028985507246" y2="351.536231884058" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="702.9728985507246" y="358.496231884058" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="705.5578985507246" y="358.496231884058" width="17.289999999999964" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="714.2028985507246" y="368.346231884058" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1.2
 </text>
 <line x1="76.52173913043478" y1="327.1304347826087" x2="72.52173913043478" y2="327.1304347826087" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="54.88173913043478" y="321.1304347826087" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="55.98173913043478" y="321.1304347826087" width="14.54" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="69.52173913043478" y="330.9804347826087" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −1
 </text>
 <line x1="76.52173913043478" y1="245.5072463768116" x2="72.52173913043478" y2="245.5072463768116" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="61.70173913043478" y="239.5072463768116" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="62.40573913043478" y="239.5072463768116" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="69.52173913043478" y="249.3572463768116" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="76.52173913043478" y1="163.88405797101447" x2="72.52173913043478" y2="163.88405797101447" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="61.70173913043478" y="157.88405797101447" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="62.40573913043478" y="157.88405797101447" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="69.52173913043478" y="167.73405797101447" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1
 </text>
-<rect x="377.31231884057974" y="375.416231884058" width="36.1" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="381.83881884057973" y="375.416231884058" width="27.047000000000025" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="395.36231884057975" y="385.266231884058" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 x (m)
 </text>
-<rect x="65.29173913043478" y="127.51826086956521" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.57423913043478" y="127.51826086956521" width="17.894999999999996" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="76.52173913043478" y="137.3682608695652" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 y/A
 </text>
@@ -657,17 +657,17 @@ y/A
 <circle cx="182.80193236714976" cy="163.88405797101447" r="3" fill="#222"/>
 <rect x="673.7153623188407" y="49.71014492753619" width="151.12" height="60" fill="#fff" stroke="#aaa" stroke-width="1" rx="0"/>
 <ellipse cx="690.7153623188407" cy="62.71014492753625" rx="4.5" ry="4.5" fill="none" stroke="#222" stroke-width="1"/>
-<rect x="707.7153623188407" y="56.71014492753624" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
-<text x="722.3553623188407" y="66.56014492753624" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="724.6773623188407" y="56.71014492753624" width="26.464000000000055" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="737.9093623188406" y="66.56014492753624" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 node
 </text>
 <circle cx="690.7153623188407" cy="79.71014492753622" r="3" fill="#222"/>
-<rect x="707.7153623188407" y="73.71014492753622" width="56.56" height="13.649999999999999" fill="#ffffff" stroke="none"/>
-<text x="735.9953623188406" y="83.56014492753621" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="724.6773623188407" y="73.71014492753622" width="44.196000000000026" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="746.7753623188406" y="83.56014492753621" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 antinode
 </text>
 <line x1="679.7153623188407" y1="96.71014492753622" x2="701.7153623188407" y2="96.71014492753622" stroke="#2679a0" stroke-width="1.6" stroke-linecap="round"/>
-<rect x="707.7153623188406" y="90.71014492753622" width="111.12" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="724.6773623188406" y="90.71014492753622" width="77.19600000000003" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="763.2753623188405" y="100.56014492753621" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 y(x, t) envelope
 </text>
@@ -675,12 +675,12 @@ y(x, t) envelope
 <path d="M 502.6425120772948 95.65217391304347 L 495.6425120772948 99.15217391304347 L 495.6425120772948 92.15217391304347 Z" fill="#444" stroke="none" stroke-width="1"/>
 <line x1="289.08212560386477" y1="95.65217391304347" x2="79.52173913043478" y2="95.65217391304347" stroke="#444" stroke-width="1" stroke-linecap="round"/>
 <path d="M 75.52173913043478 95.65217391304347 L 82.52173913043478 92.15217391304347 L 82.52173913043478 99.15217391304347 Z" fill="#444" stroke="none" stroke-width="1"/>
-<rect x="257.39212560386477" y="79.69217391304343" width="63.38" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="265.30662560386475" y="79.69217391304343" width="47.55099999999999" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="289.08212560386477" y="89.54217391304343" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 λ = 0.8 m
 </text>
 <text x="440" y="432" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-L = 1.2 m, wave speed v = 48 m/s: λ₃ = 2L/3, f₃ = 3v/(2L) = 60 Hz; nodes λ/2 apart
+L = 1.2 m, wave speed v = 48 m/s: λ<tspan font-size="8" dy="3.3">3</tspan><tspan dy="-3.3"> = 2L/3, f</tspan><tspan font-size="8" dy="3.3">3</tspan><tspan dy="-3.3"> = 3v/(2L) = 60 Hz; nodes λ/2 apart</tspan>
 </text>
 </g>
 </svg>

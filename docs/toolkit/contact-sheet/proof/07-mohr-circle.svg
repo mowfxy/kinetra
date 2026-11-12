@@ -11,54 +11,54 @@ Mohr's circle for plane stress
 <line x1="254.71698113207546" y1="475.2830188679245" x2="254.71698113207546" y2="60.73584905660374" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <path d="M 254.71698113207546 56.73584905660374 L 258.2169811320755 63.73584905660374 L 251.21698113207546 63.73584905660374 Z" fill="#777" stroke="none" stroke-width="1"/>
 <line x1="118.86792452830188" y1="271.5094339622641" x2="118.86792452830188" y2="275.50943396226415" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="107.63792452830188" y="282.46943396226413" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="108.53992452830188" y="282.46943396226413" width="20.65599999999999" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="118.86792452830188" y="292.31943396226416" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −60
 </text>
 <line x1="186.79245283018867" y1="271.5094339622641" x2="186.79245283018867" y2="275.50943396226415" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="175.56245283018868" y="282.46943396226413" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="176.46445283018866" y="282.46943396226413" width="20.656000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="186.79245283018867" y="292.31943396226416" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −30
 </text>
 <line x1="322.64150943396226" y1="271.5094339622641" x2="322.64150943396226" y2="275.50943396226415" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="314.82150943396226" y="282.46943396226413" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="315.52550943396227" y="282.46943396226413" width="14.231999999999971" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="322.64150943396226" y="292.31943396226416" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 30
 </text>
 <line x1="390.56603773584914" y1="271.5094339622641" x2="390.56603773584914" y2="275.50943396226415" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="382.74603773584914" y="282.46943396226413" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="383.45003773584915" y="282.46943396226413" width="14.231999999999971" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="390.56603773584914" y="292.31943396226416" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 60
 </text>
 <line x1="254.71698113207546" y1="452.64150943396226" x2="250.71698113207543" y2="452.64150943396226" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="226.25698113207545" y="446.64150943396226" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="228.06098113207545" y="446.64150943396226" width="20.656000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="247.71698113207546" y="456.4915094339623" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −80
 </text>
 <line x1="254.71698113207546" y1="362.0754716981132" x2="250.71698113207543" y2="362.0754716981132" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="226.25698113207545" y="356.0754716981132" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="228.06098113207545" y="356.0754716981132" width="20.656000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="247.71698113207546" y="365.9254716981132" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −40
 </text>
 <line x1="254.71698113207546" y1="180.94339622641508" x2="250.71698113207543" y2="180.94339622641508" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="233.07698113207545" y="174.9433962264151" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="234.48498113207543" y="174.9433962264151" width="14.232" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="247.71698113207543" y="184.7933962264151" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 40
 </text>
 <line x1="254.71698113207546" y1="90.37735849056605" x2="250.71698113207543" y2="90.37735849056605" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="233.07698113207545" y="84.37735849056608" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="234.48498113207543" y="84.37735849056608" width="14.232" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="247.71698113207543" y="94.22735849056608" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 80
 </text>
-<rect x="243.89698113207547" y="275.46943396226413" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="244.60098113207545" y="275.46943396226413" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="251.71698113207546" y="285.31943396226416" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
-<rect x="492.13207547169816" y="275.46943396226413" width="49.74" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="492.13207547169816" y="275.46943396226413" width="41.798" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="493.13207547169816" y="285.31943396226416" fill="#333" font-size="11" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 σ (MPa)
 </text>
-<rect x="253.71698113207546" y="39.77584905660378" width="49.74" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="253.71698113207546" y="39.77584905660378" width="39.345" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="254.71698113207546" y="49.62584905660378" fill="#333" font-size="11" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 τ (MPa)
 </text>
@@ -837,49 +837,48 @@ Mohr's circle for plane stress
 </marker>
 </defs>
 <line x1="750" y1="326.9811320754717" x2="687.7358490566037" y2="326.9811320754717" stroke="#357aa6" stroke-width="1.6" marker-end="url(#arr-23333537616136-776)" stroke-dasharray=""/>
-<rect x="665.7879245283018" y="112.17924528301886" width="106.16" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="677.8539245283018" y="112.17924528301886" width="82.02800000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="718.8679245283018" y="122.87924528301886" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Stress element
 </text>
-<rect x="615.5679245283019" y="418.33962264150944" width="206.6" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="648.4401045283018" y="418.33962264150944" width="140.85564" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="718.8679245283018" y="428.18962264150946" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-θₚ = 13.3° (2θₚ on the circle)
+θ<tspan font-size="8" dy="3.3">p</tspan><tspan dy="-3.3"> = 13.3° (2θ</tspan><tspan font-size="8" dy="3.3">p</tspan><tspan dy="-3.3"> on the circle)</tspan>
 </text>
-<line x1="718.8679245283018" y1="208.11320754716974" x2="702.1596619510999" y2="206.00645611757295" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
-<rect x="440.6490566037735" y="183.98490566037736" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="440.6490566037735" y="183.98490566037736" width="54.69200000000001" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="441.6490566037735" y="194.68490566037735" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 X (80, 30)
 </text>
-<rect x="68.0709433962264" y="344.57396226415096" width="91.28" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="68.0709433962264" y="344.57396226415096" width="68.708" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="69.0709433962264" y="355.27396226415095" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Y (−40, −30)
 </text>
-<rect x="295.168" y="249.50943396226415" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="295.168" y="249.50943396226415" width="9.663999999999987" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="296.168" y="260.20943396226414" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 C
 </text>
-<rect x="457.6838626226271" y="249.4294339622641" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="457.6838626226271" y="249.4294339622641" width="51.585440000000006" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="458.6838626226271" y="260.1294339622641" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 σ<tspan font-size="9" dy="3.6">1</tspan><tspan dy="-3.6"> = 87.1</tspan>
 </text>
-<rect x="65.91613737737276" y="249.4294339622641" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="65.91613737737276" y="249.4294339622641" width="58.59344" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="66.91613737737276" y="260.1294339622641" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 σ<tspan font-size="9" dy="3.6">2</tspan><tspan dy="-3.6"> = −47.1</tspan>
 </text>
-<rect x="824.7675471698113" y="277.84943396226413" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="825.7675471698113" y="288.5494339622641" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="824.7675471698113" y="279.34943396226413" width="14.035999999999945" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="825.7675471698113" y="290.0494339622641" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 σ<tspan font-size="9" dy="3.6">x</tspan>
 </text>
-<rect x="780.3396226415094" y="232.40735849056597" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="781.3396226415094" y="243.10735849056596" fill="#357aa6" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-τ<tspan font-size="9" dy="3.6">xy</tspan>
-</text>
-<rect x="685.2796619510999" y="189.72645611757292" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="686.2796619510999" y="200.4264561175729" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="725.1679245283018" y="185.53320754716975" width="14.035999999999945" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="726.1679245283018" y="196.23320754716974" fill="#c0392b" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 σ<tspan font-size="9" dy="3.6">y</tspan>
 </text>
+<rect x="781.8396226415094" y="232.40735849056597" width="15.980000000000018" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="782.8396226415094" y="243.10735849056596" fill="#357aa6" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+τ<tspan font-size="9" dy="3.6">xy</tspan>
+</text>
 <text x="450" y="552" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-σₓ = 80 MPa, σᵧ = −40 MPa, τₓᵧ = 30 MPa; point X = (σₓ, τₓᵧ), Y = (σᵧ, −τₓᵧ)
+σ<tspan font-size="8" dy="3.3">x</tspan><tspan dy="-3.3"> = 80 MPa, σ</tspan><tspan font-size="8" dy="3.3">y</tspan><tspan dy="-3.3"> = −40 MPa, τ</tspan><tspan font-size="8" dy="3.3">xy</tspan><tspan dy="-3.3"> = 30 MPa; point X = (σ</tspan><tspan font-size="8" dy="3.3">x</tspan><tspan dy="-3.3">, τ</tspan><tspan font-size="8" dy="3.3">xy</tspan><tspan dy="-3.3">), Y = (σ</tspan><tspan font-size="8" dy="3.3">y</tspan><tspan dy="-3.3">, −τ</tspan><tspan font-size="8" dy="3.3">xy</tspan><tspan dy="-3.3">)</tspan>
 </text>
 </g>
 </svg>

@@ -46,21 +46,21 @@ Inverting amplifier
 <line x1="266" y1="252.8" x2="266" y2="296" stroke="#222" stroke-width="1.2" stroke-linecap="round"/>
 <ellipse cx="286" cy="195.2" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
 <ellipse cx="514" cy="224" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
-<rect x="163.8" y="147.78" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="164.8" y="158.48" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-Rᵢₙ = 1 kΩ
+<rect x="163.8" y="146.29999999999998" width="56.50471999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="164.8" y="156.99999999999997" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">in</tspan><tspan dy="-3.6"> = 1 kΩ</tspan>
 </text>
-<rect x="347.8" y="32.58000000000003" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="348.8" y="43.28000000000003" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-Rf = 10 kΩ
+<rect x="347.8" y="31.100000000000012" width="58.556719999999984" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="348.8" y="41.80000000000001" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">f</tspan><tspan dy="-3.6"> = 10 kΩ</tspan>
 </text>
-<rect x="43.68" y="187.97" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="44.68" y="198.67" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-vᵢₙ
+<rect x="43.68" y="187.23" width="15.188719999999996" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="44.68" y="197.92999999999998" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+v<tspan font-size="9" dy="3.6">in</tspan>
 </text>
-<rect x="586.12" y="203.20000000000002" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="587.12" y="213.9" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-vₒᵤₜ
+<rect x="586.12" y="201.72" width="20.843600000000038" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="587.12" y="212.42" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+v<tspan font-size="9" dy="3.6">out</tspan>
 </text>
 </g>
 </svg>

@@ -16,51 +16,51 @@ Bode plot of G(s) = ωₙ²/(s² + 2ζωₙs + ωₙ²), ωₙ = 10 rad/s, ζ = 
 <line x1="89.62962962962965" y1="47.407407407407504" x2="682.2222222222222" y2="47.407407407407504" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="682.2222222222222" y1="248.88888888888897" x2="682.2222222222222" y2="47.407407407407504" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="89.62962962962965" y1="248.88888888888897" x2="89.62962962962965" y2="252.88888888888897" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="78.39962962962964" y="259.84888888888895" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="80.98462962962965" y="259.84888888888895" width="17.290000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.62962962962965" y="269.698888888889" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.1
 </text>
 <line x1="237.77777777777777" y1="248.88888888888897" x2="237.77777777777777" y2="252.88888888888897" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="233.36777777777777" y="259.84888888888895" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="233.71977777777778" y="259.84888888888895" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="237.77777777777777" y="269.698888888889" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1
 </text>
 <line x1="385.92592592592587" y1="248.88888888888897" x2="385.92592592592587" y2="252.88888888888897" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="378.1059259259259" y="259.84888888888895" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="378.8099259259259" y="259.84888888888895" width="14.231999999999971" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="385.92592592592587" y="269.698888888889" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 10
 </text>
 <line x1="534.074074074074" y1="248.88888888888897" x2="534.074074074074" y2="252.88888888888897" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="522.844074074074" y="259.84888888888895" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="523.900074074074" y="259.84888888888895" width="20.347999999999956" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="534.074074074074" y="269.698888888889" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 100
 </text>
 <line x1="682.2222222222222" y1="248.88888888888897" x2="682.2222222222222" y2="252.88888888888897" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="667.5822222222222" y="259.84888888888895" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="668.9902222222222" y="259.84888888888895" width="26.463999999999942" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="682.2222222222222" y="269.698888888889" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1000
 </text>
 <line x1="89.62962962962965" y1="248.88888888888897" x2="85.62962962962965" y2="248.88888888888897" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="61.16962962962965" y="242.88888888888897" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="62.97362962962965" y="242.88888888888897" width="20.656" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="252.73888888888897" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −80
 </text>
 <line x1="89.62962962962965" y1="181.7283950617285" x2="85.62962962962965" y2="181.7283950617285" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="61.16962962962965" y="175.7283950617285" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="62.97362962962965" y="175.7283950617285" width="20.656" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="185.5783950617285" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −40
 </text>
 <line x1="89.62962962962965" y1="114.56790123456801" x2="85.62962962962965" y2="114.56790123456801" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.80962962962965" y="108.56790123456801" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="75.51362962962965" y="108.56790123456801" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="118.417901234568" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="89.62962962962965" y1="47.407407407407504" x2="85.62962962962965" y2="47.407407407407504" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="67.98962962962965" y="41.4074074074075" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="69.39762962962965" y="41.4074074074075" width="14.232" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="51.2574074074075" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 40
 </text>
-<rect x="61.349629629629646" y="24.487407407407538" width="56.56" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="69.57212962962964" y="24.487407407407538" width="40.11500000000001" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.62962962962965" y="34.33740740740754" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 |G| (dB)
 </text>
@@ -875,60 +875,60 @@ Bode plot of G(s) = ωₙ²/(s² + 2ζωₙs + ωₙ²), ωₙ = 10 rad/s, ζ = 
 <line x1="89.62962962962965" y1="343.7037037037038" x2="682.2222222222222" y2="343.7037037037038" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="682.2222222222222" y1="545.1851851851852" x2="682.2222222222222" y2="343.7037037037038" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="89.62962962962965" y1="545.1851851851852" x2="89.62962962962965" y2="549.1851851851852" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="78.39962962962964" y="556.1451851851853" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="80.98462962962965" y="556.1451851851853" width="17.290000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.62962962962965" y="565.9951851851853" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.1
 </text>
 <line x1="237.77777777777777" y1="545.1851851851852" x2="237.77777777777777" y2="549.1851851851852" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="233.36777777777777" y="556.1451851851853" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="233.71977777777778" y="556.1451851851853" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="237.77777777777777" y="565.9951851851853" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1
 </text>
 <line x1="385.92592592592587" y1="545.1851851851852" x2="385.92592592592587" y2="549.1851851851852" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="378.1059259259259" y="556.1451851851853" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="378.8099259259259" y="556.1451851851853" width="14.231999999999971" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="385.92592592592587" y="565.9951851851853" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 10
 </text>
 <line x1="534.074074074074" y1="545.1851851851852" x2="534.074074074074" y2="549.1851851851852" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="522.844074074074" y="556.1451851851853" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="523.900074074074" y="556.1451851851853" width="20.347999999999956" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="534.074074074074" y="565.9951851851853" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 100
 </text>
 <line x1="682.2222222222222" y1="545.1851851851852" x2="682.2222222222222" y2="549.1851851851852" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="667.5822222222222" y="556.1451851851853" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="668.9902222222222" y="556.1451851851853" width="26.463999999999942" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="682.2222222222222" y="565.9951851851853" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1000
 </text>
 <line x1="89.62962962962965" y1="545.1851851851852" x2="85.62962962962965" y2="545.1851851851852" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="54.349629629629646" y="539.1851851851852" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="56.85762962962965" y="539.1851851851852" width="26.772" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="549.0351851851852" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −180
 </text>
 <line x1="89.62962962962965" y1="494.8148148148149" x2="85.62962962962965" y2="494.8148148148149" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="54.349629629629646" y="488.8148148148149" width="29.28" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="56.85762962962965" y="488.8148148148149" width="26.772" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="498.6648148148149" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −135
 </text>
 <line x1="89.62962962962965" y1="444.44444444444446" x2="85.62962962962965" y2="444.44444444444446" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="61.16962962962965" y="438.44444444444446" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="62.97362962962965" y="438.44444444444446" width="20.656" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="448.2944444444445" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −90
 </text>
 <line x1="89.62962962962965" y1="394.07407407407413" x2="85.62962962962965" y2="394.07407407407413" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="61.16962962962965" y="388.07407407407413" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="62.97362962962965" y="388.07407407407413" width="20.656" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="397.92407407407416" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −45
 </text>
 <line x1="89.62962962962965" y1="343.7037037037038" x2="85.62962962962965" y2="343.7037037037038" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.80962962962965" y="337.7037037037038" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="75.51362962962965" y="337.7037037037038" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="82.62962962962965" y="347.55370370370383" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
-<rect x="354.23592592592587" y="573.0651851851852" width="63.38" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="363.21192592592587" y="573.0651851851852" width="45.428" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="385.92592592592587" y="582.9151851851852" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 ω (rad/s)
 </text>
-<rect x="61.349629629629646" y="320.7837037037038" width="56.56" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="64.48462962962965" y="320.7837037037038" width="50.290000000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.62962962962965" y="330.6337037037038" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 ∠G (deg)
 </text>
@@ -1732,17 +1732,17 @@ Bode plot of G(s) = ωₙ²/(s² + 2ζωₙs + ωₙ²), ωₙ = 10 rad/s, ζ = 
 <line x1="680.7388865711769" y1="544.9226419545465" x2="681.4805543966995" y2="544.9256515881848" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
 <line x1="681.4805543966995" y1="544.9256515881848" x2="682.2222222222222" y2="544.9286267080263" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
 <ellipse cx="385.92592592592587" cy="444.44444444444446" rx="3.5" ry="3.5" fill="#fff" stroke="#222" stroke-width="1"/>
-<rect x="392.92592592592587" y="436.87444444444446" width="76.39999999999998" height="15.139999999999986" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
-<rect x="389.0435427663374" y="78.82730930056643" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="389.0435427663374" y="78.82730930056643" width="63.444920000000025" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="390.0435427663374" y="89.52730930056643" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 M<tspan font-size="9" dy="3.6">r</tspan><tspan dy="-3.6"> = 8.1 dB</tspan>
 </text>
-<rect x="392.92592592592587" y="437.2144444444445" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="393.92592592592587" y="447.9144444444445" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-−90° at ωₙ
+<rect x="392.92592592592587" y="436.13444444444445" width="58.341440000000034" height="16.620000000000005" fill="#fff" stroke="none" stroke-width="1" rx="0"/>
+<rect x="392.92592592592587" y="436.4744444444445" width="58.341440000000034" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="393.92592592592587" y="447.1744444444445" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+−90° at ω<tspan font-size="9" dy="3.6">n</tspan>
 </text>
 <text x="380" y="632" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-Resonant peak M_r = 1/(2ζ√(1−ζ²)) at ω_r = ωₙ√(1−2ζ²); phase is −90° at ωₙ
+Resonant peak M<tspan font-size="8" dy="3.3">r</tspan><tspan dy="-3.3"> = 1/(2ζ√(1−ζ</tspan><tspan font-size="8" dy="-4.4">2</tspan><tspan dy="4.4">)) at ω</tspan><tspan font-size="8" dy="3.3">r</tspan><tspan dy="-3.3"> = ω</tspan><tspan font-size="8" dy="3.3">n</tspan><tspan dy="-3.3">√(1−2ζ</tspan><tspan font-size="8" dy="-4.4">2</tspan><tspan dy="4.4">); phase is −90° at ω</tspan><tspan font-size="8" dy="3.3">n</tspan>
 </text>
 </g>
 </svg>

@@ -137,52 +137,52 @@ Simply supported beam: reactions
 <path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
 </marker>
 </defs>
-<line x1="79.35483870967742" y1="354.37419354838715" x2="79.35483870967742" y2="284.9387096774194" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-59)" stroke-dasharray=""/>
+<line x1="79.35483870967742" y1="364.37419354838715" x2="79.35483870967742" y2="294.93870967741935" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-59)" stroke-dasharray=""/>
 <defs>
 <marker id="arr-23333737663563-61" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
 <path d="M0,0 L7,3.5 L0,7 Z" fill="#377f5c"/>
 </marker>
 </defs>
-<line x1="740.6451612903227" y1="371.5677419354839" x2="740.6451612903227" y2="295.5193548387097" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-61)" stroke-dasharray=""/>
-<line x1="244.67741935483872" y1="382.01612903225805" x2="407.0000000000001" y2="382.01612903225805" stroke="#444" stroke-width="1" stroke-linecap="round"/>
-<path d="M 411.00000000000006 382.01612903225805 L 404.00000000000006 385.51612903225805 L 404.00000000000006 378.51612903225805 Z" fill="#444" stroke="none" stroke-width="1"/>
-<line x1="244.67741935483872" y1="382.01612903225805" x2="82.35483870967742" y2="382.01612903225805" stroke="#444" stroke-width="1" stroke-linecap="round"/>
-<path d="M 78.35483870967742 382.01612903225805 L 85.35483870967742 378.51612903225805 L 85.35483870967742 385.51612903225805 Z" fill="#444" stroke="none" stroke-width="1"/>
-<rect x="233.44741935483873" y="366.05612903225807" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
-<text x="244.67741935483872" y="375.9061290322581" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<line x1="740.6451612903227" y1="381.5677419354839" x2="740.6451612903227" y2="305.5193548387097" stroke="#377f5c" stroke-width="1.6" marker-end="url(#arr-23333737663563-61)" stroke-dasharray=""/>
+<line x1="244.67741935483872" y1="395.241935483871" x2="407.0000000000001" y2="395.241935483871" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 411.00000000000006 395.241935483871 L 404.00000000000006 398.741935483871 L 404.00000000000006 391.741935483871 Z" fill="#444" stroke="none" stroke-width="1"/>
+<line x1="244.67741935483872" y1="395.241935483871" x2="82.35483870967742" y2="395.241935483871" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 78.35483870967742 395.241935483871 L 85.35483870967742 391.741935483871 L 85.35483870967742 398.741935483871 Z" fill="#444" stroke="none" stroke-width="1"/>
+<rect x="234.50891935483872" y="379.281935483871" width="20.33699999999999" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="244.67741935483872" y="389.131935483871" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 5 m
 </text>
-<line x1="492.6612903225807" y1="382.01612903225805" x2="572.3225806451613" y2="382.01612903225805" stroke="#444" stroke-width="1" stroke-linecap="round"/>
-<path d="M 576.3225806451613 382.01612903225805 L 569.3225806451613 385.51612903225805 L 569.3225806451613 378.51612903225805 Z" fill="#444" stroke="none" stroke-width="1"/>
-<line x1="492.6612903225807" y1="382.01612903225805" x2="413.00000000000006" y2="382.01612903225805" stroke="#444" stroke-width="1" stroke-linecap="round"/>
-<path d="M 409.00000000000006 382.01612903225805 L 416.00000000000006 378.51612903225805 L 416.00000000000006 385.51612903225805 Z" fill="#444" stroke="none" stroke-width="1"/>
-<rect x="474.6112903225807" y="366.05612903225807" width="36.1" height="13.649999999999999" fill="#ffffff" stroke="none"/>
-<text x="492.6612903225807" y="375.9061290322581" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<line x1="492.6612903225807" y1="395.241935483871" x2="572.3225806451613" y2="395.241935483871" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 576.3225806451613 395.241935483871 L 569.3225806451613 398.741935483871 L 569.3225806451613 391.741935483871 Z" fill="#444" stroke="none" stroke-width="1"/>
+<line x1="492.6612903225807" y1="395.241935483871" x2="413.00000000000006" y2="395.241935483871" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 409.00000000000006 395.241935483871 L 416.00000000000006 391.741935483871 L 416.00000000000006 398.741935483871 Z" fill="#444" stroke="none" stroke-width="1"/>
+<rect x="477.90579032258074" y="379.281935483871" width="29.511000000000024" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="492.6612903225807" y="389.131935483871" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2.5 m
 </text>
-<line x1="657.9838709677421" y1="382.01612903225805" x2="737.6451612903227" y2="382.01612903225805" stroke="#444" stroke-width="1" stroke-linecap="round"/>
-<path d="M 741.6451612903226 382.01612903225805 L 734.6451612903227 385.51612903225805 L 734.6451612903227 378.51612903225805 Z" fill="#444" stroke="none" stroke-width="1"/>
-<line x1="657.9838709677421" y1="382.01612903225805" x2="578.3225806451613" y2="382.01612903225805" stroke="#444" stroke-width="1" stroke-linecap="round"/>
-<path d="M 574.3225806451613 382.01612903225805 L 581.3225806451613 378.51612903225805 L 581.3225806451613 385.51612903225805 Z" fill="#444" stroke="none" stroke-width="1"/>
-<rect x="639.9338709677421" y="366.05612903225807" width="36.1" height="13.649999999999999" fill="#ffffff" stroke="none"/>
-<text x="657.9838709677421" y="375.9061290322581" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<line x1="657.9838709677421" y1="395.241935483871" x2="737.6451612903227" y2="395.241935483871" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 741.6451612903226 395.241935483871 L 734.6451612903227 398.741935483871 L 734.6451612903227 391.741935483871 Z" fill="#444" stroke="none" stroke-width="1"/>
+<line x1="657.9838709677421" y1="395.241935483871" x2="578.3225806451613" y2="395.241935483871" stroke="#444" stroke-width="1" stroke-linecap="round"/>
+<path d="M 574.3225806451613 395.241935483871 L 581.3225806451613 391.741935483871 L 581.3225806451613 398.741935483871 Z" fill="#444" stroke="none" stroke-width="1"/>
+<rect x="643.2283709677421" y="379.281935483871" width="29.510999999999967" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="657.9838709677421" y="389.131935483871" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2.5 m
 </text>
-<rect x="206.47741935483873" y="142.9903225806452" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="206.47741935483873" y="142.9903225806452" width="62.34800000000001" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="207.47741935483873" y="153.6903225806452" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 w = 2 kN/m
 </text>
-<rect x="540.8425806451613" y="136.37741935483874" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="540.8425806451613" y="136.37741935483874" width="55.02800000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="541.8425806451613" y="147.07741935483872" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 P = 12 kN
 </text>
-<rect x="55.890838709677425" y="347.1441935483872" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="56.890838709677425" y="357.8441935483872" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-R₁
+<rect x="56.47483870967743" y="356.4041935483872" width="15.80144" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="57.47483870967743" y="367.1041935483872" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">1</tspan>
 </text>
-<rect x="746.6451612903227" y="364.33774193548396" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="747.6451612903227" y="375.03774193548395" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-R₂
+<rect x="746.6451612903227" y="373.59774193548395" width="15.801439999999957" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="747.6451612903227" y="384.29774193548394" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+R<tspan font-size="9" dy="3.6">2</tspan>
 </text>
 <text x="410" y="432" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 w = 2 kN/m over the left half, P = 12 kN at 7.5 m · Arrow scale: 1 unit = 10 kN (force)

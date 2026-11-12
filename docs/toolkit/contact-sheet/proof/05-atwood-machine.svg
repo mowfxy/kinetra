@@ -30,12 +30,12 @@ Atwood machine
 <ellipse cx="360.00000000000006" cy="108.88888888888891" rx="5" ry="5" fill="#65757d" stroke="#65757d" stroke-width="1"/>
 <line x1="360.00000000000006" y1="108.88888888888891" x2="360.00000000000006" y2="31.111111111111143" stroke="#526873" stroke-width="2" stroke-linecap="round"/>
 <rect x="286.11111111111114" y="237.22222222222223" width="54.44444444444446" height="54.44444444444446" fill="#d6e1e6" stroke="#586d78" stroke-width="1" rx="0"/>
-<rect x="304.8933333333334" y="257.94444444444446" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="304.8933333333334" y="257.94444444444446" width="16.879999999999995" height="14.799999999999999" fill="#d6e1e6" stroke="none"/>
 <text x="313.33333333333337" y="268.64444444444445" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 m<tspan font-size="9" dy="3.6">1</tspan>
 </text>
 <rect x="373.6111111111112" y="332.5" width="66.11111111111109" height="66.11111111111109" fill="#d6e1e6" stroke="#586d78" stroke-width="1" rx="0"/>
-<rect x="398.22666666666674" y="359.05555555555554" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="398.22666666666674" y="359.05555555555554" width="16.879999999999995" height="14.799999999999999" fill="#d6e1e6" stroke="none"/>
 <text x="406.66666666666674" y="369.75555555555553" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 m<tspan font-size="9" dy="3.6">2</tspan>
 </text>
@@ -78,32 +78,32 @@ m<tspan font-size="9" dy="3.6">2</tspan>
 </marker>
 </defs>
 <line x1="507.7777777777778" y1="365.55555555555554" x2="507.7777777777778" y2="460.93055555555554" stroke="#7a3a11" stroke-width="1.6" marker-end="url(#arr-23376133613131-43)" stroke-dasharray=""/>
-<rect x="256.67111111111114" y="142.76444444444445" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="257.67111111111114" y="153.46444444444444" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="255.17111111111114" y="142.76444444444445" width="9.331999999999994" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="256.17111111111114" y="153.46444444444444" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 T
 </text>
-<rect x="241.79111111111115" y="348.0344444444445" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="242.79111111111115" y="358.7344444444445" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="240.29111111111115" y="348.0344444444445" width="23.805439999999976" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="241.29111111111115" y="358.7344444444445" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 m<tspan font-size="9" dy="3.6">1</tspan><tspan dy="-3.6">g</tspan>
 </text>
-<rect x="459.7222222222223" y="243.87555555555556" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="460.7222222222223" y="254.57555555555555" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="461.22222222222223" y="243.87555555555556" width="9.331999999999994" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="462.22222222222223" y="254.57555555555555" fill="#377f5c" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 T
 </text>
-<rect x="459.7222222222223" y="510.1855555555556" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="460.7222222222223" y="520.8855555555556" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="461.22222222222223" y="510.1855555555556" width="23.805439999999976" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="462.22222222222223" y="520.8855555555556" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 m<tspan font-size="9" dy="3.6">2</tspan><tspan dy="-3.6">g</tspan>
 </text>
-<rect x="207.5022222222223" y="148.26944444444456" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="208.5022222222223" y="158.96944444444455" fill="#7a3a11" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="207.5022222222223" y="146.76944444444456" width="8.671999999999997" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="208.5022222222223" y="157.46944444444455" fill="#7a3a11" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 a
 </text>
-<rect x="503.0577777777778" y="467.2705555555556" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="504.0577777777778" y="477.97055555555556" fill="#7a3a11" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="503.0577777777778" y="468.7705555555556" width="8.672000000000025" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="504.0577777777778" y="479.47055555555556" fill="#7a3a11" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 a
 </text>
 <text x="360" y="552" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-m₁ = 3 kg rises, m₂ = 5 kg falls · Arrow scale: 1 unit = 25 N (force); 1 unit = 2 m/s^2 (acceleration)
+m<tspan font-size="8" dy="3.3">1</tspan><tspan dy="-3.3"> = 3 kg rises, m</tspan><tspan font-size="8" dy="3.3">2</tspan><tspan dy="-3.3"> = 5 kg falls · Arrow scale: 1 unit = 25 N (force); 1 unit = 2 m/s</tspan><tspan font-size="8" dy="-4.4">2</tspan><tspan dy="4.4"> (acceleration)</tspan>
 </text>
 </g>
 </svg>

@@ -48,32 +48,32 @@ Inverting amplifier with an ideal op-amp
 <ellipse cx="548.1818181818181" cy="230.45454545454547" rx="3" ry="3" fill="#222" stroke="#222" stroke-width="1"/>
 <path d="M 135.4090909090909 201.00000000000003 L 128.4090909090909 204.50000000000003 L 128.4090909090909 197.50000000000003 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
 <path d="M 516.6818181818181 83.18181818181822 L 509.68181818181813 86.68181818181822 L 509.68181818181813 79.68181818181822 Z" fill="#c0392b" stroke="none" stroke-width="1"/>
-<rect x="187.1709090909091" y="151.51090909090908" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="187.1709090909091" y="151.51090909090908" width="63.17671999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="188.1709090909091" y="162.21090909090907" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 R<tspan font-size="9" dy="3.6">in</tspan><tspan dy="-3.6"> = 10 kΩ</tspan>
 </text>
-<rect x="379.07272727272726" y="33.69272727272731" width="76.4" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="379.07272727272726" y="33.69272727272731" width="58.556719999999984" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="380.07272727272726" y="44.39272727272731" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 R<tspan font-size="9" dy="3.6">f</tspan><tspan dy="-3.6"> = 47 kΩ</tspan>
 </text>
-<rect x="56.261818181818185" y="178.72000000000003" width="83.84" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="56.261818181818185" y="178.72000000000003" width="56.88871999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="57.261818181818185" y="189.42000000000002" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 v<tspan font-size="9" dy="3.6">in</tspan><tspan dy="-3.6"> = 0.5 V</tspan>
 </text>
-<rect x="585.1018181818181" y="236.79454545454547" width="106.16" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="585.1018181818181" y="236.79454545454547" width="76.22360000000003" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="586.1018181818181" y="247.49454545454546" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 v<tspan font-size="9" dy="3.6">out</tspan><tspan dy="-3.6"> = −2.35 V</tspan>
 </text>
-<rect x="101.7890909090909" y="206.64000000000004" width="24.32" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="101.7890909090909" y="206.64000000000004" width="11.852720000000005" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="102.7890909090909" y="217.34000000000003" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 i<tspan font-size="9" dy="3.6">in</tspan>
 </text>
-<rect x="503.74181818181825" y="60.4018181818182" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="503.74181818181825" y="60.4018181818182" width="7.232720000000029" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="504.74181818181825" y="71.1018181818182" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 i<tspan font-size="9" dy="3.6">f</tspan>
 </text>
 <text x="360" y="412" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-Virtual ground at the inverting input: i_in = i_f, so v_out = −(R_f/R_in) v_in
+Virtual ground at the inverting input: i<tspan font-size="8" dy="3.3">in</tspan><tspan dy="-3.3"> = i</tspan><tspan font-size="8" dy="3.3">f</tspan><tspan dy="-3.3">, so v</tspan><tspan font-size="8" dy="3.3">out</tspan><tspan dy="-3.3"> = −(R</tspan><tspan font-size="8" dy="3.3">f</tspan><tspan dy="-3.3">/R</tspan><tspan font-size="8" dy="3.3">in</tspan><tspan dy="-3.3">) v</tspan><tspan font-size="8" dy="3.3">in</tspan>
 </text>
 </g>
 </svg>

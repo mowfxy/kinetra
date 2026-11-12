@@ -9,60 +9,60 @@ Carnot cycle on a P–V diagram (1 mol ideal diatomic gas)
 <line x1="96.10389610389608" y1="418.7012987012987" x2="690.3896103896104" y2="418.7012987012987" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="96.10389610389608" y1="418.7012987012987" x2="96.10389610389608" y2="81.03896103896102" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="96.10389610389608" y1="418.7012987012987" x2="96.10389610389608" y2="422.7012987012987" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="91.69389610389608" y="429.6612987012987" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="92.04589610389607" y="429.6612987012987" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="96.10389610389608" y="439.5112987012987" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="244.67532467532465" y1="418.7012987012987" x2="244.67532467532465" y2="422.7012987012987" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="236.85532467532465" y="429.6612987012987" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="237.55932467532466" y="429.6612987012987" width="14.232" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="244.67532467532465" y="439.5112987012987" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 20
 </text>
 <line x1="393.24675324675326" y1="418.7012987012987" x2="393.24675324675326" y2="422.7012987012987" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="385.42675324675326" y="429.6612987012987" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="386.1307532467533" y="429.6612987012987" width="14.232000000000028" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="393.24675324675326" y="439.5112987012987" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 40
 </text>
 <line x1="541.8181818181819" y1="418.7012987012987" x2="541.8181818181819" y2="422.7012987012987" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="533.9981818181818" y="429.6612987012987" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="534.7021818181819" y="429.6612987012987" width="14.231999999999971" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="541.8181818181819" y="439.5112987012987" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 60
 </text>
 <line x1="690.3896103896104" y1="418.7012987012987" x2="690.3896103896104" y2="422.7012987012987" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="682.5696103896104" y="429.6612987012987" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="683.2736103896104" y="429.6612987012987" width="14.231999999999971" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="690.3896103896104" y="439.5112987012987" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 80
 </text>
 <line x1="96.10389610389608" y1="418.7012987012987" x2="92.10389610389608" y2="418.7012987012987" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="81.28389610389607" y="412.7012987012987" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="81.98789610389606" y="412.7012987012987" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.10389610389606" y="422.5512987012987" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="96.10389610389608" y1="343.66522366522366" x2="92.10389610389608" y2="343.66522366522366" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="67.64389610389608" y="337.66522366522366" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="69.75589610389609" y="337.66522366522366" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.10389610389609" y="347.5152236652237" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 100
 </text>
 <line x1="96.10389610389608" y1="268.62914862914863" x2="92.10389610389608" y2="268.62914862914863" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="67.64389610389608" y="262.62914862914863" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="69.75589610389609" y="262.62914862914863" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.10389610389609" y="272.47914862914865" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 200
 </text>
 <line x1="96.10389610389608" y1="193.5930735930736" x2="92.10389610389608" y2="193.5930735930736" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="67.64389610389608" y="187.5930735930736" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="69.75589610389609" y="187.5930735930736" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.10389610389609" y="197.4430735930736" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 300
 </text>
 <line x1="96.10389610389608" y1="118.55699855699851" x2="92.10389610389608" y2="118.55699855699851" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="67.64389610389608" y="112.55699855699848" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="69.75589610389609" y="112.55699855699848" width="20.348" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.10389610389609" y="122.40699855699847" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 400
 </text>
-<rect x="375.19675324675325" y="446.5812987012987" width="36.1" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="380.32825324675326" y="446.5812987012987" width="25.83699999999999" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="393.24675324675326" y="456.4312987012987" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 V (L)
 </text>
-<rect x="71.23389610389607" y="65.07896103896101" width="49.74" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="76.76689610389607" y="65.07896103896101" width="38.67400000000001" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="96.10389610389608" y="74.928961038961" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 P (kPa)
 </text>
@@ -872,44 +872,44 @@ P (kPa)
 <line x1="296.6753246753247" y1="328.65800865800867" x2="411.48051948051955" y2="200.34632034632034" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
 <line x1="411.48051948051955" y1="200.34632034632034" x2="421.48051948051955" y2="200.34632034632034" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
 <circle cx="296.6753246753247" cy="328.65800865800867" r="3" fill="#777"/>
-<rect x="424.4805194805195" y="193.84632034632034" width="143.35999999999999" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="440.3025194805195" y="193.84632034632034" width="111.71599999999995" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="496.1605194805195" y="204.54632034632033" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 net work W = 1153 J
 </text>
 <rect x="523.8276623376623" y="103.29493506493503" width="117.01999999999998" height="63.53999999999999" fill="#fff" stroke="#aaa" stroke-width="1" rx="0"/>
 <line x1="529.8276623376623" y1="116.88493506493501" x2="551.8276623376623" y2="116.88493506493501" stroke="#c0392b" stroke-width="1.6" stroke-linecap="round"/>
-<rect x="557.8276623376623" y="110.88493506493504" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="566.3034923376623" y="110.88493506493504" width="60.068340000000035" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="596.3376623376623" y="120.73493506493503" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 isotherm T<tspan font-size="8" dy="3.3">H</tspan>
 </text>
 <line x1="529.8276623376623" y1="135.064935064935" x2="551.8276623376623" y2="135.064935064935" stroke="#2679a0" stroke-width="1.6" stroke-linecap="round"/>
-<rect x="557.8276623376623" y="129.06493506493499" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="566.3034923376623" y="129.06493506493499" width="60.068340000000035" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="596.3376623376623" y="138.91493506493498" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 isotherm T<tspan font-size="8" dy="3.3">C</tspan>
 </text>
 <line x1="529.8276623376623" y1="153.24493506493502" x2="551.8276623376623" y2="153.24493506493502" stroke="#222" stroke-width="1.6" stroke-linecap="round"/>
-<rect x="557.8276623376623" y="147.24493506493505" width="49.74" height="13.649999999999999" fill="#ffffff" stroke="none"/>
-<text x="582.6976623376623" y="157.09493506493504" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="566.3034923376623" y="147.24493506493505" width="38.08000000000004" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<text x="585.3434923376623" y="157.09493506493504" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 adiabat
 </text>
-<rect x="175.18961038961038" y="87.17633477633477" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="175.18961038961038" y="87.17633477633477" width="8.671999999999997" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="176.18961038961038" y="97.87633477633477" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1
 </text>
-<rect x="249.47532467532466" y="243.13881673881667" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="249.47532467532466" y="243.13881673881667" width="8.672000000000025" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="250.47532467532466" y="253.83881673881666" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2
 </text>
-<rect x="633.6952558996256" y="373.0067665854677" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="633.6952558996256" y="373.0067665854677" width="8.672000000000025" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="634.6952558996256" y="383.7067665854677" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 3
 </text>
-<rect x="348.2595760017609" y="371.6522344696366" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="348.2595760017609" y="371.6522344696366" width="8.672000000000025" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="349.2595760017609" y="382.3522344696366" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 4
 </text>
 <text x="400" y="512" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-T_H = 500 K, T_C = 300 K, γ = 1.4; shaded area = net work W = nR(T_H − T_C) ln(V₂/V₁)
+T<tspan font-size="8" dy="3.3">H</tspan><tspan dy="-3.3"> = 500 K, T</tspan><tspan font-size="8" dy="3.3">C</tspan><tspan dy="-3.3"> = 300 K, γ = 1.4; shaded area = net work W = nR(T</tspan><tspan font-size="8" dy="3.3">H</tspan><tspan dy="-3.3"> − T</tspan><tspan font-size="8" dy="3.3">C</tspan><tspan dy="-3.3">) ln(V</tspan><tspan font-size="8" dy="3.3">2</tspan><tspan dy="-3.3">/V</tspan><tspan font-size="8" dy="3.3">1</tspan><tspan dy="-3.3">)</tspan>
 </text>
 </g>
 </svg>

@@ -9,65 +9,65 @@ Three-process cycle on a P–V diagram
 <line x1="90.74626865671645" y1="379.7014925373134" x2="549.2537313432837" y2="379.7014925373134" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="90.74626865671645" y1="379.7014925373134" x2="90.74626865671645" y2="50.149253731343265" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="90.74626865671645" y1="379.7014925373134" x2="90.74626865671645" y2="383.7014925373134" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="86.33626865671646" y="390.6614925373134" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="86.68826865671645" y="390.6614925373134" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="90.74626865671645" y="400.5114925373134" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="205.37313432835828" y1="379.7014925373134" x2="205.37313432835828" y2="383.7014925373134" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="200.96313432835828" y="390.6614925373134" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="201.31513432835828" y="390.6614925373134" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="205.37313432835828" y="400.5114925373134" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1
 </text>
 <line x1="320.00000000000006" y1="379.7014925373134" x2="320.00000000000006" y2="383.7014925373134" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="315.59000000000003" y="390.6614925373134" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="315.94200000000006" y="390.6614925373134" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="320.00000000000006" y="400.5114925373134" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2
 </text>
 <line x1="434.6268656716419" y1="379.7014925373134" x2="434.6268656716419" y2="383.7014925373134" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="430.21686567164187" y="390.6614925373134" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="430.5688656716419" y="390.6614925373134" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="434.6268656716419" y="400.5114925373134" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 3
 </text>
 <line x1="549.2537313432837" y1="379.7014925373134" x2="549.2537313432837" y2="383.7014925373134" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="544.8437313432837" y="390.6614925373134" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="545.1957313432837" y="390.6614925373134" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="549.2537313432837" y="400.5114925373134" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 4
 </text>
 <line x1="90.74626865671645" y1="379.7014925373134" x2="86.74626865671645" y2="379.7014925373134" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="62.28626865671645" y="373.7014925373134" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.45626865671645" y="373.7014925373134" width="17.289999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="83.74626865671645" y="383.55149253731344" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.0
 </text>
 <line x1="90.74626865671645" y1="313.7910447761194" x2="86.74626865671645" y2="313.7910447761194" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="62.28626865671645" y="307.7910447761194" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.45626865671645" y="307.7910447761194" width="17.289999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="83.74626865671645" y="317.64104477611943" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0.5
 </text>
 <line x1="90.74626865671645" y1="247.88059701492534" x2="86.74626865671645" y2="247.88059701492534" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="62.28626865671645" y="241.88059701492534" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.45626865671645" y="241.88059701492534" width="17.289999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="83.74626865671645" y="251.73059701492534" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1.0
 </text>
 <line x1="90.74626865671645" y1="181.9701492537313" x2="86.74626865671645" y2="181.9701492537313" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="62.28626865671645" y="175.9701492537313" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.45626865671645" y="175.9701492537313" width="17.289999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="83.74626865671645" y="185.8201492537313" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1.5
 </text>
 <line x1="90.74626865671645" y1="116.05970149253727" x2="86.74626865671645" y2="116.05970149253727" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="62.28626865671645" y="110.0597014925373" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.45626865671645" y="110.0597014925373" width="17.289999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="83.74626865671645" y="119.9097014925373" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2.0
 </text>
 <line x1="90.74626865671645" y1="50.149253731343265" x2="86.74626865671645" y2="50.149253731343265" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="62.28626865671645" y="44.149253731343286" width="22.46" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="67.45626865671645" y="44.149253731343286" width="17.289999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="83.74626865671645" y="53.99925373134329" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2.5
 </text>
-<rect x="298.5400000000001" y="407.5814925373134" width="42.92" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="303.2033400000001" y="407.5814925373134" width="33.593320000000006" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="320.00000000000006" y="417.43149253731343" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-V (m³)
+V (m<tspan font-size="8" dy="-4.4">3</tspan><tspan dy="4.4">)</tspan>
 </text>
-<rect x="65.87626865671645" y="27.22925373134327" width="49.74" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="69.57776865671644" y="27.22925373134327" width="42.337" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="90.74626865671645" y="37.07925373134327" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 P (MPa)
 </text>
@@ -276,19 +276,19 @@ P (MPa)
 <circle cx="205.37313432835828" cy="116.05970149253727" r="3" fill="#222"/>
 <circle cx="434.6268656716419" cy="116.05970149253727" r="3" fill="#222"/>
 <circle cx="434.6268656716419" cy="291.820895522388" r="3" fill="#222"/>
-<rect x="313.36400000000003" y="174.2001492537313" width="10.06" height="15.95" fill="#ffffff" stroke="none"/>
+<rect x="313.36400000000003" y="174.2001492537313" width="13.271999999999991" height="15.95" fill="#cfe4ff" stroke="none"/>
 <text x="314.36400000000003" y="185.7501492537313" fill="#222" font-size="13" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 W
 </text>
-<rect x="191.13313432835827" y="96.45970149253729" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="191.13313432835827" y="96.45970149253729" width="8.671999999999997" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="192.13313432835827" y="107.1597014925373" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 1
 </text>
-<rect x="439.4268656716419" y="96.45970149253729" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="439.4268656716419" y="96.45970149253729" width="8.672000000000025" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="440.4268656716419" y="107.1597014925373" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2
 </text>
-<rect x="439.4268656716419" y="296.96089552238806" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="439.4268656716419" y="296.96089552238806" width="8.672000000000025" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="440.4268656716419" y="307.66089552238805" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 3
 </text>

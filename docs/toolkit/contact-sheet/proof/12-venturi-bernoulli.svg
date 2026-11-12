@@ -43,28 +43,28 @@ Venturi meter: continuity and Bernoulli
 <path d="M 340.57851239669424 91.56198347107443 L 344.07851239669424 98.56198347107443 L 337.07851239669424 98.56198347107443 Z" fill="#444" stroke="none" stroke-width="1"/>
 <line x1="340.57851239669424" y1="235.963967042508" x2="340.57851239669424" y2="376.3659506139416" stroke="#444" stroke-width="1" stroke-linecap="round"/>
 <path d="M 340.57851239669424 380.3659506139416 L 337.07851239669424 373.3659506139416 L 344.07851239669424 373.3659506139416 Z" fill="#444" stroke="none" stroke-width="1"/>
-<rect x="260.55851239669425" y="229.963967042508" width="77.02" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="267.03201239669426" y="229.963967042508" width="64.07299999999998" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="299.06851239669425" y="239.81396704250798" fill="#444" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 Δh = 124 cm
 </text>
-<rect x="88.57785123966946" y="516.4752066115702" width="68.96" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="98.04585123966945" y="516.4752066115702" width="50.024" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="123.05785123966945" y="527.1752066115703" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 section 1
 </text>
-<rect x="402.3804958677686" y="516.4752066115702" width="61.519999999999996" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="411.7944958677686" y="516.4752066115702" width="42.69200000000001" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="433.1404958677686" y="527.1752066115703" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 throat 2
 </text>
-<rect x="121.49645227486329" y="454.83991735537194" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="122.49645227486329" y="465.5399173553719" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="122.99645227486329" y="454.83991735537194" width="13.137439999999998" height="14.799999999999999" fill="#cfe4ff" stroke="none"/>
+<text x="123.99645227486329" y="465.5399173553719" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 v<tspan font-size="9" dy="3.6">1</tspan>
 </text>
-<rect x="499.1428338928414" y="454.83991735537194" width="16.88" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="500.1428338928414" y="465.5399173553719" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="500.64283389284145" y="454.83991735537194" width="13.137440000000026" height="14.799999999999999" fill="#cfe4ff" stroke="none"/>
+<text x="501.64283389284145" y="465.5399173553719" fill="#117a3a" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 v<tspan font-size="9" dy="3.6">2</tspan>
 </text>
 <text x="410" y="552" fill="#555" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
-D₁ = 20 cm, D₂ = 10 cm, Q = 40 L/s; heads differ by (v₂² − v₁²)/2g · Arrow scale: 1 unit = 0.1 m/s (velocity)
+D<tspan font-size="8" dy="3.3">1</tspan><tspan dy="-3.3"> = 20 cm, D</tspan><tspan font-size="8" dy="3.3">2</tspan><tspan dy="-3.3"> = 10 cm, Q = 40 L/s; heads differ by (v</tspan><tspan font-size="8" dy="3.3">2</tspan><tspan font-size="8" dy="-7.7">2</tspan><tspan dy="4.4"> − v</tspan><tspan font-size="8" dy="3.3">1</tspan><tspan font-size="8" dy="-7.7">2</tspan><tspan dy="4.4">)/2g · Arrow scale: 1 unit = 0.1 m/s (velocity)</tspan>
 </text>
 </g>
 </svg>

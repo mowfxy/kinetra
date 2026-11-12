@@ -11,60 +11,60 @@ Root locus of K / (s(s + 2)(s + 4)) with unity feedback
 <line x1="96.22641509433957" y1="72.45283018867929" x2="663.7735849056604" y2="72.45283018867929" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="663.7735849056604" y1="555.4716981132076" x2="663.7735849056604" y2="72.45283018867929" stroke="#777" stroke-width="1" stroke-linecap="round"/>
 <line x1="156.6037735849056" y1="555.4716981132076" x2="156.6037735849056" y2="559.4716981132076" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="148.78377358490562" y="566.4316981132076" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="149.3337735849056" y="566.4316981132076" width="14.539999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="156.6037735849056" y="576.2816981132077" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −6
 </text>
 <line x1="277.3584905660377" y1="555.4716981132076" x2="277.3584905660377" y2="559.4716981132076" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="269.5384905660377" y="566.4316981132076" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="270.0884905660377" y="566.4316981132076" width="14.54000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="277.3584905660377" y="576.2816981132077" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −4
 </text>
 <line x1="398.1132075471698" y1="555.4716981132076" x2="398.1132075471698" y2="559.4716981132076" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="390.2932075471698" y="566.4316981132076" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="390.8432075471698" y="566.4316981132076" width="14.54000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="398.1132075471698" y="576.2816981132077" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −2
 </text>
 <line x1="518.8679245283018" y1="555.4716981132076" x2="518.8679245283018" y2="559.4716981132076" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="514.4579245283019" y="566.4316981132076" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="514.8099245283018" y="566.4316981132076" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="518.8679245283018" y="576.2816981132077" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="639.622641509434" y1="555.4716981132076" x2="639.622641509434" y2="559.4716981132076" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="635.212641509434" y="566.4316981132076" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="635.564641509434" y="566.4316981132076" width="8.115999999999985" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="639.622641509434" y="576.2816981132077" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2
 </text>
 <line x1="96.22641509433957" y1="555.4716981132076" x2="92.22641509433957" y2="555.4716981132076" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.58641509433957" y="549.4716981132076" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="75.68641509433957" y="549.4716981132076" width="14.539999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.22641509433957" y="559.3216981132076" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −4
 </text>
 <line x1="96.22641509433957" y1="434.7169811320755" x2="92.22641509433957" y2="434.7169811320755" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="74.58641509433957" y="428.7169811320755" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="75.68641509433957" y="428.7169811320755" width="14.539999999999992" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.22641509433957" y="438.5669811320755" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 −2
 </text>
 <line x1="96.22641509433957" y1="313.96226415094344" x2="92.22641509433957" y2="313.96226415094344" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="81.40641509433956" y="307.96226415094344" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="82.11041509433956" y="307.96226415094344" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.22641509433956" y="317.81226415094346" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 0
 </text>
 <line x1="96.22641509433957" y1="193.2075471698114" x2="92.22641509433957" y2="193.2075471698114" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="81.40641509433956" y="187.20754716981142" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="82.11041509433956" y="187.20754716981142" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.22641509433956" y="197.05754716981141" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 2
 </text>
 <line x1="96.22641509433957" y1="72.45283018867929" x2="92.22641509433957" y2="72.45283018867929" stroke="#777" stroke-width="1" stroke-linecap="round"/>
-<rect x="81.40641509433956" y="66.45283018867931" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="82.11041509433956" y="66.45283018867931" width="8.116" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="89.22641509433956" y="76.30283018867931" fill="#333" font-size="11" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 4
 </text>
-<rect x="375.59" y="583.3516981132076" width="8.82" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="375.601" y="583.3516981132076" width="8.798000000000002" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="380" y="593.2016981132076" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 σ
 </text>
-<rect x="88.40641509433956" y="49.53283018867929" width="15.64" height="13.649999999999999" fill="#ffffff" stroke="none"/>
+<rect x="89.70991509433956" y="49.53283018867929" width="13.033000000000001" height="13.649999999999999" fill="#ffffff" stroke="none"/>
 <text x="96.22641509433956" y="59.38283018867929" fill="#333" font-size="11" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 jω
 </text>
@@ -1197,7 +1197,7 @@ jω
 <ellipse cx="467.83097590214345" cy="313.96226415094344" rx="3.5" ry="3.5" fill="#fff" stroke="#222" stroke-width="1"/>
 <line x1="467.83097590214345" y1="313.96226415094344" x2="371.22720231723775" y2="398.4905660377359" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
 <line x1="371.22720231723775" y1="398.4905660377359" x2="361.22720231723775" y2="398.4905660377359" stroke="#777" stroke-width="0.8" stroke-linecap="round"/>
-<rect x="207.42720231723771" y="391.9905660377359" width="150.8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="222.79320231723773" y="391.9905660377359" width="120.06799999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="282.8272023172377" y="402.6905660377359" fill="#333" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 breakaway s = −0.845
 </text>
@@ -1205,7 +1205,7 @@ breakaway s = −0.845
 <ellipse cx="518.8679245283018" cy="484.73522262618513" rx="3.5" ry="3.5" fill="#fff" stroke="#222" stroke-width="1"/>
 <line x1="394.6132075471698" y1="313.96226415094344" x2="401.61320754716974" y2="313.96226415094344" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
 <line x1="398.1132075471698" y1="317.46226415094344" x2="398.1132075471698" y2="310.4622641509435" stroke="#222" stroke-width="1.4" stroke-linecap="round"/>
-<rect x="525.8679245283018" y="135.95930567570184" width="128.48000000000002" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="525.8679245283018" y="135.95930567570184" width="89.39599999999996" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="526.8679245283018" y="146.65930567570183" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 K = 48, s = j2.83
 </text>

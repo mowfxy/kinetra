@@ -92,7 +92,7 @@ Spring–mass–damper
 <line x1="549.4416873449131" y1="271" x2="544.5416873449132" y2="277" stroke="#666" stroke-width="1" stroke-linecap="round"/>
 <line x1="557.5062034739453" y1="271" x2="552.6062034739454" y2="277" stroke="#666" stroke-width="1" stroke-linecap="round"/>
 <rect x="292.3076923076923" y="154.6153846153846" width="123.07692307692304" height="115.38461538461539" fill="#d6e1e6" stroke="#586d78" stroke-width="1" rx="0"/>
-<rect x="349.12615384615384" y="205.80769230769232" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="348.8481538461539" y="205.80769230769232" width="9.995999999999981" height="14.799999999999999" fill="#d6e1e6" stroke="none"/>
 <text x="353.84615384615387" y="216.5076923076923" fill="#222" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 m
 </text>
@@ -149,24 +149,24 @@ m
 </marker>
 </defs>
 <line x1="461.5384615384615" y1="100.76923076923077" x2="461.5384615384615" y2="46.923076923076906" stroke="#66717a" stroke-width="1.6" marker-end="url(#arr-23363637313761-128)" stroke-dasharray=""/>
-<rect x="519.3846153846154" y="94.26923076923079" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="520.1046153846154" y="94.26923076923079" width="8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="524.1046153846154" y="104.96923076923079" fill="#66717a" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 x
 </text>
-<rect x="456.81846153846146" y="28.8530769230769" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="457.5384615384615" y="28.8530769230769" width="8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="461.5384615384615" y="39.5530769230769" fill="#66717a" font-size="12" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 y
 </text>
-<rect x="172.20307692307696" y="153.73846153846156" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="172.20307692307696" y="153.73846153846156" width="8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="173.20307692307696" y="164.43846153846155" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 k
 </text>
-<rect x="172.20307692307696" y="211.43076923076924" width="9.44" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<rect x="172.20307692307696" y="211.43076923076924" width="8" height="14.799999999999999" fill="#ffffff" stroke="none"/>
 <text x="173.20307692307696" y="222.13076923076923" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 c
 </text>
-<rect x="521.3846153846154" y="205.07769230769233" width="31.759999999999998" height="14.799999999999999" fill="#ffffff" stroke="none"/>
-<text x="522.3846153846154" y="215.77769230769232" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
+<rect x="522.8846153846154" y="205.07769230769233" width="20.659999999999968" height="14.799999999999999" fill="#ffffff" stroke="none"/>
+<text x="523.8846153846154" y="215.77769230769232" fill="#222" font-size="12" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-weight="normal">
 F(t)
 </text>
 </g>
