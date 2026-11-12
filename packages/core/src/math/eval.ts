@@ -5,6 +5,7 @@
 
 import type { Expr } from "./expression.js";
 import { KinetraError } from "../errors.js";
+import { derivative } from "./symbolic.js";
 import { approxEqual, clamp } from "../utils/text.js";
 
 const CONSTS: Record<string, number> = { pi: Math.PI, e: Math.E, inf: Infinity, nan: NaN };
@@ -69,8 +70,11 @@ export function evaluate(e: Expr, ctx: EvalContext = { vars: {} }): number {
     case "matrix":
     case "vector":
       throw new KinetraError("unsupported", "Use evalVector/evalMatrix for aggregate types");
-    case "deriv":
-      return evaluate(derivative(e.var, e.body), ctx);
+    case "deriv": {
+      let d = e.body;
+      for (let i = 0; i < e.order; i++) d = derivative(e.var, d);
+      return evaluate(d, ctx);
+    }
   }
 }
 

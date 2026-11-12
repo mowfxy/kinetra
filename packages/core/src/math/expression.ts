@@ -188,7 +188,9 @@ class Parser {
     }
     if (c === "d" && this.src[this.pos + 1] === "/") {
       this.pos += 2;
-      const v = this.readIdent();
+      const id = this.readIdent();
+      // d/dx(...) differentiates with respect to x: drop the "d" of "dx".
+      const v = id.length > 1 && id[0] === "d" ? id.slice(1) : id;
       this.skip();
       if (this.src[this.pos] !== "(") throw new KinetraError("parse", "Expected ( after d/dx");
       this.pos += 1;

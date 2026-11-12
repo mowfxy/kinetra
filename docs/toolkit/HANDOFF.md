@@ -118,9 +118,6 @@ code is frozen.
 - **`workflow-a` crashes on `main`.** `dld/truth_table.ts` raises
   `variable is not defined`, so its XOR schematic has no golden. Logic is
   covered by other goldens.
-- **Pre-existing type error.** `math/eval.ts:73` references an undefined
-  `derivative`. `typecheck:toolkit` lists it as pre-existing and fails only on
-  errors in toolkit-owned files. The toolkit never builds `deriv` nodes.
 - **Kinetra expression-parser quirks** (`math/expression.ts`): a number before
   `)` is read as implicit multiplication; a leading `p` is read as π, `S` as Σ
   and `d/` as a derivative; unary minus binds tighter than `^`. The toolkit
@@ -494,5 +491,3 @@ strokes are now low priority.
 
 - `workflow-a` crashes on `main`: `dld/truth_table.ts` raises
   `variable is not defined`.
-- `math/eval.ts:73` references an undefined `derivative` (TypeScript error
-  TS2304); `typecheck:toolkit` reports it as pre-existing.

@@ -223,6 +223,14 @@ export function derivative(v: string, e: Expr): Expr {
         right: { type: "pow", left: e.right, right: num(2) },
       };
     case "pow": {
+      // Constant exponent: power rule g * f^(g-1) * f', finite for f <= 0.
+      if (!collectVars(e.right).includes(v)) {
+        if (e.right.type === "num" && e.right.value === 0) return num(0);
+        return {
+          type: "mul",
+          args: [e.right, { type: "pow", left: e.left, right: { type: "sub", left: e.right, right: num(1) } }, derivative(v, e.left)],
+        };
+      }
       // d/dx f^g = f^g * (g' ln f + g f'/f)
       return {
         type: "mul",
@@ -275,7 +283,12 @@ export function derivative(v: string, e: Expr): Expr {
       return { type: "piecewise", cases: e.cases.map((c) => ({ cond: c.cond, value: derivative(v, c.value) })), otherwise: derivative(v, e.otherwise) };
     case "vector": return { type: "vector", items: e.items.map((c) => derivative(v, c)) };
     case "matrix": return { type: "matrix", rows: e.rows.map((r) => r.map((c) => derivative(v, c))) };
-    case "deriv": return derivative(v, e.body);
+    case "deriv": {
+      // Differentiate the inner derivative itself, not its body.
+      let d = e.body;
+      for (let i = 0; i < e.order; i++) d = derivative(e.var, d);
+      return derivative(v, d);
+    }
   }
 }
 
